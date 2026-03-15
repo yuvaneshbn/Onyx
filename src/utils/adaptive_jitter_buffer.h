@@ -1,0 +1,6 @@
+#ifndef ADAPTIVE_JITTER_BUFFER_H_
+#define ADAPTIVE_JITTER_BUFFER_H_
+
+#pragma once
+
+#endif // ADAPTIVE_JITTER_BUFFER_H_

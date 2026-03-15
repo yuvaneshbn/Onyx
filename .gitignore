@@ -1,0 +1,42 @@
+# Build directories
+build/
+bin/
+obj/
+out/
+Release/
+Debug/
+
+# IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.filters
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeSettings.json
+cmake_install.cmake
+install/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Qt
+*.pro.user
+debug/
+release/
+
+# Node/Vcpkg
+vcpkg_installed/
+
+# Logs
+*.log
+client1_log.txt
+client1_err.txt
+client2_log.txt
+client2_err.txt
