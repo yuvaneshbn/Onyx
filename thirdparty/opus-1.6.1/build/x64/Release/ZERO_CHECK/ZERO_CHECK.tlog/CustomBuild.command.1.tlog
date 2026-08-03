@@ -1,0 +1,10 @@
+^C:\USERS\YUVANESH\DOWNLOADS\OPUS-1.6.1\OPUS-1.6.1\BUILD\CMAKEFILES\A81BBD087F9669B5BC2D94A520601CC0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/YUVANESH/Downloads/opus-1.6.1/opus-1.6.1 -BC:/Users/YUVANESH/Downloads/opus-1.6.1/opus-1.6.1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/YUVANESH/Downloads/opus-1.6.1/opus-1.6.1/build/Opus.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

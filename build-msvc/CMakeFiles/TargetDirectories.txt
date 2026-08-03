@@ -1,0 +1,8 @@
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/CMakeFiles/onyx-voip.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/CMakeFiles/edit_cache.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/CMakeFiles/rebuild_cache.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/CMakeFiles/list_install_components.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/CMakeFiles/install.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/CMakeFiles/install/local.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/CMakeFiles/onyx-voip_autogen_timestamp_deps.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/CMakeFiles/onyx-voip_autogen.dir

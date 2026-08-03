@@ -1,0 +1,5 @@
+C:/Users/YUVANESH/Downloads/opus-1.6.1/opus-1.6.1/build/CMakeFiles/opus.dir
+C:/Users/YUVANESH/Downloads/opus-1.6.1/opus-1.6.1/build/CMakeFiles/PACKAGE.dir
+C:/Users/YUVANESH/Downloads/opus-1.6.1/opus-1.6.1/build/CMakeFiles/INSTALL.dir
+C:/Users/YUVANESH/Downloads/opus-1.6.1/opus-1.6.1/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/YUVANESH/Downloads/opus-1.6.1/opus-1.6.1/build/CMakeFiles/ZERO_CHECK.dir

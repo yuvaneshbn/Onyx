@@ -1,0 +1,7 @@
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/include/../ABAUAXXAI3/moc_ConfigManager.cpp.json
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/include/../D3VNSN2ZHP/moc_ContactModel.cpp.json
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/include/../VCT5QEYGEO/moc_FileTransferManager.cpp.json
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/include/../VCT5QEYGEO/moc_LanDiscoveryManager.cpp.json
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/include/../VCT5QEYGEO/moc_PortKnocker.cpp.json
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/include/../VCT5QEYGEO/moc_SipController.cpp.json
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/include/main.moc.json

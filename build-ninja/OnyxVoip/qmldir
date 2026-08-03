@@ -1,0 +1,6 @@
+module OnyxVoip
+typeinfo onyx-voip.qmltypes
+prefer :/qt/qml/OnyxVoip/
+Main 1.0 source/ui/Main.qml
+depends QtQuick
+

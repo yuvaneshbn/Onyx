@@ -1,0 +1,16 @@
+-I
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc
+-I
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/OnyxVoip
+-I
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc
+-I
+C:/Qt/6.11.1/msvc2022_64/qml
+--resource
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/.qt/rcc/qmake_OnyxVoip.qrc
+--resource
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/.qt/rcc/onyx-voip_raw_qml_0.qrc
+--resource
+C:/Users/YUVANESH/Downloads/Onyx/build-msvc/.qt/rcc/onyx-voip_raw_qml_0_extra_qmldirs.qrc
+--module
+OnyxVoip

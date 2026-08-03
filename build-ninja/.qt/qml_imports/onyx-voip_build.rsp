@@ -1,0 +1,15 @@
+-rootPath
+C:/Users/YUVANESH/Downloads/Onyx
+-cmake-output
+-output-file
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/.qt/qml_imports/onyx-voip_build.cmake
+-importPath
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja
+-importPath
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/OnyxVoip
+-importPath
+C:/Qt/6.11.1/msvc2022_64/qml
+-qrcFiles
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/.qt/rcc/qmake_OnyxVoip.qrc
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/.qt/rcc/onyx-voip_raw_qml_0.qrc
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/.qt/rcc/onyx-voip_raw_qml_0_extra_qmldirs.qrc

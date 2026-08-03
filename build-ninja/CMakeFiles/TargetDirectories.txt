@@ -1,0 +1,9 @@
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/onyx-voip.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/edit_cache.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/rebuild_cache.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/list_install_components.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/install.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/install/local.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/install/strip.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/onyx-voip_autogen_timestamp_deps.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/onyx-voip_autogen.dir

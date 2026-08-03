@@ -1,0 +1,15 @@
+<RCC>
+    <!--
+        The original included several .rc2 files (res\main.rc2, res\dialog.rc2, res\menu.rc2)
+        which would define dialog templates, menus, icons, etc. Those need to be converted
+        into separate .qrc files or integrated here with appropriate file entries.
+        The TEXTINCLUDE sections are not needed in Qt; resources are compiled into the binary.
+    -->
+    <qresource prefix="/">
+        <!-- Example: add resource files from the original res\ directory -->
+        <!-- <file>res/main.rc2</file> -->      <!-- Not a valid Qt resource, replace with actual files -->
+        <!-- <file>res/dialog.rc2</file> -->
+        <!-- <file>res/menu.rc2</file> -->
+        <!-- Include standard Qt resources if needed -->
+    </qresource>
+</RCC>
