@@ -1,0 +1,71 @@
+{
+    "classes": [
+        {
+            "className": "CLevelsSliderCtrl",
+            "lineNumber": 9,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 12,
+                    "name": "IsActive",
+                    "override": false,
+                    "read": "isActive",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setActive"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "lineNumber": 13,
+                    "name": "selMin",
+                    "override": false,
+                    "read": "selMin",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setSelMin"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "lineNumber": 14,
+                    "name": "selMax",
+                    "override": false,
+                    "read": "selMax",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setSelMax"
+                }
+            ],
+            "qualifiedClassName": "CLevelsSliderCtrl",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QSlider"
+                }
+            ]
+        }
+    ],
+    "inputFile": "LevelsSliderCtrl.h",
+    "outputRevision": 69
+}

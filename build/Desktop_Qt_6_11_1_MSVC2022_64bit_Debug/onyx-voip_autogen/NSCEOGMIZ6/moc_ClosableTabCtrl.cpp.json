@@ -1,0 +1,78 @@
+{
+    "classes": [
+        {
+            "className": "ClosableTabCtrl",
+            "lineNumber": 13,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 16,
+                    "name": "closable",
+                    "override": false,
+                    "read": "isClosable",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setClosable"
+                }
+            ],
+            "qualifiedClassName": "ClosableTabCtrl",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 32,
+                    "name": "tabCloseRequested",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 33,
+                    "name": "tabDoubleClicked",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 34,
+                    "name": "tabQueryClose",
+                    "returnType": "bool"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QTabBar"
+                }
+            ]
+        }
+    ],
+    "inputFile": "ClosableTabCtrl.h",
+    "outputRevision": 69
+}

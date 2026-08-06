@@ -82,6 +82,123 @@
     {
         "classes": [
             {
+                "className": "CListCtrl_LabelTip",
+                "lineNumber": 7,
+                "object": true,
+                "qualifiedClassName": "CListCtrl_LabelTip",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "CListCtrl_ToolTip"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "CListCtrl_LabelTip.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "CListCtrl_ToolTip",
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "CListCtrl_ToolTip",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QTableWidget"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "CListCtrl_ToolTip.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "Hid",
+                "lineNumber": 14,
+                "object": true,
+                "qualifiedClassName": "Hid",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Hid.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "CMessageBoxX",
+                "lineNumber": 23,
+                "object": true,
+                "qualifiedClassName": "CMessageBoxX",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "buttonId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 78,
+                        "name": "timeoutTriggered",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 1,
+                        "lineNumber": 101,
+                        "name": "onTimeoutTimer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 2,
+                        "lineNumber": 102,
+                        "name": "onAnimatedTextTimer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "lineNumber": 103,
+                        "name": "onAnimatedCaptionTimer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 4,
+                        "lineNumber": 104,
+                        "name": "onUserActivity",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MessageBoxX.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
                 "className": "ContactModel",
                 "lineNumber": 15,
                 "methods": [
@@ -114,6 +231,3416 @@
             }
         ],
         "inputFile": "ContactModel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "AAOptionsDlg",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "lineNumber": 21,
+                        "name": "CallsOption",
+                        "values": [
+                            "NoCalls",
+                            "HoldCalls",
+                            "AllCalls"
+                        ]
+                    }
+                ],
+                "lineNumber": 12,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 15,
+                        "name": "autoAnswerDelay",
+                        "notify": "autoAnswerDelayChanged",
+                        "override": false,
+                        "read": "autoAnswerDelay",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setAutoAnswerDelay"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 16,
+                        "name": "autoAnswerNumber",
+                        "notify": "autoAnswerNumberChanged",
+                        "override": false,
+                        "read": "autoAnswerNumber",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setAutoAnswerNumber"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "lineNumber": 17,
+                        "name": "autoAnswerCalls",
+                        "notify": "autoAnswerCallsChanged",
+                        "override": false,
+                        "read": "autoAnswerCalls",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setAutoAnswerCalls"
+                    }
+                ],
+                "qualifiedClassName": "AAOptionsDlg",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "delay",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 42,
+                        "name": "autoAnswerDelayChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "number",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 43,
+                        "name": "autoAnswerNumberChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "calls",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 44,
+                        "name": "autoAnswerCallsChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "delay",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 37,
+                        "name": "setAutoAnswerDelay",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "number",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 38,
+                        "name": "setAutoAnswerNumber",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "calls",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 39,
+                        "name": "setAutoAnswerCalls",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AAOptionsDlg.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "AccountDlg",
+                "lineNumber": 17,
+                "object": true,
+                "qualifiedClassName": "AccountDlg",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 30,
+                        "name": "accountIdChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 1,
+                        "lineNumber": 38,
+                        "name": "onAccept",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 2,
+                        "lineNumber": 39,
+                        "name": "onDeleteAccountClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "lineNumber": 40,
+                        "name": "onDisplayPasswordClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 41,
+                        "name": "onPasswordChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "link",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 42,
+                        "name": "onHelpLinkActivated",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AccountDlg.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "AddDlg",
+                "lineNumber": 13,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 16,
+                        "name": "contactName",
+                        "notify": "contactNameChanged",
+                        "override": false,
+                        "read": "contactName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setContactName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 17,
+                        "name": "contactNumber",
+                        "notify": "contactNumberChanged",
+                        "override": false,
+                        "read": "contactNumber",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setContactNumber"
+                    }
+                ],
+                "qualifiedClassName": "AddDlg",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 32,
+                        "name": "contactNameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 33,
+                        "name": "contactNumberChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 2,
+                        "lineNumber": 39,
+                        "name": "onOkClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "lineNumber": 40,
+                        "name": "onCancelClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 4,
+                        "lineNumber": 41,
+                        "name": "onFirstLastNameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 5,
+                        "lineNumber": 42,
+                        "name": "onPhoneNumberChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AddDlg.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "BaseDialog",
+                "lineNumber": 15,
+                "object": true,
+                "qualifiedClassName": "BaseDialog",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "commandId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 46,
+                        "name": "postCommand",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "BaseDialog.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "ButtonBottom",
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "ButtonBottom",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QPushButton"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ButtonBottom.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "ButtonDialer",
+                "lineNumber": 9,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 12,
+                        "name": "forceNumeric",
+                        "override": false,
+                        "read": "forceNumeric",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setForceNumeric"
+                    }
+                ],
+                "qualifiedClassName": "ButtonDialer",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QPushButton"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ButtonDialer.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "ButtonEx",
+                "lineNumber": 7,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 10,
+                        "name": "faceColor",
+                        "override": false,
+                        "read": "faceColor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setFaceColor"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 11,
+                        "name": "textColor",
+                        "override": false,
+                        "read": "textColor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setTextColor"
+                    }
+                ],
+                "qualifiedClassName": "ButtonEx",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QPushButton"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ButtonEx.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "ButtonSafe",
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "ButtonSafe",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QPushButton"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ButtonSafe.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "CListCtrl_SortItemsEx",
+                "lineNumber": 7,
+                "object": true,
+                "qualifiedClassName": "CListCtrl_SortItemsEx",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "CListCtrl_Sortable"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "CListCtrl_SortItemsEx.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "CListCtrl_Sortable",
+                "lineNumber": 10,
+                "object": true,
+                "qualifiedClassName": "CListCtrl_Sortable",
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "section",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 37,
+                        "name": "OnHeaderClicked",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QTableWidget"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "CListCtrl_Sortable.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "Calls",
+                "lineNumber": 17,
+                "object": true,
+                "qualifiedClassName": "Calls",
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            },
+                            {
+                                "name": "column",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 86,
+                        "name": "onTableDoubleClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "logicalIndex",
+                                "type": "int"
+                            },
+                            {
+                                "name": "oldSize",
+                                "type": "int"
+                            },
+                            {
+                                "name": "newSize",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 87,
+                        "name": "onHeaderResized",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 88,
+                        "name": "onFilterTextChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "lineNumber": 89,
+                        "name": "onOkClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 4,
+                        "lineNumber": 90,
+                        "name": "onCancelClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 5,
+                        "lineNumber": 91,
+                        "name": "onMenuCall",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 6,
+                        "lineNumber": 92,
+                        "name": "onMenuChat",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 7,
+                        "lineNumber": 93,
+                        "name": "onMenuAdd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 8,
+                        "lineNumber": 94,
+                        "name": "onMenuCopy",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 9,
+                        "lineNumber": 95,
+                        "name": "onMenuDelete",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 10,
+                        "lineNumber": 96,
+                        "name": "onMenuExport",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 11,
+                        "lineNumber": 98,
+                        "name": "onMenuCallVideo",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "BaseDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Calls.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "ClosableTabCtrl",
+                "lineNumber": 13,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 16,
+                        "name": "closable",
+                        "override": false,
+                        "read": "isClosable",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setClosable"
+                    }
+                ],
+                "qualifiedClassName": "ClosableTabCtrl",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 32,
+                        "name": "tabCloseRequested",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 33,
+                        "name": "tabDoubleClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 34,
+                        "name": "tabQueryClose",
+                        "returnType": "bool"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QTabBar"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ClosableTabCtrl.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "Contacts",
+                "lineNumber": 27,
+                "object": true,
+                "qualifiedClassName": "Contacts",
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "logicalIndex",
+                                "type": "int"
+                            },
+                            {
+                                "name": "oldSize",
+                                "type": "int"
+                            },
+                            {
+                                "name": "newSize",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 81,
+                        "name": "onHeaderSectionResized",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 82,
+                        "name": "onFilterTextChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            },
+                            {
+                                "name": "column",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 83,
+                        "name": "onItemDoubleClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "lineNumber": 84,
+                        "name": "onOkClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 4,
+                        "lineNumber": 85,
+                        "name": "onCancelClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "pos",
+                                "type": "QPoint"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 86,
+                        "name": "onContextMenuRequested",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 6,
+                        "lineNumber": 89,
+                        "name": "onMenuCallPickup",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 7,
+                        "lineNumber": 90,
+                        "name": "onMenuCall",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 8,
+                        "lineNumber": 91,
+                        "name": "onMenuCallPhone",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 9,
+                        "lineNumber": 92,
+                        "name": "onMenuCallVideo",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 10,
+                        "lineNumber": 93,
+                        "name": "onMenuCallMobile",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 11,
+                        "lineNumber": 94,
+                        "name": "onMenuChat",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 12,
+                        "lineNumber": 95,
+                        "name": "onMenuAdd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 13,
+                        "lineNumber": 96,
+                        "name": "onMenuEdit",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 14,
+                        "lineNumber": 97,
+                        "name": "onMenuCopy",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 15,
+                        "lineNumber": 98,
+                        "name": "onMenuDelete",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 16,
+                        "lineNumber": 99,
+                        "name": "onMenuImport",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 17,
+                        "lineNumber": 100,
+                        "name": "onMenuExport",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 18,
+                        "lineNumber": 102,
+                        "name": "onTimerContactsBlink",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 19,
+                        "lineNumber": 104,
+                        "name": "contactDelete",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "contact",
+                                "type": "Contact*"
+                            }
+                        ],
+                        "index": 20,
+                        "lineNumber": 105,
+                        "name": "contactDeleteRaw",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 21,
+                        "isConst": true,
+                        "lineNumber": 106,
+                        "name": "getSelectedRow",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "private",
+                        "index": 22,
+                        "isConst": true,
+                        "lineNumber": 107,
+                        "name": "getSelectedRows",
+                        "returnType": "QList<int>"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "pContact",
+                                "type": "Contact*"
+                            }
+                        ],
+                        "index": 23,
+                        "lineNumber": 108,
+                        "name": "presenceUnsubscribeOne",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Contacts.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "CBitmapButton",
+                "lineNumber": 39,
+                "object": true,
+                "qualifiedClassName": "CBitmapButton",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QPushButton"
+                    }
+                ]
+            },
+            {
+                "className": "Dialer",
+                "lineNumber": 54,
+                "object": true,
+                "qualifiedClassName": "Dialer",
+                "slots": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 165,
+                        "name": "onOkClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 166,
+                        "name": "onCancelClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "lineNumber": 167,
+                        "name": "onDNDClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 168,
+                        "name": "onFWDClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "lineNumber": 169,
+                        "name": "onAAClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "lineNumber": 170,
+                        "name": "onACClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "lineNumber": 171,
+                        "name": "onConfClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "lineNumber": 172,
+                        "name": "onRecClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "lineNumber": 173,
+                        "name": "onVoicemailClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "lineNumber": 174,
+                        "name": "onCallClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 10,
+                        "lineNumber": 175,
+                        "name": "onVideoCallClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 11,
+                        "lineNumber": 176,
+                        "name": "onDTMFClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 12,
+                        "lineNumber": 177,
+                        "name": "onMessageClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 13,
+                        "lineNumber": 178,
+                        "name": "onHoldClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 14,
+                        "lineNumber": 179,
+                        "name": "onTransferClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 15,
+                        "lineNumber": 180,
+                        "name": "onEndClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 16,
+                        "lineNumber": 181,
+                        "name": "onComboEditTextChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 17,
+                        "lineNumber": 182,
+                        "name": "onComboIndexChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 18,
+                        "lineNumber": 183,
+                        "name": "onPlusInputClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 19,
+                        "lineNumber": 184,
+                        "name": "onMinusInputClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 20,
+                        "lineNumber": 185,
+                        "name": "onPlusOutputClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 21,
+                        "lineNumber": 186,
+                        "name": "onMinusOutputClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 22,
+                        "lineNumber": 187,
+                        "name": "onMuteOutputClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 23,
+                        "lineNumber": 188,
+                        "name": "onMuteInputClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 24,
+                        "lineNumber": 189,
+                        "name": "onKey1Clicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 25,
+                        "lineNumber": 190,
+                        "name": "onKey2Clicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 26,
+                        "lineNumber": 191,
+                        "name": "onKey3Clicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 27,
+                        "lineNumber": 192,
+                        "name": "onKey4Clicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 28,
+                        "lineNumber": 193,
+                        "name": "onKey5Clicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 29,
+                        "lineNumber": 194,
+                        "name": "onKey6Clicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 30,
+                        "lineNumber": 195,
+                        "name": "onKey7Clicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 31,
+                        "lineNumber": 196,
+                        "name": "onKey8Clicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 32,
+                        "lineNumber": 197,
+                        "name": "onKey9Clicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 33,
+                        "lineNumber": 198,
+                        "name": "onKeyStarClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 34,
+                        "lineNumber": 199,
+                        "name": "onKey0Clicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 35,
+                        "lineNumber": 200,
+                        "name": "onKeyGrateClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 36,
+                        "lineNumber": 201,
+                        "name": "onKeyPlusClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 37,
+                        "lineNumber": 202,
+                        "name": "onClearClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 38,
+                        "lineNumber": 203,
+                        "name": "onRedialClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 39,
+                        "lineNumber": 204,
+                        "name": "onDeleteClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 40,
+                        "lineNumber": 205,
+                        "name": "OnBnClickedRedial",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 41,
+                        "lineNumber": 206,
+                        "name": "OnBnClickedMuteInput",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 42,
+                        "lineNumber": 207,
+                        "name": "OnBnClickedMuteOutput",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 43,
+                        "lineNumber": 208,
+                        "name": "OnBnClickedPlusInput",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 44,
+                        "lineNumber": 209,
+                        "name": "OnBnClickedMinusInput",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 45,
+                        "lineNumber": 210,
+                        "name": "OnBnClickedPlusOutput",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 46,
+                        "lineNumber": 211,
+                        "name": "OnBnClickedMinusOutput",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "value",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 47,
+                        "lineNumber": 213,
+                        "name": "onSliderOutputMoved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "value",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 48,
+                        "lineNumber": 214,
+                        "name": "onSliderInputMoved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 49,
+                        "lineNumber": 216,
+                        "name": "onShortcutClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 50,
+                        "lineNumber": 218,
+                        "name": "onTimerBlink",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 51,
+                        "lineNumber": 219,
+                        "name": "OnBnClickedCall",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 52,
+                        "lineNumber": 220,
+                        "name": "OnTimerVUMeter",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Dialer.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "FeatureCodesDlg",
+                "lineNumber": 10,
+                "object": true,
+                "qualifiedClassName": "FeatureCodesDlg",
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 0,
+                        "lineNumber": 23,
+                        "name": "onOkClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 1,
+                        "lineNumber": 24,
+                        "name": "onCancelClicked",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FeatureCodesDlg.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "CIconButton",
+                "lineNumber": 7,
+                "object": true,
+                "qualifiedClassName": "CIconButton",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QPushButton"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "IconButton.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "CLevelsSliderCtrl",
+                "lineNumber": 9,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 12,
+                        "name": "IsActive",
+                        "override": false,
+                        "read": "isActive",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setActive"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 13,
+                        "name": "selMin",
+                        "override": false,
+                        "read": "selMin",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setSelMin"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "lineNumber": 14,
+                        "name": "selMax",
+                        "override": false,
+                        "read": "selMax",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setSelMax"
+                    }
+                ],
+                "qualifiedClassName": "CLevelsSliderCtrl",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QSlider"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "LevelsSliderCtrl.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "MessagesDlg",
+                "lineNumber": 45,
+                "object": true,
+                "qualifiedClassName": "MessagesDlg",
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 112,
+                        "name": "OnTcnSelchangeTab",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 113,
+                        "name": "OnTcnSelchangingTab",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "lineNumber": 114,
+                        "name": "OnBnClickedCallEnd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 115,
+                        "name": "OnBnClickedVideoCall",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "isConference",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 116,
+                        "name": "OnBnClickedActions",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "isCloned": true,
+                        "lineNumber": 116,
+                        "name": "OnBnClickedActions",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "lineNumber": 117,
+                        "name": "OnBnClickedTransfer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "lineNumber": 118,
+                        "name": "OnBnClickedConference",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "lineNumber": 119,
+                        "name": "OnBnClickedHold",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "lineNumber": 120,
+                        "name": "OnBnClickedEnd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 10,
+                        "lineNumber": 121,
+                        "name": "OnCloseAllTabs",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 11,
+                        "lineNumber": 122,
+                        "name": "OnGoToLastTab",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 12,
+                        "lineNumber": 123,
+                        "name": "OnBnClickedCloseAll",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 13,
+                        "lineNumber": 124,
+                        "name": "OnBnClickedLastCall",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 14,
+                        "lineNumber": 125,
+                        "name": "OnCopy",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 15,
+                        "lineNumber": 126,
+                        "name": "OnSelectAll",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 16,
+                        "lineNumber": 127,
+                        "name": "OnTransfer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 17,
+                        "lineNumber": 128,
+                        "name": "OnAttendedTransfer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 18,
+                        "lineNumber": 129,
+                        "name": "OnAttendedTransferRange",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 19,
+                        "lineNumber": 130,
+                        "name": "OnConference",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 20,
+                        "lineNumber": 131,
+                        "name": "OnMerge",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 21,
+                        "lineNumber": 132,
+                        "name": "OnMergeAll",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 22,
+                        "lineNumber": 133,
+                        "name": "OnSeparate",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 23,
+                        "lineNumber": 134,
+                        "name": "OnSeparateAll",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 24,
+                        "lineNumber": 135,
+                        "name": "OnDisconnect",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 25,
+                        "lineNumber": 136,
+                        "name": "OnEnMsgfilterMessage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "url",
+                                "type": "QUrl"
+                            }
+                        ],
+                        "index": 26,
+                        "lineNumber": 137,
+                        "name": "OnEnLink",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 27,
+                        "lineNumber": 138,
+                        "name": "onTabCloseRequested",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pos",
+                                "type": "QPoint"
+                            }
+                        ],
+                        "index": 28,
+                        "lineNumber": 139,
+                        "name": "onContextMenuRequested",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWidget"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MessagesDlg.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "Preview",
+                "lineNumber": 20,
+                "object": true,
+                "qualifiedClassName": "Preview",
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 0,
+                        "lineNumber": 38,
+                        "name": "onWindowDestroyed",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWidget"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Preview.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "RinginDlg",
+                "lineNumber": 20,
+                "object": true,
+                "qualifiedClassName": "RinginDlg",
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 0,
+                        "lineNumber": 44,
+                        "name": "onAnswerClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 1,
+                        "lineNumber": 45,
+                        "name": "onDeclineClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 2,
+                        "lineNumber": 46,
+                        "name": "onVideoClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "lineNumber": 47,
+                        "name": "onTransferClicked",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "RinginDlg.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "SettingsDlg",
+                "lineNumber": 23,
+                "object": true,
+                "qualifiedClassName": "SettingsDlg",
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 0,
+                        "lineNumber": 115,
+                        "name": "onClose",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 1,
+                        "lineNumber": 116,
+                        "name": "onBnClickedCancel",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 2,
+                        "lineNumber": 117,
+                        "name": "onBnClickedOk",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "lineNumber": 118,
+                        "name": "onUpdateSettings",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 4,
+                        "lineNumber": 119,
+                        "name": "onDeltaposSpinModifyAdd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 5,
+                        "lineNumber": 120,
+                        "name": "onDeltaposSpinModifyRemove",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 6,
+                        "lineNumber": 121,
+                        "name": "onDeltaposSpinOrderUp",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 7,
+                        "lineNumber": 122,
+                        "name": "onDeltaposSpinOrderDown",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 8,
+                        "lineNumber": 123,
+                        "name": "onFeatureCodesClicked",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 9,
+                        "lineNumber": 125,
+                        "name": "onHelpRingtone",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 10,
+                        "lineNumber": 126,
+                        "name": "onHelpMicAmplif",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 11,
+                        "lineNumber": 127,
+                        "name": "onHelpSwAdjust",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 12,
+                        "lineNumber": 128,
+                        "name": "onHelpDtmfMethod",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 13,
+                        "lineNumber": 129,
+                        "name": "onHelpAutoAnswer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 14,
+                        "lineNumber": 130,
+                        "name": "onHelpForwarding",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 15,
+                        "lineNumber": 131,
+                        "name": "onHelpFeatureCodes",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 16,
+                        "lineNumber": 132,
+                        "name": "onHelpDenyIncoming",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 17,
+                        "lineNumber": 133,
+                        "name": "onHelpDirectory",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 18,
+                        "lineNumber": 134,
+                        "name": "onHelpDnsSrv",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 19,
+                        "lineNumber": 135,
+                        "name": "onHelpStunServer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 20,
+                        "lineNumber": 136,
+                        "name": "onHelpMediaButtons",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 21,
+                        "lineNumber": 137,
+                        "name": "onHelpHeadsetSupport",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 22,
+                        "lineNumber": 138,
+                        "name": "onHelpLocalDtmf",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 23,
+                        "lineNumber": 139,
+                        "name": "onHelpSingleMode",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 24,
+                        "lineNumber": 140,
+                        "name": "onHelpVad",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 25,
+                        "lineNumber": 141,
+                        "name": "onHelpEc",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 26,
+                        "lineNumber": 142,
+                        "name": "onHelpForceCodec",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 27,
+                        "lineNumber": 143,
+                        "name": "onHelpVideo",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 28,
+                        "lineNumber": 144,
+                        "name": "onHelpPorts",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 29,
+                        "lineNumber": 145,
+                        "name": "onHelpAudioCodecs",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 30,
+                        "lineNumber": 146,
+                        "name": "onHelpEnableLog",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 31,
+                        "lineNumber": 147,
+                        "name": "onHelpBringToFront",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 32,
+                        "lineNumber": 148,
+                        "name": "onHelpRandomAnswerBox",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 33,
+                        "lineNumber": 149,
+                        "name": "onHelpEnableLocal",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 34,
+                        "lineNumber": 150,
+                        "name": "onHelpCrashReport",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 35,
+                        "lineNumber": 151,
+                        "name": "onBnClickedBrowse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 36,
+                        "lineNumber": 152,
+                        "name": "onChangeRingtone",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 37,
+                        "lineNumber": 153,
+                        "name": "onBnClickedDefault",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 38,
+                        "lineNumber": 154,
+                        "name": "onVolumeRingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 39,
+                        "lineNumber": 155,
+                        "name": "onBnClickedRecordingBrowse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 40,
+                        "lineNumber": 156,
+                        "name": "onEnChangeRecording",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 41,
+                        "lineNumber": 157,
+                        "name": "onBnClickedRecordingDefault",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 42,
+                        "lineNumber": 158,
+                        "name": "onBnClickedAAOptions",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 43,
+                        "lineNumber": 159,
+                        "name": "onBnClickedDnsSrv",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 44,
+                        "lineNumber": 160,
+                        "name": "onBnClickedStun",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 45,
+                        "lineNumber": 162,
+                        "name": "onBnClickedPreview",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "SettingsDlg.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "ShortcutsDlg",
+                "lineNumber": 18,
+                "object": true,
+                "qualifiedClassName": "ShortcutsDlg",
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            },
+                            {
+                                "name": "checked",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 55,
+                        "name": "onBnClickedToggle",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 1,
+                        "lineNumber": 56,
+                        "name": "onHelpToggle",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 2,
+                        "lineNumber": 57,
+                        "name": "onHelpBLF",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "lineNumber": 58,
+                        "name": "onBnClickedOk",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 4,
+                        "lineNumber": 59,
+                        "name": "onBnClickedCancel",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 5,
+                        "lineNumber": 60,
+                        "name": "onClose",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ShortcutsDlg.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "StatusBar",
+                "lineNumber": 7,
+                "object": true,
+                "qualifiedClassName": "StatusBar",
+                "slots": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 22,
+                        "name": "OnIdleUpdateCmdUI",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QStatusBar"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "StatusBar.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "Transfer",
+                "lineNumber": 21,
+                "object": true,
+                "qualifiedClassName": "Transfer",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Transfer.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "CmainDlg",
+                "lineNumber": 55,
+                "object": true,
+                "qualifiedClassName": "CmainDlg",
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "int"
+                            },
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 194,
+                        "name": "onUpdateWindowText",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "isCloned": true,
+                        "lineNumber": 194,
+                        "name": "onUpdateWindowText",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "isCloned": true,
+                        "lineNumber": 194,
+                        "name": "onUpdateWindowText",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "reason",
+                                "type": "QSystemTrayIcon::ActivationReason"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 195,
+                        "name": "onTrayNotify",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "call_id",
+                                "type": "pjsua_call_id"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 196,
+                        "name": "onCreateRingingDlg",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lParam",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 197,
+                        "name": "onRefreshLevels",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 6,
+                        "isCloned": true,
+                        "lineNumber": 197,
+                        "name": "onRefreshLevels",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "isCloned": true,
+                        "lineNumber": 197,
+                        "name": "onRefreshLevels",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "code",
+                                "type": "int"
+                            },
+                            {
+                                "name": "headerError",
+                                "type": "QString*"
+                            }
+                        ],
+                        "index": 8,
+                        "lineNumber": 198,
+                        "name": "onRegState2",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "call_info",
+                                "type": "pjsua_call_info*"
+                            },
+                            {
+                                "name": "user_data",
+                                "type": "call_user_data*"
+                            }
+                        ],
+                        "index": 9,
+                        "lineNumber": 199,
+                        "name": "onCallState",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "call_info",
+                                "type": "pjsua_call_info*"
+                            },
+                            {
+                                "name": "user_data",
+                                "type": "call_user_data*"
+                            }
+                        ],
+                        "index": 10,
+                        "lineNumber": 200,
+                        "name": "onIncomingCall",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "hasMail",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 11,
+                        "lineNumber": 201,
+                        "name": "onMWIInfo",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "call_info",
+                                "type": "pjsua_call_info*"
+                            },
+                            {
+                                "name": "user_data",
+                                "type": "call_user_data*"
+                            }
+                        ],
+                        "index": 12,
+                        "lineNumber": 202,
+                        "name": "onCallMediaState",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "call_info",
+                                "type": "pjsua_call_info*"
+                            },
+                            {
+                                "name": "str",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 13,
+                        "lineNumber": 203,
+                        "name": "onCallTransferStatus",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "number",
+                                "type": "QString*"
+                            },
+                            {
+                                "name": "message",
+                                "type": "QString*"
+                            }
+                        ],
+                        "index": 14,
+                        "lineNumber": 204,
+                        "name": "onPager",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "number",
+                                "type": "QString*"
+                            },
+                            {
+                                "name": "message",
+                                "type": "QString*"
+                            }
+                        ],
+                        "index": 15,
+                        "lineNumber": 205,
+                        "name": "onPagerStatus",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "buddy_id",
+                                "type": "pjsua_buddy_id"
+                            }
+                        ],
+                        "index": 16,
+                        "lineNumber": 206,
+                        "name": "onBuddyState",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "data",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 17,
+                        "lineNumber": 207,
+                        "name": "onCopyData",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 18,
+                        "lineNumber": 208,
+                        "name": "CreationComplete",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 19,
+                        "lineNumber": 209,
+                        "name": "OnNetworkChange",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 20,
+                        "lineNumber": 210,
+                        "name": "OnRestart",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 21,
+                        "lineNumber": 211,
+                        "name": "PostRestart",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "WPARAM"
+                            },
+                            {
+                                "name": "lParam",
+                                "type": "LPARAM"
+                            }
+                        ],
+                        "index": 22,
+                        "lineNumber": 212,
+                        "name": "OnPowerBroadcast",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "WPARAM"
+                            }
+                        ],
+                        "index": 23,
+                        "isCloned": true,
+                        "lineNumber": 212,
+                        "name": "OnPowerBroadcast",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nID",
+                                "type": "UINT"
+                            },
+                            {
+                                "name": "lParam",
+                                "type": "LPARAM"
+                            }
+                        ],
+                        "index": 24,
+                        "lineNumber": 213,
+                        "name": "OnSysCommand",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nID",
+                                "type": "UINT"
+                            }
+                        ],
+                        "index": 25,
+                        "isCloned": true,
+                        "lineNumber": 213,
+                        "name": "OnSysCommand",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 26,
+                        "lineNumber": 214,
+                        "name": "OnBnClickedOk",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 27,
+                        "lineNumber": 215,
+                        "name": "OnBnClickedMenu",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "w",
+                                "type": "QWidget*"
+                            },
+                            {
+                                "name": "pos",
+                                "type": "QPoint"
+                            }
+                        ],
+                        "index": 28,
+                        "lineNumber": 216,
+                        "name": "OnContextMenu",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 29,
+                        "lineNumber": 217,
+                        "name": "OnQueryEndSession",
+                        "returnType": "BOOL"
+                    },
+                    {
+                        "access": "public",
+                        "index": 30,
+                        "lineNumber": 218,
+                        "name": "OnClose",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pDC",
+                                "type": "CDC*"
+                            },
+                            {
+                                "name": "pWnd",
+                                "type": "CWnd*"
+                            },
+                            {
+                                "name": "nCtlColor",
+                                "type": "UINT"
+                            }
+                        ],
+                        "index": 31,
+                        "lineNumber": 219,
+                        "name": "OnCtlColor",
+                        "returnType": "HBRUSH"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nEventType",
+                                "type": "UINT"
+                            },
+                            {
+                                "name": "dwData",
+                                "type": "DWORD_PTR"
+                            }
+                        ],
+                        "index": 32,
+                        "lineNumber": 220,
+                        "name": "OnDeviceChange",
+                        "returnType": "BOOL"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nSessionState",
+                                "type": "UINT"
+                            },
+                            {
+                                "name": "nId",
+                                "type": "UINT"
+                            }
+                        ],
+                        "index": 33,
+                        "lineNumber": 221,
+                        "name": "OnSessionChange",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "x",
+                                "type": "int"
+                            },
+                            {
+                                "name": "y",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 34,
+                        "lineNumber": 222,
+                        "name": "OnMove",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "type",
+                                "type": "UINT"
+                            },
+                            {
+                                "name": "w",
+                                "type": "int"
+                            },
+                            {
+                                "name": "h",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 35,
+                        "lineNumber": 223,
+                        "name": "OnSize",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 36,
+                        "lineNumber": 224,
+                        "name": "onShellHookMessage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "call_id",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lParam",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 37,
+                        "lineNumber": 225,
+                        "name": "onCallAnswer",
+                        "returnType": "LRESULT"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "call_id",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 38,
+                        "isCloned": true,
+                        "lineNumber": 225,
+                        "name": "onCallAnswer",
+                        "returnType": "LRESULT"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "call_id",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 39,
+                        "lineNumber": 226,
+                        "name": "onCallHangup",
+                        "returnType": "LRESULT"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "call_id",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 40,
+                        "lineNumber": 227,
+                        "name": "onTabIconUpdate",
+                        "returnType": "LRESULT"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "sound",
+                                "type": "int"
+                            },
+                            {
+                                "name": "custom",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 41,
+                        "lineNumber": 228,
+                        "name": "onPlayerPlay",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "sound",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 42,
+                        "isCloned": true,
+                        "lineNumber": 228,
+                        "name": "onPlayerPlay",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "int"
+                            },
+                            {
+                                "name": "lParam",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 43,
+                        "lineNumber": 229,
+                        "name": "onPlayerStop",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 44,
+                        "isCloned": true,
+                        "lineNumber": 229,
+                        "name": "onPlayerStop",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 45,
+                        "isCloned": true,
+                        "lineNumber": 229,
+                        "name": "onPlayerStop",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "params",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 46,
+                        "lineNumber": 230,
+                        "name": "onCommandLine",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "WPARAM"
+                            },
+                            {
+                                "name": "lParam",
+                                "type": "LPARAM"
+                            }
+                        ],
+                        "index": 47,
+                        "lineNumber": 231,
+                        "name": "OnAccount",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "WPARAM"
+                            }
+                        ],
+                        "index": 48,
+                        "isCloned": true,
+                        "lineNumber": 231,
+                        "name": "OnAccount",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 49,
+                        "isCloned": true,
+                        "lineNumber": 231,
+                        "name": "OnAccount",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 50,
+                        "lineNumber": 232,
+                        "name": "OnMenuAccountAdd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 51,
+                        "lineNumber": 233,
+                        "name": "OnMenuAccountEdit",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 52,
+                        "lineNumber": 234,
+                        "name": "OnMenuAccountChange",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 53,
+                        "lineNumber": 235,
+                        "name": "OnMenuAccountLocalEdit",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nID",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 54,
+                        "lineNumber": 236,
+                        "name": "OnMenuCustomRange",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 55,
+                        "lineNumber": 237,
+                        "name": "OnMenuSettings",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 56,
+                        "lineNumber": 238,
+                        "name": "OnMenuShortcuts",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 57,
+                        "lineNumber": 239,
+                        "name": "OnMenuAlwaysOnTop",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 58,
+                        "lineNumber": 240,
+                        "name": "OnMenuLog",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 59,
+                        "lineNumber": 241,
+                        "name": "OnMenuExit",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "timerId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 60,
+                        "lineNumber": 242,
+                        "name": "OnTimer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 61,
+                        "lineNumber": 243,
+                        "name": "OnTcnSelchangeTab",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 62,
+                        "lineNumber": 244,
+                        "name": "OnTcnSelchangingTab",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 63,
+                        "lineNumber": 245,
+                        "name": "OnMenuWebsite",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 64,
+                        "lineNumber": 246,
+                        "name": "OnMenuHelp",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 65,
+                        "lineNumber": 247,
+                        "name": "OnMenuAddl",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 66,
+                        "lineNumber": 248,
+                        "name": "OnMuteInput",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 67,
+                        "lineNumber": 249,
+                        "name": "OnMuteOutput",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 68,
+                        "lineNumber": 250,
+                        "name": "OnCheckUpdates",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 69,
+                        "lineNumber": 251,
+                        "name": "CheckUpdates",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "response",
+                                "type": "URLGetAsyncData*"
+                            }
+                        ],
+                        "index": 70,
+                        "lineNumber": 252,
+                        "name": "OnUpdateCheckerLoaded",
+                        "returnType": "LRESULT"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "response",
+                                "type": "URLGetAsyncData*"
+                            }
+                        ],
+                        "index": 71,
+                        "lineNumber": 253,
+                        "name": "onUsersDirectoryLoaded",
+                        "returnType": "LRESULT"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "response",
+                                "type": "URLGetAsyncData*"
+                            }
+                        ],
+                        "index": 72,
+                        "lineNumber": 254,
+                        "name": "onShortcutsURLLoaded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "wParam",
+                                "type": "WPARAM"
+                            },
+                            {
+                                "name": "lParam",
+                                "type": "LPARAM"
+                            }
+                        ],
+                        "index": 73,
+                        "lineNumber": 255,
+                        "name": "onCustomLoaded",
+                        "returnType": "LRESULT"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pCmdUI",
+                                "type": "CCmdUI*"
+                            }
+                        ],
+                        "index": 74,
+                        "lineNumber": 256,
+                        "name": "OnUpdatePane",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "int"
+                            },
+                            {
+                                "name": "interval",
+                                "type": "int"
+                            },
+                            {
+                                "name": "callback",
+                                "type": "std::function<void()>"
+                            }
+                        ],
+                        "index": 75,
+                        "lineNumber": 257,
+                        "name": "startTimer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "int"
+                            },
+                            {
+                                "name": "interval",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 76,
+                        "isCloned": true,
+                        "lineNumber": 257,
+                        "name": "startTimer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 77,
+                        "lineNumber": 258,
+                        "name": "killTimer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "event",
+                                "type": "QTimerEvent*"
+                            }
+                        ],
+                        "index": 78,
+                        "lineNumber": 259,
+                        "name": "timerEvent",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "BaseDialog"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "mainDlg.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "OnyxApp",
+                "lineNumber": 16,
+                "object": true,
+                "qualifiedClassName": "OnyxApp",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QApplication"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "onyx.h",
         "outputRevision": 69
     },
     {

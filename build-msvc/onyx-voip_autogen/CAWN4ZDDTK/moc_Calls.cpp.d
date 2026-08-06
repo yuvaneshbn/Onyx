@@ -3,12 +3,15 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Cal
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/array \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/atomic \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cassert \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cctype \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/chrono \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/climits \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cmath \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/concurrencysal.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdarg \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstddef \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdint \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdio \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdlib \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstring \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/excpt.h \
@@ -51,6 +54,8 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Cal
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/basetsd.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/driverspecs.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/guiddef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/in6addr.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/inaddr.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/kernelspecs.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ktmtypes.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/minwindef.h \
@@ -60,6 +65,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Cal
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack2.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack4.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack8.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/qos.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/sdkddkver.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/sdv_driverspecs.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/specstrings.h \
@@ -71,6 +77,8 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Cal
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winerror.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winpackagefamily.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/wnnc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ws2def.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ws2ipdef.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/assert.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_malloc.h \
@@ -144,15 +152,18 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Cal
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winbase.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wincon.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wincontypes.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/windows.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wingdi.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnetwk.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnls.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnt.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winreg.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winsock2.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winsvc.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winuser.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winver.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wow64apiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/ws2tcpip.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QByteArray \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QChar \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QDateTime \

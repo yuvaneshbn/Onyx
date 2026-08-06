@@ -1,0 +1,11 @@
+Time: 2026-08-06 23:24:49 (1786038889)
+ExceptionCode: 0xc0000005
+ExceptionInformation(0): 0x0
+ExceptionInformation(1): 0x8
+Wine version: n/a
+Windows version: 10.0 (26200) 64-bit
+Name: Onyx
+Version: 1.0.0
+State: 0
+Video: yes
+Log enabled: 0

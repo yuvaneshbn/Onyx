@@ -1,0 +1,82 @@
+{
+    "classes": [
+        {
+            "className": "AccountDlg",
+            "lineNumber": 17,
+            "object": true,
+            "qualifiedClassName": "AccountDlg",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 30,
+                    "name": "accountIdChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "index": 1,
+                    "lineNumber": 38,
+                    "name": "onAccept",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 2,
+                    "lineNumber": 39,
+                    "name": "onDeleteAccountClicked",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 3,
+                    "lineNumber": 40,
+                    "name": "onDisplayPasswordClicked",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "lineNumber": 41,
+                    "name": "onPasswordChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "link",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "lineNumber": 42,
+                    "name": "onHelpLinkActivated",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QDialog"
+                }
+            ]
+        }
+    ],
+    "inputFile": "AccountDlg.h",
+    "outputRevision": 69
+}

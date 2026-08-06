@@ -1,0 +1,37 @@
+{
+    "classes": [
+        {
+            "className": "ButtonDialer",
+            "lineNumber": 9,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 12,
+                    "name": "forceNumeric",
+                    "override": false,
+                    "read": "forceNumeric",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setForceNumeric"
+                }
+            ],
+            "qualifiedClassName": "ButtonDialer",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QPushButton"
+                }
+            ]
+        }
+    ],
+    "inputFile": "ButtonDialer.h",
+    "outputRevision": 69
+}

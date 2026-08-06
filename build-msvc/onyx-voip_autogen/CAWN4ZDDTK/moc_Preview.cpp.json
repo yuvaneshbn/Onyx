@@ -1,0 +1,27 @@
+{
+    "classes": [
+        {
+            "className": "Preview",
+            "lineNumber": 20,
+            "object": true,
+            "qualifiedClassName": "Preview",
+            "slots": [
+                {
+                    "access": "private",
+                    "index": 0,
+                    "lineNumber": 38,
+                    "name": "onWindowDestroyed",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QWidget"
+                }
+            ]
+        }
+    ],
+    "inputFile": "Preview.h",
+    "outputRevision": 69
+}

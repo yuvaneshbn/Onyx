@@ -1,0 +1,33 @@
+{
+    "classes": [
+        {
+            "className": "CListCtrl_Sortable",
+            "lineNumber": 10,
+            "object": true,
+            "qualifiedClassName": "CListCtrl_Sortable",
+            "slots": [
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "section",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 37,
+                    "name": "OnHeaderClicked",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QTableWidget"
+                }
+            ]
+        }
+    ],
+    "inputFile": "CListCtrl_Sortable.h",
+    "outputRevision": 69
+}

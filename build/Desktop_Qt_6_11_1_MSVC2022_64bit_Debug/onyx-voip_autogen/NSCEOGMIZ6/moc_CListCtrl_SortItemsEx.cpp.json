@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "CListCtrl_SortItemsEx",
+            "lineNumber": 7,
+            "object": true,
+            "qualifiedClassName": "CListCtrl_SortItemsEx",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "CListCtrl_Sortable"
+                }
+            ]
+        }
+    ],
+    "inputFile": "CListCtrl_SortItemsEx.h",
+    "outputRevision": 69
+}

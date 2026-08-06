@@ -10,43 +10,54 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-option(ONYX_ENABLE_PJSIP "Enable PJSIP when prebuilt pjproject libraries are available." ON)
-set(ONYX_THIRDPARTY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/thirdparty" CACHE PATH "Root folder for vendored third-party packages.")
-set(ONYX_PJPROJECT_DIR "${ONYX_THIRDPARTY_DIR}/pjproject-2.17/pjproject-2.17" CACHE PATH "Path to the pjproject source tree.")
-set(ONYX_PJSIP_LIB_DIR "${ONYX_PJPROJECT_DIR}/lib" CACHE PATH "Folder containing built pjproject .lib files.")
+option(ONYX_ENABLE_PJSIP "Enable PJSIP integration when static libraries are staged." ON)
+
+set(ONYX_THIRDPARTY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/thirdparty" CACHE PATH "Path to thirdparty packages.")
+set(ONYX_PJPROJECT_DIR "${ONYX_THIRDPARTY_DIR}/pjproject-2.17/pjproject-2.17" CACHE PATH "Path to pjproject tree.")
+set(ONYX_PJSIP_LIB_DIR "${ONYX_PJPROJECT_DIR}/lib" CACHE PATH "Folder containing prebuilt PJSIP .lib archives.")
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Gui Widgets Network Xml)
 qt_standard_project_setup(REQUIRES 6.5)
 
-file(GLOB_RECURSE ONYX_APP_SOURCES CONFIGURE_DEPENDS
-    "${CMAKE_CURRENT_SOURCE_DIR}/source/*.cpp"
-    "${CMAKE_CURRENT_SOURCE_DIR}/lib/*.cpp"
+file(GLOB ONYX_SOURCE_CPP CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/src/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/core/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/models/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/network/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/lib/src/*.cpp"
 )
 
-list(REMOVE_ITEM ONYX_APP_SOURCES
-    "${CMAKE_CURRENT_SOURCE_DIR}/source/ui/main.cpp"
-    "${CMAKE_CURRENT_SOURCE_DIR}/lib/ggets.cpp"
+list(FILTER ONYX_SOURCE_CPP EXCLUDE REGEX ".*/ggets\\.cpp$")
+
+file(GLOB ONYX_SOURCE_HEADERS CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/include/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/core/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/models/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/network/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/ui/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/lib/include/*.h"
 )
 
-file(GLOB_RECURSE ONYX_APP_HEADERS CONFIGURE_DEPENDS
-    "${CMAKE_CURRENT_SOURCE_DIR}/source/*.h"
-    "${CMAKE_CURRENT_SOURCE_DIR}/lib/*.h"
+set(ONYX_SOURCES
+    ${ONYX_SOURCE_CPP}
+    ${ONYX_SOURCE_HEADERS}
 )
 
-qt_add_executable(onyx-voip WIN32)
-
-target_sources(onyx-voip PRIVATE
-    ${ONYX_APP_SOURCES}
-    ${ONYX_APP_HEADERS}
+qt_add_executable(onyx-voip WIN32
+    ${ONYX_SOURCES}
     source/resources.qrc
 )
 
 target_include_directories(onyx-voip PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/source"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/include"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/src"
     "${CMAKE_CURRENT_SOURCE_DIR}/source/core"
     "${CMAKE_CURRENT_SOURCE_DIR}/source/models"
     "${CMAKE_CURRENT_SOURCE_DIR}/source/network"
     "${CMAKE_CURRENT_SOURCE_DIR}/lib"
+    "${CMAKE_CURRENT_SOURCE_DIR}/lib/include"
+    "${CMAKE_CURRENT_SOURCE_DIR}/lib/src"
     "${CMAKE_CURRENT_SOURCE_DIR}/lib/jsoncpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/lib/jsoncpp/json"
 )
@@ -59,27 +70,26 @@ target_compile_definitions(onyx-voip PRIVATE
     NOMINMAX
 )
 
-target_link_libraries(onyx-voip
-    PRIVATE
-        Qt6::Core
-        Qt6::Gui
-        Qt6::Widgets
-        Qt6::Network
-        Qt6::Xml
-        Ws2_32
-        Iphlpapi
-        Winmm
-        Ole32
-        OleAut32
-        Shell32
-        Comctl32
-        Psapi
-        Dbghelp
-        Wininet
-        Setupapi
-        Advapi32
-        Msi
-        Userenv
+target_link_libraries(onyx-voip PRIVATE
+    Qt6::Core
+    Qt6::Gui
+    Qt6::Widgets
+    Qt6::Network
+    Qt6::Xml
+    Ws2_32
+    Iphlpapi
+    Winmm
+    Ole32
+    OleAut32
+    Shell32
+    Comctl32
+    Psapi
+    Dbghelp
+    Wininet
+    Setupapi
+    Advapi32
+    Msi
+    Userenv
 )
 
 if(ONYX_ENABLE_PJSIP AND EXISTS "${ONYX_PJPROJECT_DIR}/pjsip/include/pjsua-lib/pjsua.h")

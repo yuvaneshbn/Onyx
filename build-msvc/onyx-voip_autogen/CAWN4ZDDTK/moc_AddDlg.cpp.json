@@ -1,0 +1,112 @@
+{
+    "classes": [
+        {
+            "className": "AddDlg",
+            "lineNumber": 13,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 16,
+                    "name": "contactName",
+                    "notify": "contactNameChanged",
+                    "override": false,
+                    "read": "contactName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setContactName"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "lineNumber": 17,
+                    "name": "contactNumber",
+                    "notify": "contactNumberChanged",
+                    "override": false,
+                    "read": "contactNumber",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setContactNumber"
+                }
+            ],
+            "qualifiedClassName": "AddDlg",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 32,
+                    "name": "contactNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 33,
+                    "name": "contactNumberChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "index": 2,
+                    "lineNumber": 39,
+                    "name": "onOkClicked",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 3,
+                    "lineNumber": 40,
+                    "name": "onCancelClicked",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 4,
+                    "lineNumber": 41,
+                    "name": "onFirstLastNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 5,
+                    "lineNumber": 42,
+                    "name": "onPhoneNumberChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QDialog"
+                }
+            ]
+        }
+    ],
+    "inputFile": "AddDlg.h",
+    "outputRevision": 69
+}

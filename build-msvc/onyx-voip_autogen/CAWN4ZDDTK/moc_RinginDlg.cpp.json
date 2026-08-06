@@ -1,0 +1,48 @@
+{
+    "classes": [
+        {
+            "className": "RinginDlg",
+            "lineNumber": 20,
+            "object": true,
+            "qualifiedClassName": "RinginDlg",
+            "slots": [
+                {
+                    "access": "private",
+                    "index": 0,
+                    "lineNumber": 44,
+                    "name": "onAnswerClicked",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 1,
+                    "lineNumber": 45,
+                    "name": "onDeclineClicked",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 2,
+                    "lineNumber": 46,
+                    "name": "onVideoClicked",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 3,
+                    "lineNumber": 47,
+                    "name": "onTransferClicked",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QDialog"
+                }
+            ]
+        }
+    ],
+    "inputFile": "RinginDlg.h",
+    "outputRevision": 69
+}

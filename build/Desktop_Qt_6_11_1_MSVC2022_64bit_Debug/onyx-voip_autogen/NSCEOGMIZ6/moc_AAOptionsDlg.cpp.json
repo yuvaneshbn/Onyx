@@ -1,0 +1,169 @@
+{
+    "classes": [
+        {
+            "className": "AAOptionsDlg",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "lineNumber": 21,
+                    "name": "CallsOption",
+                    "values": [
+                        "NoCalls",
+                        "HoldCalls",
+                        "AllCalls"
+                    ]
+                }
+            ],
+            "lineNumber": 12,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 15,
+                    "name": "autoAnswerDelay",
+                    "notify": "autoAnswerDelayChanged",
+                    "override": false,
+                    "read": "autoAnswerDelay",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setAutoAnswerDelay"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "lineNumber": 16,
+                    "name": "autoAnswerNumber",
+                    "notify": "autoAnswerNumberChanged",
+                    "override": false,
+                    "read": "autoAnswerNumber",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setAutoAnswerNumber"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "lineNumber": 17,
+                    "name": "autoAnswerCalls",
+                    "notify": "autoAnswerCallsChanged",
+                    "override": false,
+                    "read": "autoAnswerCalls",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setAutoAnswerCalls"
+                }
+            ],
+            "qualifiedClassName": "AAOptionsDlg",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "delay",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 42,
+                    "name": "autoAnswerDelayChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "number",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 43,
+                    "name": "autoAnswerNumberChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "calls",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 44,
+                    "name": "autoAnswerCallsChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "delay",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 3,
+                    "lineNumber": 37,
+                    "name": "setAutoAnswerDelay",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "number",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "lineNumber": 38,
+                    "name": "setAutoAnswerNumber",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "calls",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "lineNumber": 39,
+                    "name": "setAutoAnswerCalls",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QDialog"
+                }
+            ]
+        }
+    ],
+    "inputFile": "AAOptionsDlg.h",
+    "outputRevision": 69
+}

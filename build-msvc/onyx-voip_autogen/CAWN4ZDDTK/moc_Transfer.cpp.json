@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "Transfer",
+            "lineNumber": 21,
+            "object": true,
+            "qualifiedClassName": "Transfer",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QDialog"
+                }
+            ]
+        }
+    ],
+    "inputFile": "Transfer.h",
+    "outputRevision": 69
+}

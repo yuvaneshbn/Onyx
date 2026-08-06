@@ -3,12 +3,15 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/array \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/atomic \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cassert \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cctype \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/chrono \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/climits \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cmath \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/concurrencysal.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdarg \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstddef \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdint \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdio \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdlib \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstring \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/excpt.h \
@@ -50,6 +53,8 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/basetsd.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/driverspecs.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/guiddef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/in6addr.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/inaddr.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/kernelspecs.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ktmtypes.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/minwindef.h \
@@ -59,6 +64,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack2.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack4.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack8.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/qos.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/sdkddkver.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/sdv_driverspecs.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/specstrings.h \
@@ -70,6 +76,8 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winerror.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winpackagefamily.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/wnnc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ws2def.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ws2ipdef.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/assert.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_malloc.h \
@@ -143,23 +151,37 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winbase.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wincon.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wincontypes.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/windows.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wingdi.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnetwk.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnls.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnt.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winreg.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winsock2.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winsvc.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winuser.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winver.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wow64apiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/ws2tcpip.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QByteArray \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QDateTime \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QFlags \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QIODevice \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QList \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QMetaType \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QMutex \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QObject \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QRect \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QRegularExpression \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QSettings \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QSharedDataPointer \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QSize \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QSizeF \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QString \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QStringList \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QTimer \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QUrl \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QVariant \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/q20functional.h \
@@ -169,6 +191,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/q20utility.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/q23type_traits.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/q23utility.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/q26numeric.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qabstracteventdispatcher.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qalgorithms.h \
@@ -187,6 +210,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qbytearrayalgorithms.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qbytearraylist.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qbytearrayview.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/qcalendar.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qchar.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qcheckedint_impl.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qcompare.h \
@@ -202,8 +226,10 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qcoreapplication.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qcoreapplication_platform.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qcoreevent.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/qcryptographichash.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/qdatetime.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qdebug.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qendian.h \
@@ -234,8 +260,10 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qmargins.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qmath.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qmetacontainer.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/qmetaobject.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qmetatype.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qminmax.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/qmutex.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qnamespace.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qnativeinterface.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qnumeric.h \
@@ -253,6 +281,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qset.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/qsettings.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qshareddata.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qshareddata_impl.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qsharedpointer.h \
@@ -290,6 +319,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qtnoop.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qtpreprocessorsupport.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qtresource.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/qtsan_impl.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qttranslation.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qttypetraits.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qtversion.h \
@@ -305,6 +335,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qyieldcpu.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtGui/QCloseEvent \
   C:/Qt/6.11.1/msvc2022_64/include/QtGui/QFont \
+  C:/Qt/6.11.1/msvc2022_64/include/QtGui/QIcon \
   C:/Qt/6.11.1/msvc2022_64/include/QtGui/QKeyEvent \
   C:/Qt/6.11.1/msvc2022_64/include/QtGui/QShowEvent \
   C:/Qt/6.11.1/msvc2022_64/include/QtGui/QTransform \
@@ -351,6 +382,27 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Qt/6.11.1/msvc2022_64/include/QtGui/qvectornd.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/QNetworkAccessManager \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/QNetworkReply \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/QNetworkRequest \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/QSslConfiguration \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qabstractsocket.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qhostaddress.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qhttpheaders.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qnetworkaccessmanager.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qnetworkreply.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qnetworkrequest.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qssl.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qsslcertificate.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qsslconfiguration.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qsslerror.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qsslsocket.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qtcpsocket.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qtnetwork-config.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qtnetworkexports.h \
+  C:/Qt/6.11.1/msvc2022_64/include/QtNetwork/qtnetworkglobal.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/QComboBox \
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/QDialog \
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/QHBoxLayout \
@@ -358,6 +410,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/QPushButton \
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/QTableWidget \
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/QVBoxLayout \
+  C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/QWidget \
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/qabstractitemdelegate.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/qabstractitemview.h \
@@ -386,7 +439,12 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Tra
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtWidgets/qwidget.h \
+  C:/Users/YUVANESH/Downloads/Onyx/lib/OnyxUtils.h \
+  C:/Users/YUVANESH/Downloads/Onyx/lib/compat/pj_compat.h \
+  C:/Users/YUVANESH/Downloads/Onyx/lib/compat/pjsua-lib/pjsua.h \
+  C:/Users/YUVANESH/Downloads/Onyx/lib/compat/pjsua-lib/pjsua_internal.h \
   C:/Users/YUVANESH/Downloads/Onyx/source/Contacts.h \
   C:/Users/YUVANESH/Downloads/Onyx/source/const.h \
   C:/Users/YUVANESH/Downloads/Onyx/source/define.h \
+  C:/Users/YUVANESH/Downloads/Onyx/source/global.h \
   C:/Users/YUVANESH/Downloads/Onyx/source/resource.h

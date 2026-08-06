@@ -1,0 +1,54 @@
+{
+    "classes": [
+        {
+            "className": "ButtonEx",
+            "lineNumber": 7,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 10,
+                    "name": "faceColor",
+                    "override": false,
+                    "read": "faceColor",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setFaceColor"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "lineNumber": 11,
+                    "name": "textColor",
+                    "override": false,
+                    "read": "textColor",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setTextColor"
+                }
+            ],
+            "qualifiedClassName": "ButtonEx",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QPushButton"
+                }
+            ]
+        }
+    ],
+    "inputFile": "ButtonEx.h",
+    "outputRevision": 69
+}

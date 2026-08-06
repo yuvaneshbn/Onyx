@@ -9,6 +9,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/CAWN4ZDDTK/moc_ma
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QMetaType \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QMutex \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QObject \
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/QPair \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QRect \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QRegularExpression \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QSettings \
@@ -629,6 +630,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/CAWN4ZDDTK/moc_ma
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsavesintrin.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xtestintrin.h \
   C:/mingw64/x86_64-w64-mingw32/include/Windows.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_bsd_types.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
@@ -666,6 +668,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/CAWN4ZDDTK/moc_ma
   C:/mingw64/x86_64-w64-mingw32/include/handleapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/heapapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/imm.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inaddr.h \
   C:/mingw64/x86_64-w64-mingw32/include/interlockedapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/ioapiset.h \
   C:/mingw64/x86_64-w64-mingw32/include/jobapi.h \
@@ -684,6 +687,12 @@ C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/CAWN4ZDDTK/moc_ma
   C:/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/processtopologyapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/profileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_fd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_socket_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsadata.h \
   C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
   C:/mingw64/x86_64-w64-mingw32/include/pshpack1.h \
   C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
@@ -694,6 +703,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/CAWN4ZDDTK/moc_ma
   C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
+  C:/mingw64/x86_64-w64-mingw32/include/qos.h \
   C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
   C:/mingw64/x86_64-w64-mingw32/include/reason.h \
   C:/mingw64/x86_64-w64-mingw32/include/sal.h \
@@ -736,14 +746,17 @@ C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/CAWN4ZDDTK/moc_ma
   C:/mingw64/x86_64-w64-mingw32/include/wincon.h \
   C:/mingw64/x86_64-w64-mingw32/include/wincontypes.h \
   C:/mingw64/x86_64-w64-mingw32/include/windef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
   C:/mingw64/x86_64-w64-mingw32/include/winerror.h \
   C:/mingw64/x86_64-w64-mingw32/include/wingdi.h \
   C:/mingw64/x86_64-w64-mingw32/include/winnetwk.h \
   C:/mingw64/x86_64-w64-mingw32/include/winnls.h \
   C:/mingw64/x86_64-w64-mingw32/include/winnt.h \
   C:/mingw64/x86_64-w64-mingw32/include/winreg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsock2.h \
   C:/mingw64/x86_64-w64-mingw32/include/winsvc.h \
   C:/mingw64/x86_64-w64-mingw32/include/winuser.h \
   C:/mingw64/x86_64-w64-mingw32/include/winver.h \
   C:/mingw64/x86_64-w64-mingw32/include/wnnc.h \
-  C:/mingw64/x86_64-w64-mingw32/include/wow64apiset.h
+  C:/mingw64/x86_64-w64-mingw32/include/wow64apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2def.h

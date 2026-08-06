@@ -28,6 +28,7 @@ using pjrpid_activity = int;
 using pjrpid_element_type = int;
 using pjsip_status_code = int;
 
+struct pj_timer_heap_t;
 struct pjsip_hdr;
 struct pjsip_msg;
 struct pjsip_msg_body;
@@ -273,6 +274,8 @@ struct pjsip_transaction
     int role = 0;
     pjsip_method method;
     int state = 0;
+    int status_code = 0;
+    pj_str_t status_text;
     void *endpt = nullptr;
 };
 
@@ -280,6 +283,11 @@ struct pjsip_dialog
 {
     int unused = 0;
 };
+
+struct pjsip_uri;
+
+using pjsip_redirect_op = int;
+constexpr int PJSIP_REDIRECT_ACCEPT_REPLACE = 0;
 
 struct pjsip_tx_data
 {
@@ -290,6 +298,7 @@ struct pj_stun_nat_detect_result
 {
     pj_status_t status = 0;
     int nat_type = 0;
+    const char *nat_type_name = "";
 };
 
 struct pjsua_reg_info
@@ -331,9 +340,21 @@ struct pjsua_call_info
     pj_time_val total_duration;
 };
 
+struct pjsua_call_inv
+{
+    int neg = 0;
+};
+
+struct pjsua_call
+{
+    pjsua_call_inv *inv = nullptr;
+};
+
 struct pjsua_acc_info
 {
     pj_str_t status_text;
+    pj_bool_t has_registration = 0;
+    int status = 0;
 };
 
 struct pjsua_buddy_info
@@ -408,6 +429,21 @@ struct pjsua_transport_config
     unsigned port = 0;
 };
 
+struct pjsua_transport_data
+{
+    struct
+    {
+        pj_str_t host;
+    } local_name;
+};
+
+struct pjsua_var_t
+{
+    pjsua_transport_data tpdata[1];
+};
+
+inline pjsua_var_t pjsua_var{};
+
 struct pjsua_logging_config
 {
     int console_level = 0;
@@ -449,10 +485,42 @@ struct pjsua_acc_config
     pj_str_t reg_uri;
     unsigned cred_count = 0;
     pjsua_cred_info cred_info[8];
+    pj_bool_t register_on_acc_add = 1;
+    int priority = 0;
+    int ka_interval = 0;
+    int vid_in_auto_show = 0;
+    int vid_out_auto_transmit = 0;
+    int vid_cap_dev = 0;
+    int vid_wnd_flags = 0;
+    unsigned reg_timeout = 0;
+    int use_timer = 0;
+    int use_srtp = 0;
+    int enable_rtcp_mux = 0;
+    struct
+    {
+        unsigned keying_count = 0;
+        int keying[4] = {};
+    } srtp_opt;
+    int ice_cfg_use = 0;
+    struct
+    {
+        int enable_ice = 0;
+    } ice_cfg;
+    int allow_via_rewrite = 0;
+    int allow_sdp_nat_rewrite = 0;
+    int allow_contact_rewrite = 0;
+    int contact_rewrite_method = 0;
+    int publish_enabled = 0;
+    int mwi_enabled = 0;
+    int transport_id = 0;
+    unsigned proxy_cnt = 0;
+    pj_str_t proxy[8];
     int sip_stun_use = 0;
     int media_stun_use = 0;
     struct
     {
+        unsigned port = 0;
+        unsigned port_range = 0;
         pj_str_t public_addr;
     } rtp_cfg;
 };
@@ -547,6 +615,7 @@ constexpr int PJSIP_INV_STATE_DISCONNECTED = 6;
 
 constexpr int PJSIP_TSX_STATE_TRYING = 1;
 constexpr int PJSIP_TSX_STATE_TERMINATED = 2;
+constexpr int PJSIP_TSX_STATE_COMPLETED = 3;
 
 constexpr int PJSUA_BUDDY_STATUS_OFFLINE = 0;
 constexpr int PJSUA_BUDDY_STATUS_ONLINE = 1;
@@ -557,12 +626,26 @@ constexpr int PJRPID_ACTIVITY_BUSY = 2;
 constexpr int PJRPID_ELEMENT_TYPE_PERSON = 0;
 
 constexpr int PJSUA_STUN_USE_DISABLED = 0;
+constexpr int PJMEDIA_SRTP_OPTIONAL = 0;
+constexpr int PJMEDIA_SRTP_MANDATORY = 1;
+constexpr int PJMEDIA_SRTP_DISABLED = 2;
+constexpr int PJMEDIA_SRTP_KEYING_DTLS_SRTP = 0;
+constexpr int PJMEDIA_SRTP_KEYING_SDES = 1;
+constexpr int PJSUA_ICE_CONFIG_USE_CUSTOM = 1;
+constexpr int PJSUA_CONTACT_REWRITE_ALWAYS_UPDATE = 1;
+constexpr int PJSUA_CONTACT_REWRITE_UNREGISTER = 2;
+constexpr int PJMEDIA_VID_DEV_WND_BORDER = 0x0001;
+constexpr int PJMEDIA_VID_DEV_WND_RESIZABLE = 0x0002;
+constexpr int PJSUA_SIP_TIMER_INACTIVE = 0;
+constexpr int PJ_STUN_NAT_TYPE_SYMMETRIC = 1;
+constexpr int PJ_SCAN_AUTOSKIP_WS = 0;
 
 constexpr int PJSIP_TRANSPORT_UDP = 0;
 constexpr int PJSIP_TRANSPORT_TCP = 1;
 constexpr int PJSIP_TRANSPORT_TLS = 2;
 
 constexpr int PJSIP_CRED_DATA_PLAIN_PASSWD = 0;
+constexpr int PJSIP_CRED_DATA_DIGEST = 1;
 
 constexpr int PJMEDIA_TYPE_NONE = 0;
 constexpr int PJMEDIA_TYPE_AUDIO = 1;
@@ -795,6 +878,12 @@ inline void pj_strerror(pj_status_t, char *buf, std::size_t len)
     }
 }
 
+inline void pj_strdup(pj_pool_t *, pj_str_t *dst, const pj_str_t *src)
+{
+    if (dst)
+        *dst = src ? *src : pj_str("");
+}
+
 inline void pj_list_push_back(void *, void *) {}
 
 inline void *pj_pool_create(const char *, std::size_t, std::size_t)
@@ -810,7 +899,14 @@ inline void pj_pool_release(void *pool)
 inline void pjmedia_port_destroy(void *) {}
 inline void pjmedia_sdp_neg_set_prefer_remote_codec_order(void *, pj_bool_t) {}
 inline void pjmedia_aud_dev_refresh() {}
-inline void pjmedia_wav_player_set_eof_cb(void *, void *, void *) {}
+using pjmedia_wav_player_eof_cb = pj_status_t (*)(pjmedia_port *, void *);
+inline void pjmedia_wav_player_set_eof_cb(void *, void *, pjmedia_wav_player_eof_cb) {}
+inline void pjsua_perror(const char *, const char *, pj_status_t) {}
+
+struct pjsua_mwi_info
+{
+    pjsip_rx_data *rdata = nullptr;
+};
 
 inline void pjsua_config_default(void *) {}
 inline void pjsua_media_config_default(void *) {}
@@ -981,14 +1077,14 @@ inline pj_status_t pjsua_call_get_stream_info(pjsua_call_id, int, pjsua_stream_i
 inline pj_status_t pjsua_acc_get_info(pjsua_acc_id, pjsua_acc_info *info)
 {
     if (info)
-        *info = {};
+        *info = pjsua_acc_info{};
     return PJ_SUCCESS;
 }
 
 inline pj_status_t pjsua_acc_get_config(pjsua_acc_id, pj_pool_t *, pjsua_acc_config *cfg)
 {
     if (cfg)
-        *cfg = {};
+        *cfg = pjsua_acc_config{};
     return PJ_SUCCESS;
 }
 
@@ -1030,11 +1126,24 @@ inline pj_bool_t pjsua_call_is_active(pjsua_call_id) { return PJ_FALSE; }
 inline pj_bool_t pjsua_call_has_media(pjsua_call_id) { return PJ_FALSE; }
 inline unsigned pjsua_call_get_count() { return 0; }
 inline pjsua_conf_port_id pjsua_call_get_conf_port(pjsua_call_id) { return 0; }
+inline pj_status_t acquire_call(const char *, pjsua_call_id, pjsua_call **call, pjsip_dialog **dlg)
+{
+    static pjsua_call_inv inv;
+    static pjsua_call dummyCall;
+    dummyCall.inv = &inv;
+    if (call)
+        *call = &dummyCall;
+    if (dlg)
+        *dlg = nullptr;
+    return PJ_SUCCESS;
+}
+inline void pjsip_dlg_dec_lock(pjsip_dialog *) {}
 
 inline pj_status_t pjsua_conf_add_port(pj_pool_t *, pjmedia_port *, pjsua_conf_port_id *) { return PJ_SUCCESS; }
 inline pj_status_t pjsua_conf_connect(pjsua_conf_port_id, pjsua_conf_port_id) { return PJ_SUCCESS; }
 inline pj_status_t pjsua_conf_disconnect(pjsua_conf_port_id, pjsua_conf_port_id) { return PJ_SUCCESS; }
 inline pj_status_t pjsua_conf_remove_port(pjsua_conf_port_id) { return PJ_SUCCESS; }
+inline unsigned pjsua_conf_get_active_ports() { return 0; }
 inline pj_status_t pjsua_conf_adjust_rx_level(pjsua_conf_port_id, float) { return PJ_SUCCESS; }
 inline pj_status_t pjsua_conf_adjust_tx_level(pjsua_conf_port_id, float) { return PJ_SUCCESS; }
 inline pj_status_t pjsua_conf_get_port_info(pjsua_conf_port_id, pjsua_conf_port_info *info)
@@ -1071,6 +1180,12 @@ inline pj_status_t pjsua_player_create(const pj_str_t *, unsigned, pjsua_player_
 {
     if (id)
         *id = 0;
+    return PJ_SUCCESS;
+}
+inline pj_status_t pjsua_player_get_port(pjsua_player_id, pjmedia_port **port)
+{
+    if (port)
+        *port = nullptr;
     return PJ_SUCCESS;
 }
 inline pjmedia_port *pjsua_player_get_port(pjsua_player_id) { return nullptr; }

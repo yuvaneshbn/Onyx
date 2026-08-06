@@ -151,7 +151,9 @@ template <> constexpr inline auto Dialer::qt_create_metaobjectdata<qt_meta_tag_Z
         "value",
         "onSliderInputMoved",
         "onShortcutClicked",
-        "onTimerBlink"
+        "onTimerBlink",
+        "OnBnClickedCall",
+        "OnTimerVUMeter"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -265,6 +267,10 @@ template <> constexpr inline auto Dialer::qt_create_metaobjectdata<qt_meta_tag_Z
         QtMocHelpers::SlotData<void()>(54, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'onTimerBlink'
         QtMocHelpers::SlotData<void()>(55, 2, QMC::AccessPublic, QMetaType::Void),
+        // Slot 'OnBnClickedCall'
+        QtMocHelpers::SlotData<void()>(56, 2, QMC::AccessPublic, QMetaType::Void),
+        // Slot 'OnTimerVUMeter'
+        QtMocHelpers::SlotData<void()>(57, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -339,6 +345,8 @@ void Dialer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 48: _t->onSliderInputMoved((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
         case 49: _t->onShortcutClicked(); break;
         case 50: _t->onTimerBlink(); break;
+        case 51: _t->OnBnClickedCall(); break;
+        case 52: _t->OnTimerVUMeter(); break;
         default: ;
         }
     }
@@ -363,14 +371,14 @@ int Dialer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 51)
+        if (_id < 53)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 51;
+        _id -= 53;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 51)
+        if (_id < 53)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 51;
+        _id -= 53;
     }
     return _id;
 }

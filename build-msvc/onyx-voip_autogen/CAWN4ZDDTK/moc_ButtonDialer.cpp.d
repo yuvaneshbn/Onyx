@@ -1,4 +1,61 @@
 C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_ButtonDialer.cpp: C:/Users/YUVANESH/Downloads/Onyx/source/ButtonDialer.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/algorithm \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/array \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/atomic \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cassert \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/chrono \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/climits \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cmath \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/concurrencysal.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstddef \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdint \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdlib \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstring \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/functional \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/initializer_list \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/iterator \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/limits \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/limits.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/list \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/map \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/memory \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/new \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/numeric \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/optional \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/sal.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/set \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/stdarg.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/stdbool.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/string \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/string_view \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/tuple \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/type_traits \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/unordered_map \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/unordered_set \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/utility \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vadefs.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/variant \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vcruntime.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vcruntime_string.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vector \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/version \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/yvals.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/yvals_core.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/assert.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_malloc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_s.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_memory.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_search.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_stdio_config.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdio.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdlib.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/errno.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stddef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stdio.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stdlib.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/string.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QList \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QMap \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QObject \

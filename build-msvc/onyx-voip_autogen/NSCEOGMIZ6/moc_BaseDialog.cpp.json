@@ -1,0 +1,33 @@
+{
+    "classes": [
+        {
+            "className": "BaseDialog",
+            "lineNumber": 15,
+            "object": true,
+            "qualifiedClassName": "BaseDialog",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commandId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 46,
+                    "name": "postCommand",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QDialog"
+                }
+            ]
+        }
+    ],
+    "inputFile": "BaseDialog.h",
+    "outputRevision": 69
+}

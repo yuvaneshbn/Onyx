@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "ButtonBottom",
+            "lineNumber": 8,
+            "object": true,
+            "qualifiedClassName": "ButtonBottom",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QPushButton"
+                }
+            ]
+        }
+    ],
+    "inputFile": "ButtonBottom.h",
+    "outputRevision": 69
+}

@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "CIconButton",
+            "lineNumber": 7,
+            "object": true,
+            "qualifiedClassName": "CIconButton",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QPushButton"
+                }
+            ]
+        }
+    ],
+    "inputFile": "IconButton.h",
+    "outputRevision": 69
+}

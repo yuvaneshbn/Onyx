@@ -3,17 +3,22 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Pre
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/array \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/atomic \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cassert \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cctype \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/chrono \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/climits \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cmath \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/concurrencysal.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdarg \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstddef \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdint \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdio \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdlib \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstring \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/excpt.h \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/filesystem \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/functional \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/initializer_list \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/intrin.h \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/iterator \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/limits \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/limits.h \
@@ -42,21 +47,123 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Pre
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/version \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/yvals.h \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/yvals_core.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/DriverSpecs.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/SpecStrings.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/apiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/apisetcconv.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/basetsd.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/driverspecs.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/guiddef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/in6addr.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/inaddr.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/kernelspecs.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ktmtypes.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/minwindef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/no_sal2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/poppack.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack1.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack4.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack8.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/qos.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/sdkddkver.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/sdv_driverspecs.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/specstrings.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/specstrings_strict.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/stralign.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/tvout.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winapifamily.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/windef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winerror.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winpackagefamily.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/wnnc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ws2def.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ws2ipdef.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/assert.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_malloc.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_s.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_memory.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_search.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_share.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_stdio_config.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wconio.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wctype.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wdirect.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wio.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wprocess.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdio.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdlib.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/ctype.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/errno.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stddef.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stdio.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stdlib.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/string.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/sys/stat.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/sys/types.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/tchar.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/wchar.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/Windows.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/apiquery2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/consoleapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/consoleapi2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/consoleapi3.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/datetimeapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/debugapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/enclaveapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/errhandlingapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/fibersapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/fileapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/fileapifromapp.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/handleapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/heapapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/ime_cmodes.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/imm.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/interlockedapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/ioapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/jobapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/jobapi2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/libloaderapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/mcx.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/memoryapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/minwinbase.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/namedpipeapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/namespaceapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/processenv.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/processthreadsapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/processtopologyapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/profileapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/realtimeapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/reason.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/securityappcontainer.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/securitybaseapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/stringapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/synchapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/sysinfoapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/systemtopologyapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/threadpoolapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/threadpoollegacyapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/timezoneapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/utilapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/verrsrc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winbase.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wincon.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wincontypes.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/windows.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wingdi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnetwk.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnls.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnt.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winreg.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winsock2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winsvc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winuser.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winver.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wow64apiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/ws2tcpip.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QDir \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QFile \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QList \
@@ -262,4 +369,5 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/onyx-voip_autogen/CAWN4ZDDTK/moc_Pre
   C:/Users/YUVANESH/Downloads/Onyx/lib/compat/pjsua-lib/pjsua.h \
   C:/Users/YUVANESH/Downloads/Onyx/lib/compat/pjsua-lib/pjsua_internal.h \
   C:/Users/YUVANESH/Downloads/Onyx/lib/langpack.h \
-  C:/Users/YUVANESH/Downloads/Onyx/source/const.h
+  C:/Users/YUVANESH/Downloads/Onyx/source/const.h \
+  C:/Users/YUVANESH/Downloads/Onyx/source/define.h

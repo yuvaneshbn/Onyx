@@ -256,7 +256,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Enable PJSIP when prebuilt pjproject libraries are available.
+//Enable PJSIP integration when static libraries are staged.
 ONYX_ENABLE_PJSIP:BOOL=ON
 
 //Path to the pjproject source tree.

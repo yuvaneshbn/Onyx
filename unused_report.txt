@@ -1,0 +1,357 @@
+lib\hid.c:141:2: warning: If memory allocation fails, then there is a possible null pointer dereference: dev [nullPointerOutOfMemory]
+ dev->device_handle = INVALID_HANDLE_VALUE;
+ ^
+lib\hid.c:140:40: note: Assuming allocation function fails
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                                       ^
+lib\hid.c:140:20: note: Assignment 'dev=(hid_device*)calloc(1,sizeof(hid_device))', assigned value is 0
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                   ^
+lib\hid.c:141:2: note: Null pointer dereference
+ dev->device_handle = INVALID_HANDLE_VALUE;
+ ^
+lib\hid.c:142:2: warning: If memory allocation fails, then there is a possible null pointer dereference: dev [nullPointerOutOfMemory]
+ dev->blocking = TRUE;
+ ^
+lib\hid.c:140:40: note: Assuming allocation function fails
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                                       ^
+lib\hid.c:140:20: note: Assignment 'dev=(hid_device*)calloc(1,sizeof(hid_device))', assigned value is 0
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                   ^
+lib\hid.c:142:2: note: Null pointer dereference
+ dev->blocking = TRUE;
+ ^
+lib\hid.c:143:2: warning: If memory allocation fails, then there is a possible null pointer dereference: dev [nullPointerOutOfMemory]
+ dev->input_report_length = 0;
+ ^
+lib\hid.c:140:40: note: Assuming allocation function fails
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                                       ^
+lib\hid.c:140:20: note: Assignment 'dev=(hid_device*)calloc(1,sizeof(hid_device))', assigned value is 0
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                   ^
+lib\hid.c:143:2: note: Null pointer dereference
+ dev->input_report_length = 0;
+ ^
+lib\hid.c:144:2: warning: If memory allocation fails, then there is a possible null pointer dereference: dev [nullPointerOutOfMemory]
+ dev->last_error_str = NULL;
+ ^
+lib\hid.c:140:40: note: Assuming allocation function fails
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                                       ^
+lib\hid.c:140:20: note: Assignment 'dev=(hid_device*)calloc(1,sizeof(hid_device))', assigned value is 0
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                   ^
+lib\hid.c:144:2: note: Null pointer dereference
+ dev->last_error_str = NULL;
+ ^
+lib\hid.c:145:2: warning: If memory allocation fails, then there is a possible null pointer dereference: dev [nullPointerOutOfMemory]
+ dev->last_error_num = 0;
+ ^
+lib\hid.c:140:40: note: Assuming allocation function fails
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                                       ^
+lib\hid.c:140:20: note: Assignment 'dev=(hid_device*)calloc(1,sizeof(hid_device))', assigned value is 0
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                   ^
+lib\hid.c:145:2: note: Null pointer dereference
+ dev->last_error_num = 0;
+ ^
+lib\hid.c:146:2: warning: If memory allocation fails, then there is a possible null pointer dereference: dev [nullPointerOutOfMemory]
+ dev->read_pending = FALSE;
+ ^
+lib\hid.c:140:40: note: Assuming allocation function fails
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                                       ^
+lib\hid.c:140:20: note: Assignment 'dev=(hid_device*)calloc(1,sizeof(hid_device))', assigned value is 0
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                   ^
+lib\hid.c:146:2: note: Null pointer dereference
+ dev->read_pending = FALSE;
+ ^
+lib\hid.c:147:2: warning: If memory allocation fails, then there is a possible null pointer dereference: dev [nullPointerOutOfMemory]
+ dev->read_buf = NULL;
+ ^
+lib\hid.c:140:40: note: Assuming allocation function fails
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                                       ^
+lib\hid.c:140:20: note: Assignment 'dev=(hid_device*)calloc(1,sizeof(hid_device))', assigned value is 0
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                   ^
+lib\hid.c:147:2: note: Null pointer dereference
+ dev->read_buf = NULL;
+ ^
+lib\hid.c:149:2: warning: If memory allocation fails, then there is a possible null pointer dereference: dev [nullPointerOutOfMemory]
+ dev->ol.hEvent = CreateEvent(NULL, FALSE, FALSE /*inital state f=nonsignaled*/, NULL);
+ ^
+lib\hid.c:140:40: note: Assuming allocation function fails
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                                       ^
+lib\hid.c:140:20: note: Assignment 'dev=(hid_device*)calloc(1,sizeof(hid_device))', assigned value is 0
+ hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+                   ^
+lib\hid.c:149:2: note: Null pointer dereference
+ dev->ol.hEvent = CreateEvent(NULL, FALSE, FALSE /*inital state f=nonsignaled*/, NULL);
+ ^
+lib\hid.c:321:3: warning: If memory allocation fails, then there is a possible null pointer dereference: device_interface_detail_data [nullPointerOutOfMemory]
+  device_interface_detail_data->cbSize = sizeof(SP_DEVICE_INTERFACE_DETAIL_DATA_A);
+  ^
+lib\hid.c:320:77: note: Assuming allocation function fails
+  device_interface_detail_data = (SP_DEVICE_INTERFACE_DETAIL_DATA_A*) malloc(required_size);
+                                                                            ^
+lib\hid.c:320:34: note: Assignment 'device_interface_detail_data=(SP_DEVICE_INTERFACE_DETAIL_DATA_A*)malloc(required_size)', assigned value is 0
+  device_interface_detail_data = (SP_DEVICE_INTERFACE_DETAIL_DATA_A*) malloc(required_size);
+                                 ^
+lib\hid.c:321:3: note: Null pointer dereference
+  device_interface_detail_data->cbSize = sizeof(SP_DEVICE_INTERFACE_DETAIL_DATA_A);
+  ^
+lib\hid.c:165:12: error: Uninitialized variable: msg [uninitvar]
+  (LPWSTR)&msg, 0/*sz*/,
+           ^
+lib\jsoncpp\json_batchallocator.h:110:7: warning: If memory allocation fails, then there is a possible null pointer dereference: batch [nullPointerOutOfMemory]
+      batch->next_ = 0;
+      ^
+lib\jsoncpp\json_batchallocator.h:109:57: note: Assuming allocation function fails
+      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+                                                        ^
+lib\jsoncpp\json_batchallocator.h:109:49: note: Assignment 'batch=static_cast<BatchInfo*>(malloc(mallocSize))', assigned value is 0
+      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+                                                ^
+lib\jsoncpp\json_batchallocator.h:110:7: note: Null pointer dereference
+      batch->next_ = 0;
+      ^
+lib\jsoncpp\json_batchallocator.h:111:7: warning: If memory allocation fails, then there is a possible null pointer dereference: batch [nullPointerOutOfMemory]
+      batch->used_ = batch->buffer_;
+      ^
+lib\jsoncpp\json_batchallocator.h:109:57: note: Assuming allocation function fails
+      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+                                                        ^
+lib\jsoncpp\json_batchallocator.h:109:49: note: Assignment 'batch=static_cast<BatchInfo*>(malloc(mallocSize))', assigned value is 0
+      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+                                                ^
+lib\jsoncpp\json_batchallocator.h:111:7: note: Null pointer dereference
+      batch->used_ = batch->buffer_;
+      ^
+lib\jsoncpp\json_batchallocator.h:111:22: warning: If memory allocation fails, then there is a possible null pointer dereference: batch [nullPointerOutOfMemory]
+      batch->used_ = batch->buffer_;
+                     ^
+lib\jsoncpp\json_batchallocator.h:109:57: note: Assuming allocation function fails
+      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+                                                        ^
+lib\jsoncpp\json_batchallocator.h:109:49: note: Assignment 'batch=static_cast<BatchInfo*>(malloc(mallocSize))', assigned value is 0
+      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+                                                ^
+lib\jsoncpp\json_batchallocator.h:111:22: note: Null pointer dereference
+      batch->used_ = batch->buffer_;
+                     ^
+lib\jsoncpp\json_batchallocator.h:112:7: warning: If memory allocation fails, then there is a possible null pointer dereference: batch [nullPointerOutOfMemory]
+      batch->end_ = batch->buffer_ + objectsPerPage;
+      ^
+lib\jsoncpp\json_batchallocator.h:109:57: note: Assuming allocation function fails
+      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+                                                        ^
+lib\jsoncpp\json_batchallocator.h:109:49: note: Assignment 'batch=static_cast<BatchInfo*>(malloc(mallocSize))', assigned value is 0
+      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+                                                ^
+lib\jsoncpp\json_batchallocator.h:112:7: note: Null pointer dereference
+      batch->end_ = batch->buffer_ + objectsPerPage;
+      ^
+lib\jsoncpp\json_batchallocator.h:112:21: warning: If memory allocation fails, then there is a possible null pointer dereference: batch [nullPointerOutOfMemory]
+      batch->end_ = batch->buffer_ + objectsPerPage;
+                    ^
+lib\jsoncpp\json_batchallocator.h:109:57: note: Assuming allocation function fails
+      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+                                                        ^
+lib\jsoncpp\json_batchallocator.h:109:49: note: Assignment 'batch=static_cast<BatchInfo*>(malloc(mallocSize))', assigned value is 0
+      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+                                                ^
+lib\jsoncpp\json_batchallocator.h:112:21: note: Null pointer dereference
+      batch->end_ = batch->buffer_ + objectsPerPage;
+                    ^
+lib\jsoncpp\json_value.cpp:86:15: warning: If memory allocation fails, then there is a possible null pointer dereference: newString [nullPointerOutOfMemory]
+      memcpy( newString, value, length );
+              ^
+lib\jsoncpp\json_value.cpp:85:52: note: Assuming allocation function fails
+      char *newString = static_cast<char *>( malloc( length + 1 ) );
+                                                   ^
+lib\jsoncpp\json_value.cpp:85:44: note: Assignment 'newString=static_cast<char*>(malloc(length+1))', assigned value is 0
+      char *newString = static_cast<char *>( malloc( length + 1 ) );
+                                           ^
+lib\jsoncpp\json_value.cpp:86:15: note: Null pointer dereference
+      memcpy( newString, value, length );
+              ^
+lib\jsoncpp\json_value.cpp:87:7: warning: If memory allocation fails, then there is a possible null pointer dereference: newString [nullPointerOutOfMemory]
+      newString[length] = 0;
+      ^
+lib\jsoncpp\json_value.cpp:85:52: note: Assuming allocation function fails
+      char *newString = static_cast<char *>( malloc( length + 1 ) );
+                                                   ^
+lib\jsoncpp\json_value.cpp:85:44: note: Assignment 'newString=static_cast<char*>(malloc(length+1))', assigned value is 0
+      char *newString = static_cast<char *>( malloc( length + 1 ) );
+                                           ^
+lib\jsoncpp\json_value.cpp:87:7: note: Null pointer dereference
+      newString[length] = 0;
+      ^
+lib\jsoncpp\json_internalarray.inl:297:31: error: Unhandled exception thrown in function declared not to throw exceptions. [throwInNoexceptFunction]
+   for ( ; !equals(it,itEnd); increment(it) )
+                              ^
+lib\src\OnyxUtils.cpp:276:12: warning: If memory allocation fails, then there is a possible null pointer dereference: buf [nullPointerOutOfMemory]
+    memcpy(buf, utf8.constData(), utf8.size());
+           ^
+lib\src\OnyxUtils.cpp:275:30: note: Assuming allocation function fails
+    char* buf = (char*)malloc(utf8.size() + 1);
+                             ^
+lib\src\OnyxUtils.cpp:275:17: note: Assignment 'buf=(char*)malloc(utf8.size()+1)', assigned value is 0
+    char* buf = (char*)malloc(utf8.size() + 1);
+                ^
+lib\src\OnyxUtils.cpp:276:12: note: Null pointer dereference
+    memcpy(buf, utf8.constData(), utf8.size());
+           ^
+lib\src\OnyxUtils.cpp:277:5: warning: If memory allocation fails, then there is a possible null pointer dereference: buf [nullPointerOutOfMemory]
+    buf[utf8.size()] = '\0';
+    ^
+lib\src\OnyxUtils.cpp:275:30: note: Assuming allocation function fails
+    char* buf = (char*)malloc(utf8.size() + 1);
+                             ^
+lib\src\OnyxUtils.cpp:275:17: note: Assignment 'buf=(char*)malloc(utf8.size()+1)', assigned value is 0
+    char* buf = (char*)malloc(utf8.size() + 1);
+                ^
+lib\src\OnyxUtils.cpp:277:5: note: Null pointer dereference
+    buf[utf8.size()] = '\0';
+    ^
+lib\hid.c:487:42: style: The function 'hid_open' is never used. [unusedFunction]
+HID_API_EXPORT hid_device * HID_API_CALL hid_open(unsigned short vendor_id, unsigned short product_id, wchar_t *serial_number)
+                                         ^
+lib\hid.c:679:33: style: The function 'hid_send_feature_report' is never used. [unusedFunction]
+int HID_API_EXPORT HID_API_CALL hid_send_feature_report(hid_device *dev, const unsigned char *data, size_t length)
+                                ^
+lib\hid.c:691:33: style: The function 'hid_get_feature_report' is never used. [unusedFunction]
+int HID_API_EXPORT HID_API_CALL hid_get_feature_report(hid_device *dev, unsigned char *data, size_t length)
+                                ^
+lib\hid.c:746:38: style: The function 'hid_get_manufacturer_string' is never used. [unusedFunction]
+int HID_API_EXPORT_CALL HID_API_CALL hid_get_manufacturer_string(hid_device *dev, wchar_t *string, size_t maxlen)
+                                     ^
+lib\hid.c:759:38: style: The function 'hid_get_product_string' is never used. [unusedFunction]
+int HID_API_EXPORT_CALL HID_API_CALL hid_get_product_string(hid_device *dev, wchar_t *string, size_t maxlen)
+                                     ^
+lib\hid.c:772:38: style: The function 'hid_get_serial_number_string' is never used. [unusedFunction]
+int HID_API_EXPORT_CALL HID_API_CALL hid_get_serial_number_string(hid_device *dev, wchar_t *string, size_t maxlen)
+                                     ^
+lib\hid.c:785:38: style: The function 'hid_get_indexed_string' is never used. [unusedFunction]
+int HID_API_EXPORT_CALL HID_API_CALL hid_get_indexed_string(hid_device *dev, int string_index, wchar_t *string, size_t maxlen)
+                                     ^
+lib\jsoncpp\json_reader.cpp:42:11: style: The function 'strictMode' is never used. [unusedFunction]
+Features::strictMode()
+          ^
+lib\jsoncpp\json_reader.cpp:284:9: style: The function 'expectToken' is never used. [unusedFunction]
+Reader::expectToken( TokenType type, Token &token, const QString &message )
+        ^
+lib\jsoncpp\json_value.cpp:709:8: style: The function 'asConstString' is never used. [unusedFunction]
+Value::asConstString() const
+       ^
+lib\jsoncpp\json_value.cpp:821:8: style: The function 'isConvertibleTo' is never used. [unusedFunction]
+Value::isConvertibleTo( ValueType other ) const
+       ^
+lib\jsoncpp\json_value.cpp:1262:8: style: The function 'isBool' is never used. [unusedFunction]
+Value::isBool() const
+       ^
+lib\jsoncpp\json_value.cpp:1269:8: style: The function 'isInt' is never used. [unusedFunction]
+Value::isInt() const
+       ^
+lib\jsoncpp\json_value.cpp:1276:8: style: The function 'isUInt' is never used. [unusedFunction]
+Value::isUInt() const
+       ^
+lib\jsoncpp\json_value.cpp:1299:8: style: The function 'isNumeric' is never used. [unusedFunction]
+Value::isNumeric() const
+       ^
+lib\jsoncpp\json_value.cpp:1306:8: style: The function 'isString' is never used. [unusedFunction]
+Value::isString() const
+       ^
+lib\jsoncpp\json_value.cpp:1360:8: style: The function 'toStyledString' is never used. [unusedFunction]
+Value::toStyledString() const
+       ^
+lib\jsoncpp\json_value.cpp:1691:7: style: The function 'make' is never used. [unusedFunction]
+Path::make( Value &root ) const
+      ^
+lib\jsoncpp\json_valueiterator.inl:196:20: style: The function 'memberName' is never used. [unusedFunction]
+ValueIteratorBase::memberName() const
+                   ^
+lib\jsoncpp\json_writer.cpp:185:13: style: The function 'enableYAMLCompatibility' is never used. [unusedFunction]
+FastWriter::enableYAMLCompatibility()
+            ^
+lib\src\ModelessMessageBox.cpp:131:6: style: The function 'ModelessMessageBox' is never used. [unusedFunction]
+void ModelessMessageBox(QWidget* parent,
+     ^
+lib\src\OnyxUtils.cpp:245:12: style: The function 'UnicodeToAnsi' is never used. [unusedFunction]
+QByteArray UnicodeToAnsi(const QString& str)
+           ^
+lib\src\OnyxUtils.cpp:250:9: style: The function 'AnsiToUnicode' is never used. [unusedFunction]
+QString AnsiToUnicode(const QByteArray& str)
+        ^
+lib\src\OnyxUtils.cpp:260:12: style: The function 'StringToPjString' is never used. [unusedFunction]
+QByteArray StringToPjString(const QString& str)
+           ^
+lib\src\OnyxUtils.cpp:405:9: style: The function 'FormatDateTime' is never used. [unusedFunction]
+QString FormatDateTime(const QDateTime& time, const QDateTime* timeNow)
+        ^
+lib\src\OnyxUtils.cpp:425:9: style: The function 'GetSID' is never used. [unusedFunction]
+QString GetSID()
+        ^
+lib\src\ggets.cpp:43:9: style: The function 'GetFileString' is never used. [unusedFunction]
+TTCHAR* GetFileString(TTCHAR* string, int n, QTextStream* stream)
+        ^
+lib\src\ggets.cpp:59:9: style: The function 'FindCharInString' is never used. [unusedFunction]
+TTCHAR* FindCharInString(const TTCHAR* string, int c)
+        ^
+lib\src\ggets.cpp:80:5: style: The function 'fggets' is never used. [unusedFunction]
+int fggets(TTCHAR** ln, QTextStream* f, bool& bOwnBuffer, const int nDefaultBufferSizeChars)
+    ^
+lib\src\langpack.cpp:94:14: style: The function 'hashstrW' is never used. [unusedFunction]
+unsigned int hashstrW(const wchar_t *key)
+             ^
+lib\src\langpack.cpp:256:9: style: The function 'LangPackTranslate' is never used. [unusedFunction]
+QString LangPackTranslate(const QString &english)
+        ^
+lib\src\langpack.cpp:306:6: style: The function 'TranslateMenu' is never used. [unusedFunction]
+void TranslateMenu(QMenu *menu)
+     ^
+source\src\MessagesDlg.cpp:31:23: style: The function 'tow' is never used. [unusedFunction]
+static inline QString tow(const QString& str) {
+                      ^
+source\src\RinginDlg.cpp:28:24: style: The function 'getScreens' is never used. [unusedFunction]
+static QList<QScreen*> getScreens() {
+                       ^
+source\src\global.cpp:675:6: style: The function 'call_hangup_incoming' is never used. [unusedFunction]
+bool call_hangup_incoming()
+     ^
+source\src\global.cpp:693:6: style: The function 'call_hangup_calling' is never used. [unusedFunction]
+void call_hangup_calling()
+     ^
+source\src\global.cpp:708:6: style: The function 'call_hangup_all' is never used. [unusedFunction]
+void call_hangup_all()
+     ^
+source\src\global.cpp:729:12: style: The function 'urldecode' is never used. [unusedFunction]
+QByteArray urldecode(const QByteArray& str)
+           ^
+source\src\global.cpp:864:6: style: The function 'URLGetAsync' is never used. [unusedFunction]
+void URLGetAsync(QString url, QWidget* hWnd, int message, bool post,
+     ^
+source\src\global.cpp:887:17: style: The function 'URLGetSync' is never used. [unusedFunction]
+URLGetAsyncData URLGetSync(QString url, bool post, QString postData, QString headers,
+                ^
+source\src\global.cpp:996:7: style: The function 'LoadImageIcon' is never used. [unusedFunction]
+QIcon LoadImageIcon(int i, int w, int h)
+      ^
+source\src\global.cpp:1533:9: style: The function 'onyx_url_mask' is never used. [unusedFunction]
+QString onyx_url_mask(QString url)
+        ^
+source\src\settings.cpp:30:16: style: The function 'AnsiToWideChar' is never used. [unusedFunction]
+static QString AnsiToWideChar(const QByteArray &ansi) {
+               ^
+lib\hid.c:241:20: style: The function 'hid_init' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+int HID_API_EXPORT hid_init(void)
+                   ^
+lib\hid.c:601:33: style: The function 'hid_read_timeout' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+int HID_API_EXPORT HID_API_CALL hid_read_timeout(hid_device *dev, unsigned char *data, size_t length, int milliseconds)
+                                ^

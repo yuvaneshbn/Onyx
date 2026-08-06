@@ -1,4 +1,5 @@
 C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/onyx-voip.dir
+C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/onyx-voip_qmlimportscan.dir
 C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/edit_cache.dir
 C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/rebuild_cache.dir
 C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/list_install_components.dir

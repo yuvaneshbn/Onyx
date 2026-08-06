@@ -1,0 +1,27 @@
+{
+    "classes": [
+        {
+            "className": "StatusBar",
+            "lineNumber": 7,
+            "object": true,
+            "qualifiedClassName": "StatusBar",
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "lineNumber": 22,
+                    "name": "OnIdleUpdateCmdUI",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QStatusBar"
+                }
+            ]
+        }
+    ],
+    "inputFile": "StatusBar.h",
+    "outputRevision": 69
+}

@@ -55,6 +55,8 @@ C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/on
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/basetsd.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/driverspecs.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/guiddef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/in6addr.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/inaddr.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/kernelspecs.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ktmtypes.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/minwindef.h \
@@ -64,6 +66,7 @@ C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/on
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack2.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack4.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack8.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/qos.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/sdkddkver.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/sdv_driverspecs.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/specstrings.h \
@@ -75,6 +78,8 @@ C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/on
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winerror.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winpackagefamily.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/wnnc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ws2def.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ws2ipdef.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/assert.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_malloc.h \
@@ -148,15 +153,18 @@ C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/on
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winbase.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wincon.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wincontypes.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/windows.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wingdi.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnetwk.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnls.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnt.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winreg.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winsock2.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winsvc.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winuser.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winver.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wow64apiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/ws2tcpip.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QByteArray \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QDateTime \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QFlags \

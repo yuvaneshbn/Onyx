@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "ButtonSafe",
+            "lineNumber": 6,
+            "object": true,
+            "qualifiedClassName": "ButtonSafe",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QPushButton"
+                }
+            ]
+        }
+    ],
+    "inputFile": "ButtonSafe.h",
+    "outputRevision": 69
+}
