@@ -12,6 +12,7 @@
 #include <commctrl.h>
 #include <shellapi.h>
 #include <wininet.h>              // for direct HTTP (replaces CInternetSession)
+#include <io.h>
 
 #pragma comment(lib, "comctl32.lib")
 #pragma comment(lib, "Psapi")
@@ -63,10 +64,11 @@ static LONG WINAPI ExceptionFilter(EXCEPTION_POINTERS *ExceptionInfo)
 
     // ---- Write text crash dump ----
     filename = QString("%1crash-dump_%2.txt")
-                  .arg(accountSettings.pathLocal, version);
+                   .arg(accountSettings.pathLocal, version);
     file.setFileName(filename);
-    if (file.open(QIODevice::WriteOnly)) {
-        QTextStream stream(&file);
+    if (file.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
+        QString dumpText;
+        QTextStream stream(&dumpText);
         stream << "Time: " << tm.toString("yyyy-MM-dd hh:mm:ss") << " (" << tm.toSecsSinceEpoch() << ")\r\n";
         stream << "ExceptionCode: 0x" << QString::number(ExceptionInfo->ExceptionRecord->ExceptionCode, 16) << "\r\n";
         for (int i = 0; i < ExceptionInfo->ExceptionRecord->NumberParameters; i++) {
@@ -76,16 +78,22 @@ static LONG WINAPI ExceptionFilter(EXCEPTION_POINTERS *ExceptionInfo)
         stream << "Wine version: " << wineVersion() << "\r\n";
 
         // Windows version info
+#pragma warning(push)
+#pragma warning(disable: 4996)
         DWORD dwVersion = GetVersion();
+#pragma warning(pop)
         DWORD dwMajorVersion = LOBYTE(LOWORD(dwVersion));
         DWORD dwMinorVersion = HIBYTE(LOWORD(dwVersion));
         DWORD dwBuild = 0;
         if (dwVersion < 0x80000000) dwBuild = HIWORD(dwVersion);
         BOOL Wow64Process = FALSE;
         IsWow64Process(GetCurrentProcess(), &Wow64Process);
-        QString winVer = QString("%1.%2 (%3) %4-bit")
-                            .arg(dwMajorVersion).arg(dwMinorVersion).arg(dwBuild)
-                            .arg(Wow64Process ? "32" : "64");
+        const QString bitness = Wow64Process ? QStringLiteral("32") : QStringLiteral("64");
+        const QString winVer = QStringLiteral("%1.%2 (%3) %4-bit")
+                            .arg(QString::number(dwMajorVersion))
+                            .arg(QString::number(dwMinorVersion))
+                            .arg(QString::number(dwBuild))
+                            .arg(bitness);
         stream << "Windows version: " << winVer << "\r\n";
 
         stream << "Name: " << QString::fromUtf8(urlencode(_GLOBAL_NAME)) << "\r\n"
@@ -107,9 +115,8 @@ static LONG WINAPI ExceptionFilter(EXCEPTION_POINTERS *ExceptionInfo)
             }
         }
         stream.flush();
-        file.flush();
-        file.seek(0);
-        dataStr = QString::fromUtf8(file.readAll());
+        dataStr = dumpText;
+        file.write(dumpText.toUtf8());
         file.close();
     }
 
@@ -129,9 +136,8 @@ static LONG WINAPI ExceptionFilter(EXCEPTION_POINTERS *ExceptionInfo)
                                                      INTERNET_FLAG_SECURE, 0);
                 if (hRequest) {
                     QString headers = "Content-Type: application/x-www-form-urlencoded\r\n";
-        QString formData = QString("name=%1&version=%2")
-                                          .arg(QString::fromUtf8(urlencode(_GLOBAL_NAME)))
-                                          .arg(version);
+        QString formData = QStringLiteral("name=%1&version=%2")
+                                          .arg(QString::fromUtf8(urlencode(_GLOBAL_NAME)), version);
 #ifdef _GLOBAL_VIDEO
                     formData += "&video=1";
 #endif
@@ -165,8 +171,9 @@ static LONG WINAPI ExceptionFilter(EXCEPTION_POINTERS *ExceptionInfo)
         MinidumpExceptionInfo.ThreadId = GetCurrentThreadId();
         MinidumpExceptionInfo.ExceptionPointers = ExceptionInfo;
         MinidumpExceptionInfo.ClientPointers = FALSE;
+        const HANDLE dumpHandle = reinterpret_cast<HANDLE>(static_cast<ULONG_PTR>(_get_osfhandle(file.handle())));
         if (MiniDumpWriteDump(GetCurrentProcess(), GetCurrentProcessId(),
-                              (HANDLE)file.handle(), MiniDumpNormal,
+                              dumpHandle, MiniDumpNormal,
                               &MinidumpExceptionInfo, NULL, NULL)) {
             // Upload dump if needed
             if (sendCrashReport && txtSent && !blockDump) {
@@ -180,17 +187,16 @@ static LONG WINAPI ExceptionFilter(EXCEPTION_POINTERS *ExceptionInfo)
                                                          NULL, NULL, NULL,
                                                          INTERNET_FLAG_SECURE, 0);
                         if (hReq) {
-                             QString hdrs = QString("Content-Type: application/octet-stream\r\n"
+                             QString hdrs = QStringLiteral("Content-Type: application/octet-stream\r\n"
                                                     "X-Name: %1\r\nX-Version: %2\r\n"
                                                     "%3")
-                                               .arg(QString::fromUtf8(urlencode(_GLOBAL_NAME_VISIBLE)))
-                                               .arg(version)
+                                               .arg(QString::fromUtf8(urlencode(_GLOBAL_NAME_VISIBLE)), version,
 #ifdef _GLOBAL_VIDEO
-                                               .arg("X-Video: 1\r\n")
+                                               QStringLiteral("X-Video: 1\r\n")
 #else
-                                               .arg("")
+                                               QStringLiteral("")
 #endif
-                                               ;
+                                               );
                             if (HttpSendRequest(hReq, hdrs.toStdWString().c_str(), hdrs.length(),
                                                 NULL, 0)) {
                                 char buf[1024];
@@ -218,9 +224,9 @@ static LONG WINAPI ExceptionFilter(EXCEPTION_POINTERS *ExceptionInfo)
     QString message;
 
     if (blockDump) {
-        message = QString("%1 %2")
-                      .arg(Translate("A crash happened. It is strongly recommended that you update your version to continue using the software safely."))
-                      .arg(Translate("Would you like to update it now?"));
+        message = QStringLiteral("%1 %2")
+                      .arg(Translate("A crash happened. It is strongly recommended that you update your version to continue using the software safely."),
+                           Translate("Would you like to update it now?"));
         if (QMessageBox::critical(nullptr, _GLOBAL_NAME_VISIBLE, message,
                                   QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes) {
             Onyx::OpenURL("https://example.com/onyx-voip/downloads");
@@ -229,13 +235,13 @@ static LONG WINAPI ExceptionFilter(EXCEPTION_POINTERS *ExceptionInfo)
     } else {
         if (!restart) {
 #ifdef _GLOBAL_VIDEO
-            message = QString("A crash happened. Check your video card driver or try to install the LITE version (without video). Tracking info: %1%2")
-                          .arg(tm.toString("yyyyMMddhhmmss"))
-                          .arg(sent ? "Y" : "N");
+            message = QStringLiteral("A crash happened. Check your video card driver or try to install the LITE version (without video). Tracking info: %1%2")
+                          .arg(tm.toString("yyyyMMddhhmmss"),
+                               sent ? QStringLiteral("Y") : QStringLiteral("N"));
 #else
-            message = QString("A crash happened. Make sure your system is working properly and that you have enough free memory and hard disk space. Check your sound device driver, antivirus software. Try disabling additional softphone features. You can try uninstalling Onyx-voip \"with configuration\" and reinstalling it. Tracking info: %1%2")
-                          .arg(tm.toString("yyyyMMddhhmmss"))
-                          .arg(sent ? "Y" : "N");
+            message = QStringLiteral("A crash happened. Make sure your system is working properly and that you have enough free memory and hard disk space. Check your sound device driver, antivirus software. Try disabling additional softphone features. You can try uninstalling Onyx-voip \"with configuration\" and reinstalling it. Tracking info: %1%2")
+                          .arg(tm.toString("yyyyMMddhhmmss"),
+                               sent ? QStringLiteral("Y") : QStringLiteral("N"));
 #endif
             QMessageBox::critical(nullptr, _GLOBAL_NAME_VISIBLE, message);
         }

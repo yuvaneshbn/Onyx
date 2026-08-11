@@ -1,0 +1,14 @@
+# Package Information for pkg-config
+
+prefix=C:/Program Files (x86)/pjproject
+exec_prefix=
+libdir=C:/Program Files (x86)/pjproject/lib
+includedir=C:/Program Files (x86)/pjproject/include
+
+Name: libpjproject
+Description: Multimedia communication library
+URL: http://www.pjsip.org
+Version: 2.17
+Libs: 
+Libs.private: 
+Cflags: 

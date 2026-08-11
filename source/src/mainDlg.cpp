@@ -1,5 +1,3 @@
-// mainDlg.cpp - Complete Qt conversion (Part 1)
-
 #define THIS_FILENAME "mainDlg.cpp"
 
 #include "mainDlg.h"
@@ -18,6 +16,7 @@
 #include <QMessageBox>
 #include <QStatusBar>
 #include <QTabWidget>
+#include <QStyle>
 #include <QMenu>
 #include <QCloseEvent>
 #include <QSystemTrayIcon>
@@ -55,22 +54,21 @@
 #include <winuser.h>
 #include <windows.h>
 #include <io.h>
-#include <afxmt.h>
-#include <afxinet.h>
 #include <ws2tcpip.h>
 #include <Dbt.h>
 #include <Strsafe.h>
+#include <ctime>
 #include <locale.h> 
 #include <Wtsapi32.h>
 #include "atlrx.h"
 
-#include "afxvisualmanager.h"
-#include "afxvisualmanagerwindows.h"
-
 #include "iphlpapi.h"
 #include "wininet.h"
-#pragma comment(lib, "iphlpapi.lib")
-#pragma comment(lib, "Wtsapi32.lib")
+
+static inline pj_str_t pj_str_literal(const char* s)
+{
+    return pj_str((char*)s);
+}
 
 #ifdef new
 #undef new
@@ -83,11 +81,6 @@ static UINT WM_TASKBARRESTARTMESSAGE;
 
 static bool updateCheckerShow;
 
-static UINT indicators[] =
-{
-	IDS_STATUSBAR,
-	IDS_STATUSBAR2,
-};
 
 static int usersDirectorySequence;
 static int usersDirectoryRefresh;
@@ -96,7 +89,7 @@ static int usersDirectoryReconnect;
 
 QMutex CmainDlg::gethostbyaddrThreadCS;
 QString CmainDlg::gethostbyaddrThreadResult;
-static DWORD WINAPI gethostbyaddrThread(LPVOID lpParam)
+DWORD WINAPI gethostbyaddrThread(LPVOID lpParam)
 {
     QString* addr = (QString*)lpParam;
     QString res = *addr;
@@ -131,7 +124,7 @@ static void on_reg_state2(pjsua_acc_id acc_id, pjsua_reg_info* info)
     QString* str = NULL;
     if (info->cbparam->code >= 400 && info->cbparam->rdata) {
         pjsip_generic_string_hdr* hsr;
-        const pj_str_t headerError = pj_str("P-Registrar-Error");
+        const pj_str_t headerError = pj_str_literal("P-Registrar-Error");
         hsr = (pjsip_generic_string_hdr*)pjsip_msg_find_hdr_by_name(info->cbparam->rdata->msg_info.msg, &headerError, NULL);
         if (hsr) {
             str = new QString(Onyx::PjToStr(&hsr->hvalue, true));
@@ -148,8 +141,8 @@ static void call_timeout_callback(pj_timer_heap_t* timer_heap,
     pjsua_call_id call_id = entry->id;
     pjsua_msg_data msg_data_;
     pjsip_generic_string_hdr warn;
-    pj_str_t hname = pj_str("Warning");
-    pj_str_t hvalue = pj_str("399 localhost \"Call duration exceeded\"");
+    pj_str_t hname = pj_str_literal("Warning");
+    pj_str_t hvalue = pj_str_literal("399 localhost \"Call duration exceeded\"");
 
     PJ_UNUSED_ARG(timer_heap);
 
@@ -305,37 +298,50 @@ static void on_call_media_event(pjsua_call_id call_id,
                                 unsigned med_idx,
                                 pjmedia_event* event)
 {
-    //char event_name[5];
+    if (!event || !mainDlg || event->type != PJMEDIA_EVENT_FMT_CHANGED) {
+        return;
+    }
 
-    //PJ_LOG(5, (THIS_FILENAME, "Event %s",
-        //pjmedia_fourcc_name(event->type, event_name)));
+#if PJSUA_HAS_VIDEO
+    pjsua_call_info ci;
+    if (pjsua_call_get_info(call_id, &ci) != PJ_SUCCESS) {
+        return;
+    }
 
-    //#if PJSUA_HAS_VIDEO
-        //if (event->type == PJMEDIA_EVENT_FMT_CHANGED) {
-        //	pjsua_call_info ci;
-        //	pjsua_call_get_info(call_id, &ci);
-        //	if ((ci.media[med_idx].type == PJMEDIA_TYPE_VIDEO) &&
-        //		(ci.media[med_idx].dir & PJMEDIA_DIR_DECODING)) {
-        //		pjsua_vid_win_id wid;
-        //		pjmedia_rect_size size;
-        //		pjsua_vid_win_info win_info;
+    if (ci.media[med_idx].type != PJMEDIA_TYPE_VIDEO ||
+        !(ci.media[med_idx].dir & PJMEDIA_DIR_DECODING)) {
+        return;
+    }
 
-        //		wid = ci.media[med_idx].stream.vid.win_in;
-        //		pjsua_vid_win_get_info(wid, &win_info);
+    pjsua_vid_win_id wid = ci.media[med_idx].stream.vid.win_in;
+    if (wid == PJSUA_INVALID_ID) {
+        return;
+    }
 
-        //		size = event->data.fmt_changed.new_fmt.det.vid.size;
-        //		if (size.w != win_info.size.w || size.h != win_info.size.h) {
-        //			pjsua_vid_win_set_size(wid, &size);
-        //			/* Re-arrange video windows */
-        //			arrange_window(PJSUA_INVALID_ID);
-        //		}
-        //	}
-        //}
-    //#else
-    //	PJ_UNUSED_ARG(call_id);
-    //	PJ_UNUSED_ARG(med_idx);
-    //	PJ_UNUSED_ARG(event);
-    //#endif
+    const pjmedia_rect_size size = event->data.fmt_changed.new_fmt.det.vid.size;
+    QMetaObject::invokeMethod(mainDlg, [wid, size]() {
+        pjsua_vid_win_info win_info;
+        pjsua_vid_win_get_info(wid, &win_info);
+
+        if (size.w != win_info.size.w || size.h != win_info.size.h) {
+            pjsua_vid_win_set_size(wid, &size);
+            if (mainDlg && mainDlg->previewWin) {
+                // Capture previewWin as a local so the inner lambda holds a safe pointer
+                QWidget* previewWin = mainDlg->previewWin;
+                QMetaObject::invokeMethod(previewWin, [previewWin, size]() {
+                    if (mainDlg && mainDlg->previewWin == previewWin) {
+                        previewWin->resize(size.w, size.h);
+                        previewWin->show();
+                    }
+                }, Qt::QueuedConnection);
+            }
+        }
+    }, Qt::QueuedConnection);
+#else
+    PJ_UNUSED_ARG(call_id);
+    PJ_UNUSED_ARG(med_idx);
+    PJ_UNUSED_ARG(event);
+#endif
 }
 
 static void on_incoming_call(pjsua_acc_id acc, pjsua_call_id call_id,
@@ -367,7 +373,7 @@ static void on_incoming_call(pjsua_acc_id acc, pjsua_call_id call_id,
     }
     pjsip_generic_string_hdr* hsr;
     // -- diversion
-    const pj_str_t headerDiversion = pj_str("Diversion");
+    const pj_str_t headerDiversion = pj_str_literal("Diversion");
     hsr = (pjsip_generic_string_hdr*)pjsip_msg_find_hdr_by_name(rdata->msg_info.msg, &headerDiversion, NULL);
     if (hsr) {
         QString str = Onyx::PjToStr(&hsr->hvalue, true);
@@ -380,7 +386,7 @@ static void on_incoming_call(pjsua_acc_id acc, pjsua_call_id call_id,
     user_data->callerID = GetPAI(rdata);
     // -- end caller id
     // -- user agent
-    const pj_str_t headerUserAgent = pj_str("User-Agent");
+    const pj_str_t headerUserAgent = pj_str_literal("User-Agent");
     hsr = (pjsip_generic_string_hdr*)pjsip_msg_find_hdr_by_name(rdata->msg_info.msg, &headerUserAgent, NULL);
     if (hsr) {
         user_data->userAgent = Onyx::PjToStr(&hsr->hvalue, true);
@@ -511,7 +517,7 @@ static void on_incoming_call(pjsua_acc_id acc, pjsua_call_id call_id,
             else if (accountSettings.autoAnswer == QStringLiteral("header")) {
                 //--
                 pjsip_generic_string_hdr* hsr = NULL;
-                const pj_str_t header = pj_str("X-AUTOANSWER");
+                const pj_str_t header = pj_str_literal("X-AUTOANSWER");
                 hsr = (pjsip_generic_string_hdr*)pjsip_msg_find_hdr_by_name(rdata->msg_info.msg, &header, NULL);
                 if (hsr) {
                     QString autoAnswerValue = Onyx::PjToStr(&hsr->hvalue, TRUE).toLower();
@@ -522,7 +528,7 @@ static void on_incoming_call(pjsua_acc_id acc, pjsua_call_id call_id,
                 //--
                 if (!autoAnswer) {
                     pjsip_generic_string_hdr* hsr = NULL;
-                    const pj_str_t header = pj_str("Call-Info");
+                    const pj_str_t header = pj_str_literal("Call-Info");
                     hsr = (pjsip_generic_string_hdr*)pjsip_msg_find_hdr_by_name(rdata->msg_info.msg, &header, NULL);
                     if (hsr) {
                         QString callInfoValue = Onyx::PjToStr(&hsr->hvalue, TRUE).toLower();
@@ -839,16 +845,16 @@ static void on_call_tsx_state(pjsua_call_id call_id, pjsip_transaction * tsx, pj
     if (tsx->role == PJSIP_ROLE_UAS) {
         const pjsip_method update_method = {
             PJSIP_OTHER_METHOD,
-            pj_str("UPDATE")
+            pj_str_literal("UPDATE")
         };
         if (tsx->method.id == PJSIP_INVITE_METHOD || pjsip_method_cmp(&tsx->method, &update_method) == 0) {
             if (e->body.tsx_state.type == PJSIP_EVENT_RX_MSG) {
                 pjsip_rx_data* rdata = e->body.rx_msg.rdata;
                 pjsip_generic_string_hdr* hsr;
-                const pj_str_t headerCallerID = pj_str("P-Asserted-Identity");
+                const pj_str_t headerCallerID = pj_str_literal("P-Asserted-Identity");
                 hsr = (pjsip_generic_string_hdr*)pjsip_msg_find_hdr_by_name(rdata->msg_info.msg, &headerCallerID, NULL);
                 if (!hsr) {
-                    const pj_str_t headerCallerID = pj_str("Remote-Party-Id");
+                    const pj_str_t headerCallerID = pj_str_literal("Remote-Party-Id");
                     hsr = (pjsip_generic_string_hdr*)pjsip_msg_find_hdr_by_name(rdata->msg_info.msg, &headerCallerID, NULL);
                 }
                 if (hsr) {
@@ -875,7 +881,7 @@ static void on_call_tsx_state(pjsua_call_id call_id, pjsip_transaction * tsx, pj
     }
         const pjsip_method info_method = {
             PJSIP_OTHER_METHOD,
-            pj_str("INFO")
+            pj_str_literal("INFO")
         };
     if (pjsip_method_cmp(&tsx->method, &info_method) == 0) {
         if (tsx->role == PJSIP_ROLE_UAS && tsx->state == PJSIP_TSX_STATE_TRYING) {
@@ -939,12 +945,12 @@ static void on_call_tsx_state(pjsua_call_id call_id, pjsip_transaction * tsx, pj
     }
                     const pjsip_method cancel_method = {
                         PJSIP_CANCEL_METHOD,
-                        pj_str("CANCEL")
+                        pj_str_literal("CANCEL")
                     };
     if (pjsip_method_cmp(&tsx->method, &cancel_method) == 0) {
         if (e->body.tsx_state.type == PJSIP_EVENT_RX_MSG) {
             pjsip_rx_data* rdata = e->body.rx_msg.rdata;
-            const pj_str_t headerReason = pj_str("Reason");
+            const pj_str_t headerReason = pj_str_literal("Reason");
             pjsip_generic_string_hdr* hsr;
             hsr = (pjsip_generic_string_hdr*)pjsip_msg_find_hdr_by_name(rdata->msg_info.msg, &headerReason, NULL);
             if (hsr) {
@@ -970,7 +976,7 @@ static void on_call_tsx_state(pjsua_call_id call_id, pjsip_transaction * tsx, pj
         if (tsx->state == PJSIP_TSX_STATE_COMPLETED) {
         const pjsip_method refer_method = {
             PJSIP_OTHER_METHOD,
-            pj_str("REFER")
+            pj_str_literal("REFER")
         };
         if (pjsip_method_cmp(&tsx->method, &refer_method) == 0 && tsx->status_code / 100 != 2) {
             pj_bool_t cont;
@@ -1028,10 +1034,6 @@ void CmainDlg::PostNcDestroy()
     delete this;
 }
 
-void CmainDlg::DoDataExchange(QDataExchange* pDX)
-{
-    // Handled by Qt Designer UI file (ui.setupUi)
-}
 
 // Constructor taking QWidget* parent
 CmainDlg::CmainDlg(QWidget* parent)
@@ -1112,55 +1114,7 @@ CmainDlg::CmainDlg(QWidget* parent)
     _tsetlocale(LC_ALL, szLocale);
 
     LoadLangPackModule();
-}
-
-int CmainDlg::OnCreate(LPCREATESTRUCT lpCreateStruct)
-{
-    WM_TASKBARRESTARTMESSAGE = RegisterWindowMessage(_T("TaskbarCreated"));
-    // Visual manager not needed
-
-    HDC hDC = ::GetDC(0);
-    dpiY = GetDeviceCaps(hDC, LOGPIXELSY);
-    ::ReleaseDC(0, hDC);
-
-    bool setpos = false;
-    if (accountSettings.noResize) {
-        setWindowFlags(windowFlags() & ~Qt::WindowMaximizeButtonHint);
-        setFixedSize(lpCreateStruct->cx, lpCreateStruct->cy);
-        setpos = true;
-    }
-
-    ShortcutsLoad();
-    shortcutsEnabled = accountSettings.enableShortcuts;
-    shortcutsBottom = accountSettings.shortcutsBottom;
-    shortcutsCount = shortcuts.size();
-    if (accountSettings.enableShortcuts) {
-        if (shortcutsBottom) {
-            if (shortcutsCount) {
-                if (shortcutsCount > _GLOBAL_SHORTCUTS_QTY / 2) {
-                    heightAdd += MulDiv(10 + (shortcutsCount + shortcutsCount % 2) * 25 / 2, dpiY, 96);
-                } else {
-                    heightAdd += MulDiv(10 + shortcutsCount * 25, dpiY, 96);
-                }
-            }
-        } else {
-            if (shortcutsCount > 12) {
-                widthAdd += MulDiv(200, dpiY, 96);
-            } else {
-                widthAdd += MulDiv(140, dpiY, 96);
-            }
-        }
-    }
-    int heightFix = 0;
-    if (setpos || widthAdd || heightAdd || heightFix) {
-        resize(lpCreateStruct->cx + widthAdd, lpCreateStruct->cy + heightAdd + heightFix);
-    }
-
-    if (langPack.rtl) {
-        setLayoutDirection(Qt::RightToLeft);
-    }
-
-    return 0;
+    OnInitDialog();
 }
 
 BOOL CmainDlg::OnInitDialog()
@@ -1173,7 +1127,9 @@ BOOL CmainDlg::OnInitDialog()
     settingsDlg = NULL;
     shortcutsDlg = NULL;
 
-    messagesDlg = new MessagesDlg(this);
+    // MessagesDlg is a separate floating window – must NOT be parented to mainDlg
+    // or its top-bar buttons will appear inside CmainDlg's client area.
+    messagesDlg = new MessagesDlg(nullptr);
     transferDlg = NULL;
     accountDlg = NULL;
 
@@ -1197,20 +1153,33 @@ BOOL CmainDlg::OnInitDialog()
     }
     ShowTrayIcon();
 
-    // Status bar
+    // ── Main window layout ─────────────────────────────────────────────────
+    // Use a proper QVBoxLayout so tabWidget + statusBar resize automatically.
+    // Previously raw setGeometry() was used which caused children to overlap.
+    auto *rootLayout = new QVBoxLayout(this);
+    rootLayout->setContentsMargins(0, 0, 0, 0);
+    rootLayout->setSpacing(0);
+
+    // Tab widget – fills all available space above the status bar
+    tabWidget = new QTabWidget(this);
+    tabWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    rootLayout->addWidget(tabWidget, 1); // stretch factor 1 = expands to fill
+
+    // Status bar – pinned to the bottom
     statusBar = new QStatusBar(this);
     statusBar->setSizeGripEnabled(false);
+    statusBar->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     QLabel* statusLabel1 = new QLabel(Translate(_T("Idle")));
     QLabel* statusLabel2 = new QLabel("");
     statusBar->addPermanentWidget(statusLabel1, 1);
     statusBar->addPermanentWidget(statusLabel2);
     m_barLabels[0] = statusLabel1;
     m_barLabels[1] = statusLabel2;
+    rootLayout->addWidget(statusBar);
 
-    // Tab control (use QTabWidget)
-    tabWidget = new QTabWidget(this);
-    tabWidget->setGeometry(0, 0, width(), height() - statusBar->height());
+    setLayout(rootLayout);
 
+    // Tab pages
     pageDialer = new Dialer(this);
     tabWidget->addTab(pageDialer, Translate(_T("Phone")));
 
@@ -1222,10 +1191,12 @@ BOOL CmainDlg::OnInitDialog()
 
     connect(tabWidget, &QTabWidget::currentChanged, this, &CmainDlg::OnTcnSelchangeTab);
 
-    // Menu button
-    m_ButtonMenu = new QPushButton(this);
+    // Menu button – placed in the tab bar's corner
+    m_ButtonMenu = new QPushButton();
     m_ButtonMenu->setIcon(QIcon(":/icons/dropdown.ico"));
     m_ButtonMenu->setFixedSize(20, 20);
+    m_ButtonMenu->setToolTip(tr("Menu"));
+    tabWidget->setCornerWidget(m_ButtonMenu, Qt::TopRightCorner);
     connect(m_ButtonMenu, &QPushButton::clicked, this, &CmainDlg::OnBnClickedMenu);
 
     // Window position/size
@@ -1317,11 +1288,18 @@ void CmainDlg::onMWIInfo(bool hasMail)
 void CmainDlg::ShowTrayIcon()
 {
     if (!trayIcon) {
-        trayIcon = new QSystemTrayIcon(m_hIcon, this);
+        trayIcon = new QSystemTrayIcon(this);
         connect(trayIcon, &QSystemTrayIcon::activated, this, &CmainDlg::onTrayNotify);
     }
-    trayIcon->show();
+    // Always set icon before show() - Qt warns if no icon is set
+    if (!m_hIcon.isNull()) {
+        trayIcon->setIcon(m_hIcon);
+    } else {
+        // Fallback: use app icon
+        trayIcon->setIcon(QApplication::style()->standardIcon(QStyle::SP_ComputerIcon));
+    }
     trayIcon->setToolTip(QStringLiteral(_GLOBAL_NAME_VISIBLE));
+    trayIcon->show();
 }
 
 void CmainDlg::OnCreated()
@@ -2480,8 +2458,7 @@ void CmainDlg::PJCreateRaw()
 
     // check updates
     if (accountSettings.updatesInterval != "never") {
-        CTime t = CTime::getCurrentTime();
-        time_t time = t.getTime();
+        time_t time = std::time(nullptr);
         int days;
         if (accountSettings.updatesInterval == "daily") days = 1;
         else if (accountSettings.updatesInterval == "monthly") days = 30;
@@ -2723,8 +2700,8 @@ void CmainDlg::PJVideoCodecs() { /* ... */ }
 void CmainDlg::UpdateSoundDevicesIds()
 {
     onyx_audio_input = -1; onyx_audio_output = -2; onyx_audio_ring = -2;
-    unsigned count = PJMEDIA_AUD_MAX_DEVS;
-    pjmedia_aud_dev_info aud_dev_info[PJMEDIA_AUD_MAX_DEVS];
+    unsigned count = PJMEDIA_AUD_DEV_MAX_DEVS;
+    pjmedia_aud_dev_info aud_dev_info[PJMEDIA_AUD_DEV_MAX_DEVS];
     pjsua_enum_aud_devs(aud_dev_info, &count);
     for (unsigned i = 0; i < count; i++) {
         QString audDevName = Onyx::Utf8DecodeUni(aud_dev_info[i].name);
@@ -2923,8 +2900,8 @@ void CmainDlg::PJAccountConfig(pjsua_acc_config* acc_cfg, Account* account)
 
     acc_cfg->cred_count = 1;
     acc_cfg->cred_info[0].username = Onyx::StrToPjStr(!account->authID.isEmpty() ? account->authID : (isLocal ? account->username : get_account_username()));
-    acc_cfg->cred_info[0].realm = pj_str("*");
-    acc_cfg->cred_info[0].scheme = pj_str("Digest");
+    acc_cfg->cred_info[0].realm = pj_str_literal("*");
+    acc_cfg->cred_info[0].scheme = pj_str_literal("Digest");
     if (!account->digest.isEmpty()) {
         acc_cfg->cred_info[0].data_type = PJSIP_CRED_DATA_DIGEST;
         acc_cfg->cred_info[0].data = Onyx::StrToPjStr(account->digest);
@@ -2951,6 +2928,7 @@ void CmainDlg::PJAccountConfig(pjsua_acc_config* acc_cfg, Account* account)
 
 void CmainDlg::OnTcnSelchangeTab(int index)
 {
+    if (!tabWidget) return;
     if (index == m_tabPrev) return;
     if (m_tabPrev != -1) {
         QWidget* prev = tabWidget->widget(m_tabPrev);
@@ -3076,14 +3054,14 @@ void CmainDlg::PublishStatus(bool online, bool init)
     if (!is_pjsua_running()) return;
     bool busy = (accountSettings.denyIncoming == "button" && accountSettings.DND);
     pjrpid_activity presenceStatusNew;
-    pj_str_t note = pj_str("");
+    pj_str_t note = pj_str_literal("");
     if (m_PresenceStatus == PJRPID_ACTIVITY_BUSY) {
-        if (!busy) { presenceStatusNew = PJRPID_ACTIVITY_UNKNOWN; note = pj_str("Idle"); }
+        if (!busy) { presenceStatusNew = PJRPID_ACTIVITY_UNKNOWN; note = pj_str_literal("Idle"); }
     } else {
-        if (busy) { presenceStatusNew = PJRPID_ACTIVITY_BUSY; note = pj_str("Busy"); }
+        if (busy) { presenceStatusNew = PJRPID_ACTIVITY_BUSY; note = pj_str_literal("Busy"); }
         else {
             presenceStatusNew = online ? PJRPID_ACTIVITY_UNKNOWN : PJRPID_ACTIVITY_AWAY;
-            note = online ? pj_str("Idle") : pj_str("Away");
+            note = online ? pj_str_literal("Idle") : pj_str_literal("Away");
         }
     }
     if (note.slen) {
@@ -3092,7 +3070,7 @@ void CmainDlg::PublishStatus(bool online, bool init)
         if (pjsua_enum_accs(ids, &count) == PJ_SUCCESS) {
             pjrpid_element pr;
             pr.type = PJRPID_ELEMENT_TYPE_PERSON;
-            pr.id = pj_str("");
+            pr.id = pj_str_literal("");
             pr.note = note;
             pr.activity = presenceStatusNew;
             for (unsigned i = 0; i < count; i++)
@@ -3554,10 +3532,6 @@ void CmainDlg::OnClose()
     close();
 }
 
-HBRUSH CmainDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
-{
-    return (HBRUSH)GetStockObject(NULL_BRUSH);
-}
 
 void CmainDlg::OnContextMenu(QWidget* w, const QPoint& pos)
 {
@@ -3601,7 +3575,8 @@ void CmainDlg::OnSize(UINT type, int w, int h)
         accountSettings.mainH = h;
         AccountSettingsPendingSave();
     }
-    QWidget::resizeEvent(nullptr);
+    // QVBoxLayout handles tabWidget + statusBar resize automatically.
+    // No manual child geometry needed.
 }
 
 void CmainDlg::SetupJumpList()
@@ -3755,7 +3730,3 @@ void CmainDlg::createPreviewWin()
 }
 #endif
 
-void CmainDlg::OnUpdatePane(CCmdUI* pCmdUI)
-{
-    Q_UNUSED(pCmdUI);
-}

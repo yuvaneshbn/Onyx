@@ -5,6 +5,9 @@
 #include <QDebug>
 #include <QList>
 #include <cstring>
+#include <Windows.h>
+#include <hidsdi.h>
+#include <hidpi.h>
 
 #include <pjsua-lib/pjsua.h>
 #include <pjsua-lib/pjsua_internal.h>
@@ -12,10 +15,22 @@
 #include "settings.h"
 #include "mainDlg.h"
 
-// Original HIDAPI implementation (unchanged)
-#include "hid.c"
+extern "C" {
+#include "hidapi.h"
+}
 
-//#include <SetupAPI.h>
+struct hid_device_ {
+    HANDLE device_handle;
+    BOOL blocking;
+    size_t input_report_length;
+    void *last_error_str;
+    DWORD last_error_num;
+    BOOL read_pending;
+    char *read_buf;
+    OVERLAPPED ol;
+    HIDP_CAPS caps;
+    PHIDP_PREPARSED_DATA pp_data;
+};
 
 #pragma comment(lib, "Setupapi.lib")
 #pragma comment(lib, "hid")

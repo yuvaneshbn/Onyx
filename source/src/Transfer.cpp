@@ -10,6 +10,8 @@ Transfer::Transfer(QWidget *parent)
 {
     // Replicates: Create(IDD, pParent) and the dialog resource layout
     setWindowFlags(Qt::Dialog | Qt::WindowCloseButtonHint);
+    // Prevent Qt from restoring an invalid tiny geometry saved from a previous MFC session
+    setMinimumSize(280, 320);
     setAttribute(Qt::WA_DeleteOnClose, false); // we control deletion via done() override
 
     // --- Build UI exactly as IDD_TRANSFER ---
@@ -102,8 +104,8 @@ void Transfer::showEvent(QShowEvent *event)
 
     // Create the scaled font (16pt based on current DPI)
     QFont font = this->font();
-    int dpiY = logicalDpiY();   // Qt provides screen DPI
-    int pixelHeight = MulDiv(16, dpiY, 96);  // MulDiv must be defined or use qRound
+    int dpiY = qMax(96, (int)logicalDpiY()); // guard: never 0
+    int pixelHeight = qMax(10, (int)MulDiv(16, dpiY, 96));
     font.setPixelSize(pixelHeight);
     m_font = font;
 

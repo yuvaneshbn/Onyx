@@ -21,8 +21,8 @@ CMAKE_AR:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/V
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:UNINITIALIZED=cl
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /EHsc
@@ -42,8 +42,26 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:UNINITIALIZED=cl
+//C compiler
+CMAKE_C_COMPILER:STRING=C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe
+
+//Flags used by the C compiler during all build types.
+CMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS
+
+//Flags used by the C compiler during DEBUG builds.
+CMAKE_C_FLAGS_DEBUG:STRING=/Zi /Ob0 /Od /RTC1
+
+//Flags used by the C compiler during MINSIZEREL builds.
+CMAKE_C_FLAGS_MINSIZEREL:STRING=/O1 /Ob1 /DNDEBUG
+
+//Flags used by the C compiler during RELEASE builds.
+CMAKE_C_FLAGS_RELEASE:STRING=/O2 /Ob2 /DNDEBUG
+
+//Flags used by the C compiler during RELWITHDEBINFO builds.
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG
+
+//Libraries linked by default with all C applications.
+CMAKE_C_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=/machine:x64
@@ -146,11 +164,14 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
 // RELWITHDEBINFO builds.
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 
+//No help, variable specified on the command line.
+CMAKE_MSVC_RUNTIME_LIBRARY:UNINITIALIZED=MultiThreadedDebugDLL
+
 //Path to a program.
 CMAKE_MT:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/mt.exe
 
 //No help, variable specified on the command line.
-CMAKE_PREFIX_PATH:UNINITIALIZED=C:/Qt/6.11.1/msvc2022_64
+CMAKE_PREFIX_PATH:UNINITIALIZED=C:\Qt\6.11.1\msvc2022_64
 
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
@@ -247,22 +268,28 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
+//Windows SDK version to target
+CMAKE_SYSTEM_VERSION:STRING=10.0.26100.0
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Windows SDK version to target
+CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION:STRING=10.0.26100.0
+
 //Enable PJSIP integration when static libraries are staged.
 ONYX_ENABLE_PJSIP:BOOL=ON
 
-//Path to the pjproject source tree.
+//Path to pjproject tree.
 ONYX_PJPROJECT_DIR:PATH=C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17
 
-//Folder containing built pjproject .lib files.
-ONYX_PJSIP_LIB_DIR:PATH=C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/lib
+//Folder containing prebuilt PJSIP .lib archives.
+ONYX_PJSIP_LIB_DIR:PATH=C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc
 
-//Root folder for vendored third-party packages.
+//Path to thirdparty packages.
 ONYX_THIRDPARTY_DIR:PATH=C:/Users/YUVANESH/Downloads/Onyx/thirdparty
 
 //Value Computed by CMake
@@ -328,12 +355,6 @@ Qt6QmlWorkerScript_DIR:PATH=C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlWorkerScrip
 
 //The directory containing a CMake configuration file for Qt6Qml.
 Qt6Qml_DIR:PATH=C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml
-
-//The directory containing a CMake configuration file for Qt6QuickControls2.
-Qt6QuickControls2_DIR:PATH=C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickControls2
-
-//The directory containing a CMake configuration file for Qt6QuickTemplates2.
-Qt6QuickTemplates2_DIR:PATH=C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTemplates2
 
 //The directory containing a CMake configuration file for Qt6QuickTools.
 Qt6QuickTools_DIR:PATH=C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools
@@ -406,6 +427,20 @@ CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_STANDARD_LIBRARIES
 CMAKE_CXX_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER
+CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS
+CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
+CMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_MINSIZEREL
+CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_RELEASE
+CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
+CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_STANDARD_LIBRARIES
+CMAKE_C_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -1177,34 +1212,6 @@ QT_FEATURE_quick_treeview:INTERNAL=ON
 QT_FEATURE_quick_vectorimage:INTERNAL=ON
 //Qt feature: quick_viewtransitions (from target Qt6::Quick)
 QT_FEATURE_quick_viewtransitions:INTERNAL=ON
-//Qt feature: quickcontrols2_basic (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_basic:INTERNAL=ON
-//Qt feature: quickcontrols2_fluentwinui3 (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_fluentwinui3:INTERNAL=ON
-//Qt feature: quickcontrols2_fusion (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_fusion:INTERNAL=ON
-//Qt feature: quickcontrols2_imagine (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_imagine:INTERNAL=ON
-//Qt feature: quickcontrols2_ios (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_ios:INTERNAL=OFF
-//Qt feature: quickcontrols2_macos (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_macos:INTERNAL=OFF
-//Qt feature: quickcontrols2_material (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_material:INTERNAL=ON
-//Qt feature: quickcontrols2_stylekit (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_stylekit:INTERNAL=ON
-//Qt feature: quickcontrols2_universal (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_universal:INTERNAL=ON
-//Qt feature: quickcontrols2_windows (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_windows:INTERNAL=ON
-//Qt feature: quicktemplates2_calendar (from target Qt6::QuickTemplates2)
-QT_FEATURE_quicktemplates2_calendar:INTERNAL=ON
-//Qt feature: quicktemplates2_container (from target Qt6::QuickTemplates2)
-QT_FEATURE_quicktemplates2_container:INTERNAL=ON
-//Qt feature: quicktemplates2_hover (from target Qt6::QuickTemplates2)
-QT_FEATURE_quicktemplates2_hover:INTERNAL=ON
-//Qt feature: quicktemplates2_multitouch (from target Qt6::QuickTemplates2)
-QT_FEATURE_quicktemplates2_multitouch:INTERNAL=ON
 //Qt feature: radiobutton (from target Qt6::Widgets)
 QT_FEATURE_radiobutton:INTERNAL=ON
 //Qt feature: raster_64bit (from target Qt6::Gui)

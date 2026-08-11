@@ -106,10 +106,12 @@ private:
    {
       const unsigned int mallocSize = sizeof(BatchInfo) - sizeof(AllocatedType)* objectPerAllocation
                                 + sizeof(AllocatedType) * objectPerAllocation * objectsPerPage;
-      BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
-      batch->next_ = 0;
-      batch->used_ = batch->buffer_;
-      batch->end_ = batch->buffer_ + objectsPerPage;
+       BatchInfo *batch = static_cast<BatchInfo*>( malloc( mallocSize ) );
+       if ( !batch )
+          throw std::bad_alloc();
+       batch->next_ = 0;
+       batch->used_ = batch->buffer_;
+       batch->end_ = batch->buffer_ + objectsPerPage;
       return batch;
    }
 

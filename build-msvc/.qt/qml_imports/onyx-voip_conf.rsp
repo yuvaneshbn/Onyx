@@ -6,10 +6,4 @@ C:/Users/YUVANESH/Downloads/Onyx/build-msvc/.qt/qml_imports/onyx-voip_conf.cmake
 -importPath
 C:/Users/YUVANESH/Downloads/Onyx/build-msvc
 -importPath
-C:/Users/YUVANESH/Downloads/Onyx/build-msvc/OnyxVoip
--importPath
 C:/Qt/6.11.1/msvc2022_64/qml
--qrcFiles
-C:/Users/YUVANESH/Downloads/Onyx/build-msvc/.qt/rcc/qmake_OnyxVoip.qrc
-C:/Users/YUVANESH/Downloads/Onyx/build-msvc/.qt/rcc/onyx-voip_raw_qml_0.qrc
-C:/Users/YUVANESH/Downloads/Onyx/build-msvc/.qt/rcc/onyx-voip_raw_qml_0_extra_qmldirs.qrc

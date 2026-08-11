@@ -138,6 +138,9 @@ struct hid_device_ {
 static hid_device *new_hid_device()
 {
 	hid_device *dev = (hid_device*) calloc(1, sizeof(hid_device));
+	if (!dev) {
+		return NULL;
+	}
 	dev->device_handle = INVALID_HANDLE_VALUE;
 	dev->blocking = TRUE;
 	dev->input_report_length = 0;
@@ -147,6 +150,10 @@ static hid_device *new_hid_device()
 	dev->read_buf = NULL;
 	memset(&dev->ol, 0, sizeof(dev->ol));
 	dev->ol.hEvent = CreateEvent(NULL, FALSE, FALSE /*inital state f=nonsignaled*/, NULL);
+	if (!dev->ol.hEvent) {
+		free(dev);
+		return NULL;
+	}
 
 	return dev;
 }
@@ -154,9 +161,10 @@ static hid_device *new_hid_device()
 
 static void register_error(hid_device *device, const char *op)
 {
-	WCHAR *ptr, *msg;
+	WCHAR *ptr;
+	LPWSTR msg = NULL;
 
-	FormatMessageW(FORMAT_MESSAGE_ALLOCATE_BUFFER |
+	DWORD res = FormatMessageW(FORMAT_MESSAGE_ALLOCATE_BUFFER |
 		FORMAT_MESSAGE_FROM_SYSTEM |
 		FORMAT_MESSAGE_IGNORE_INSERTS,
 		NULL,
@@ -164,22 +172,25 @@ static void register_error(hid_device *device, const char *op)
 		MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
 		(LPWSTR)&msg, 0/*sz*/,
 		NULL);
-	
-	// Get rid of the CR and LF that FormatMessage() sticks at the
-	// end of the message. Thanks Microsoft!
-	ptr = msg;
-	while (*ptr) {
-		if (*ptr == '\r') {
-			*ptr = 0x0000;
-			break;
+	if (res > 0 && msg) {
+		// Get rid of the CR and LF that FormatMessage() sticks at the
+		// end of the message. Thanks Microsoft!
+		ptr = msg;
+		while (*ptr) {
+			if (*ptr == '\r') {
+				*ptr = 0x0000;
+				break;
+			}
+			ptr++;
 		}
-		ptr++;
-	}
 
-	// Store the message off in the Device entry so that 
-	// the hid_error() function can pick it up.
-	LocalFree(device->last_error_str);
-	device->last_error_str = msg;
+		// Store the message off in the Device entry so that 
+		// the hid_error() function can pick it up.
+		LocalFree(device->last_error_str);
+		device->last_error_str = msg;
+	} else {
+		device->last_error_str = NULL;
+	}
 }
 
 #ifndef HIDAPI_USE_DDK
@@ -318,6 +329,10 @@ struct hid_device_info HID_API_EXPORT * HID_API_CALL hid_enumerate(unsigned shor
 
 		// Allocate a long enough structure for device_interface_detail_data.
 		device_interface_detail_data = (SP_DEVICE_INTERFACE_DETAIL_DATA_A*) malloc(required_size);
+		if (!device_interface_detail_data) {
+			SetupDiDestroyDeviceInfoList(device_info_set);
+			return NULL;
+		}
 		device_interface_detail_data->cbSize = sizeof(SP_DEVICE_INTERFACE_DETAIL_DATA_A);
 
 		// Get the detailed data for this device. The detail data gives us

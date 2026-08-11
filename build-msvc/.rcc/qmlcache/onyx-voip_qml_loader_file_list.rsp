@@ -1,7 +1,0 @@
---resource
-C:/Users/YUVANESH/Downloads/Onyx/build-msvc/.qt/rcc/qmake_OnyxVoip.qrc
---resource
-C:/Users/YUVANESH/Downloads/Onyx/build-msvc/.qt/rcc/onyx-voip_raw_qml_0.qrc
---resource
-C:/Users/YUVANESH/Downloads/Onyx/build-msvc/.qt/rcc/onyx-voip_raw_qml_0_extra_qmldirs.qrc
-/qt/qml/OnyxVoip/source/ui/Main.qml

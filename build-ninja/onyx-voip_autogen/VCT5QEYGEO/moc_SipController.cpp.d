@@ -1,5 +1,151 @@
 C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/VCT5QEYGEO/moc_SipController.cpp: C:/Users/YUVANESH/Downloads/Onyx/source/network/SipController.h \
-  C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/moc_predefs.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/algorithm \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/array \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/atomic \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/chrono \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cmath \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/concurrencysal.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstddef \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdint \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstring \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/excpt.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/functional \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/initializer_list \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/iterator \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/limits \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/limits.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/list \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/map \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/memory \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/new \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/numeric \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/optional \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/sal.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/setjmp.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/stdarg.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/stdbool.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/string \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/string_view \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/tuple \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/type_traits \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/utility \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vadefs.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/variant \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vcruntime.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vcruntime_string.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vector \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/version \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/yvals.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/yvals_core.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/DriverSpecs.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/SpecStrings.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/apiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/apisetcconv.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/basetsd.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/driverspecs.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/guiddef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/in6addr.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/inaddr.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/kernelspecs.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ktmtypes.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/minwindef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/no_sal2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/poppack.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack1.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack4.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/pshpack8.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/qos.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/sdkddkver.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/sdv_driverspecs.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/specstrings.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/specstrings_strict.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/stralign.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/tvout.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winapifamily.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/windef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winerror.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/winpackagefamily.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/wnnc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ws2def.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/shared/ws2ipdef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/assert.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_malloc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_math.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_s.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_memory.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_search.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_stdio_config.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wctype.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdio.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdlib.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/ctype.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/errno.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/math.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stddef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stdio.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stdlib.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/string.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/sys/types.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/apiquery2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/consoleapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/consoleapi2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/consoleapi3.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/datetimeapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/debugapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/enclaveapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/errhandlingapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/fibersapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/fileapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/fileapifromapp.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/handleapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/heapapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/ime_cmodes.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/imm.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/interlockedapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/ioapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/jobapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/jobapi2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/libloaderapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/mcx.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/memoryapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/minwinbase.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/namedpipeapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/namespaceapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/processenv.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/processthreadsapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/processtopologyapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/profileapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/realtimeapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/reason.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/securityappcontainer.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/securitybaseapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/stringapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/synchapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/sysinfoapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/systemtopologyapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/threadpoolapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/threadpoollegacyapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/timezoneapi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/utilapiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/verrsrc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winbase.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wincon.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wincontypes.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/windows.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wingdi.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnetwk.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnls.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winnt.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winreg.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winsock2.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winsvc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winuser.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/winver.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/wow64apiset.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/um/ws2tcpip.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QObject \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QString \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QStringList \
@@ -107,212 +253,238 @@ C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/VCT5QEYGEO/moc_Si
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qyieldcpu.h \
-  C:/mingw64/include/c++/15.2.0/algorithm \
-  C:/mingw64/include/c++/15.2.0/array \
-  C:/mingw64/include/c++/15.2.0/atomic \
-  C:/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
-  C:/mingw64/include/c++/15.2.0/backward/binders.h \
-  C:/mingw64/include/c++/15.2.0/bit \
-  C:/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
-  C:/mingw64/include/c++/15.2.0/bits/align.h \
-  C:/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
-  C:/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
-  C:/mingw64/include/c++/15.2.0/bits/allocator.h \
-  C:/mingw64/include/c++/15.2.0/bits/atomic_base.h \
-  C:/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
-  C:/mingw64/include/c++/15.2.0/bits/basic_string.h \
-  C:/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/char_traits.h \
-  C:/mingw64/include/c++/15.2.0/bits/charconv.h \
-  C:/mingw64/include/c++/15.2.0/bits/chrono.h \
-  C:/mingw64/include/c++/15.2.0/bits/concept_check.h \
-  C:/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
-  C:/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
-  C:/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
-  C:/mingw64/include/c++/15.2.0/bits/enable_special_members.h \
-  C:/mingw64/include/c++/15.2.0/bits/erase_if.h \
-  C:/mingw64/include/c++/15.2.0/bits/exception.h \
-  C:/mingw64/include/c++/15.2.0/bits/exception_defines.h \
-  C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
-  C:/mingw64/include/c++/15.2.0/bits/functexcept.h \
-  C:/mingw64/include/c++/15.2.0/bits/functional_hash.h \
-  C:/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
-  C:/mingw64/include/c++/15.2.0/bits/hashtable.h \
-  C:/mingw64/include/c++/15.2.0/bits/hashtable_policy.h \
-  C:/mingw64/include/c++/15.2.0/bits/invoke.h \
-  C:/mingw64/include/c++/15.2.0/bits/ios_base.h \
-  C:/mingw64/include/c++/15.2.0/bits/list.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/locale_classes.h \
-  C:/mingw64/include/c++/15.2.0/bits/locale_classes.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/localefwd.h \
-  C:/mingw64/include/c++/15.2.0/bits/memory_resource.h \
-  C:/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
-  C:/mingw64/include/c++/15.2.0/bits/move.h \
-  C:/mingw64/include/c++/15.2.0/bits/nested_exception.h \
-  C:/mingw64/include/c++/15.2.0/bits/new_allocator.h \
-  C:/mingw64/include/c++/15.2.0/bits/node_handle.h \
-  C:/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
-  C:/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
-  C:/mingw64/include/c++/15.2.0/bits/postypes.h \
-  C:/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
-  C:/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
-  C:/mingw64/include/c++/15.2.0/bits/range_access.h \
-  C:/mingw64/include/c++/15.2.0/bits/refwrap.h \
-  C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
-  C:/mingw64/include/c++/15.2.0/bits/shared_ptr.h \
-  C:/mingw64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
-  C:/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h \
-  C:/mingw64/include/c++/15.2.0/bits/specfun.h \
-  C:/mingw64/include/c++/15.2.0/bits/std_abs.h \
-  C:/mingw64/include/c++/15.2.0/bits/std_function.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_algo.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_construct.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_function.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_list.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_map.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_numeric.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_pair.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_relops.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_tree.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
-  C:/mingw64/include/c++/15.2.0/bits/stream_iterator.h \
-  C:/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h \
-  C:/mingw64/include/c++/15.2.0/bits/string_view.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/stringfwd.h \
-  C:/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
-  C:/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
-  C:/mingw64/include/c++/15.2.0/bits/unordered_map.h \
-  C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
-  C:/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
-  C:/mingw64/include/c++/15.2.0/bits/utility.h \
-  C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/version.h \
-  C:/mingw64/include/c++/15.2.0/cctype \
-  C:/mingw64/include/c++/15.2.0/cerrno \
-  C:/mingw64/include/c++/15.2.0/chrono \
-  C:/mingw64/include/c++/15.2.0/clocale \
-  C:/mingw64/include/c++/15.2.0/cmath \
-  C:/mingw64/include/c++/15.2.0/compare \
-  C:/mingw64/include/c++/15.2.0/concepts \
-  C:/mingw64/include/c++/15.2.0/cstddef \
-  C:/mingw64/include/c++/15.2.0/cstdint \
-  C:/mingw64/include/c++/15.2.0/cstdio \
-  C:/mingw64/include/c++/15.2.0/cstdlib \
-  C:/mingw64/include/c++/15.2.0/cstring \
-  C:/mingw64/include/c++/15.2.0/ctime \
-  C:/mingw64/include/c++/15.2.0/cwchar \
-  C:/mingw64/include/c++/15.2.0/debug/assertions.h \
-  C:/mingw64/include/c++/15.2.0/debug/debug.h \
-  C:/mingw64/include/c++/15.2.0/exception \
-  C:/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
-  C:/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
-  C:/mingw64/include/c++/15.2.0/ext/atomicity.h \
-  C:/mingw64/include/c++/15.2.0/ext/concurrence.h \
-  C:/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
-  C:/mingw64/include/c++/15.2.0/ext/string_conversions.h \
-  C:/mingw64/include/c++/15.2.0/ext/type_traits.h \
-  C:/mingw64/include/c++/15.2.0/functional \
-  C:/mingw64/include/c++/15.2.0/initializer_list \
-  C:/mingw64/include/c++/15.2.0/iosfwd \
-  C:/mingw64/include/c++/15.2.0/iterator \
-  C:/mingw64/include/c++/15.2.0/limits \
-  C:/mingw64/include/c++/15.2.0/list \
-  C:/mingw64/include/c++/15.2.0/map \
-  C:/mingw64/include/c++/15.2.0/memory \
-  C:/mingw64/include/c++/15.2.0/new \
-  C:/mingw64/include/c++/15.2.0/numeric \
-  C:/mingw64/include/c++/15.2.0/optional \
-  C:/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
-  C:/mingw64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
-  C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
-  C:/mingw64/include/c++/15.2.0/ratio \
-  C:/mingw64/include/c++/15.2.0/stdexcept \
-  C:/mingw64/include/c++/15.2.0/stdlib.h \
-  C:/mingw64/include/c++/15.2.0/streambuf \
-  C:/mingw64/include/c++/15.2.0/string \
-  C:/mingw64/include/c++/15.2.0/string_view \
-  C:/mingw64/include/c++/15.2.0/system_error \
-  C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
-  C:/mingw64/include/c++/15.2.0/tuple \
-  C:/mingw64/include/c++/15.2.0/type_traits \
-  C:/mingw64/include/c++/15.2.0/typeinfo \
-  C:/mingw64/include/c++/15.2.0/unordered_map \
-  C:/mingw64/include/c++/15.2.0/utility \
-  C:/mingw64/include/c++/15.2.0/variant \
-  C:/mingw64/include/c++/15.2.0/vector \
-  C:/mingw64/include/c++/15.2.0/version \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
-  C:/mingw64/x86_64-w64-mingw32/include/assert.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt_wconio.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
-  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
-  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
-  C:/mingw64/x86_64-w64-mingw32/include/errno.h \
-  C:/mingw64/x86_64-w64-mingw32/include/locale.h \
-  C:/mingw64/x86_64-w64-mingw32/include/process.h \
-  C:/mingw64/x86_64-w64-mingw32/include/pthread.h \
-  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
-  C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
-  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
-  C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sched.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wconio_s.h \
-  C:/mingw64/x86_64-w64-mingw32/include/signal.h \
-  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
-  C:/mingw64/x86_64-w64-mingw32/include/string.h \
-  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sys/types.h \
-  C:/mingw64/x86_64-w64-mingw32/include/time.h \
-  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/mingw64/x86_64-w64-mingw32/include/wchar.h
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/base64.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/cli.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/cli_console.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/cli_imp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/cli_telnet.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/config.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/crc32.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/dns.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/dns_server.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/errno.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/getopt.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/hmac_md5.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/hmac_sha1.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/http_client.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/json.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/md5.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/pcap.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/resolver.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/scanner.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/scanner_cis_bitwise.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/sha1.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/srv_resolver.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/string.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/stun_simple.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/types.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/websock.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include/pjlib-util/xml.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/activesock.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/addr_resolv.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/argparse.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/array.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/assert.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/atomic_queue.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/atomic_slist.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/compat/assert.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/compat/ctype.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/compat/errno.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/compat/high_precision.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/compat/limits.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/compat/os_win32.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/compat/setjmp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/compat/size_t.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/compat/socket.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/compat/string.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/config.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/config_site.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/ctype.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/errno.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/except.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/fifobuf.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/file_access.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/file_io.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/guid.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/hash.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/ioqueue.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/ip_helper.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/limits.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/list.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/lock.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/log.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/math.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/os.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/pool.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/pool_buf.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/rand.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/rbtree.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/sock.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/sock_qos.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/sock_select.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/ssl_sock.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/string.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/timer.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/types.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/unicode.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pj/unittest.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include/pjlib.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-audiodev/audiodev.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-audiodev/config.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-audiodev/errno.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/and_aud_mediacodec.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/and_vid_mediacodec.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/audio_codecs.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/bcg729.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/config.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/ffmpeg_vid_codecs.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/g722.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/g7221.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/gsm.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/ilbc.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/ipp_codecs.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/l16.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/lyra.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/opencore_amr.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/openh264.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/opus.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/passthrough.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/silk.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/speex.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/types.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/vid_toolbox.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-codec/vpx.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-videodev/avi_dev.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-videodev/config.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-videodev/errno.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-videodev/videodev.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia-videodev/videodev_imp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/ai_port.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/alaw_ulaw.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/audiodev.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/av_sync.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/avi.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/avi_stream.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/bidirectional.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/circbuf.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/clock.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/codec.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/conference.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/config.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/converter.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/delaybuf.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/echo.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/echo_port.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/endpoint.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/errno.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/event.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/format.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/frame.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/g711.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/jbuf.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/master_port.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/mem_port.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/null_port.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/plc.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/port.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/resample.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/rtcp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/rtcp_fb.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/rtcp_xr.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/rtp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/sdp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/sdp_neg.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/signatures.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/silencedet.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/sound.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/sound_port.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/splitcomb.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/stereo.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/stream.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/stream_common.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/tonegen.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/transport.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/transport_adapter_sample.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/transport_ice.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/transport_loop.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/transport_srtp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/transport_udp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/txt_stream.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/types.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/vid_codec.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/vid_conf.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/vid_port.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/vid_stream.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/videodev.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/wav_playlist.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/wav_port.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/wave.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia/wsola.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include/pjmedia_videodev.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/config.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/errno.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/ice_session.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/ice_strans.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/nat_detect.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/stun_auth.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/stun_config.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/stun_msg.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/stun_session.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/stun_sock.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/stun_transaction.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/turn_session.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/turn_sock.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/types.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include/pjnath/upnp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/dialog_info.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/dlg_event.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/evsub.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/evsub_msg.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/iscomposing.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/mwi.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/pidf.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/presence.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/publish.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/rpid.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/types.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-simple/xpidf.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-ua/sip_100rel.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-ua/sip_inv.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-ua/sip_regc.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-ua/sip_replaces.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-ua/sip_siprec.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-ua/sip_timer.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip-ua/sip_xfer.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_auth.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_auth_aka.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_auth_msg.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_auth_parser.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_config.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_dialog.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_endpoint.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_errno.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_event.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_module.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_msg.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_multipart.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_parser.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_resolve.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_tel_uri.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_transaction.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_transport.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_transport_loop.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_transport_tcp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_transport_tls.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_transport_udp.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_types.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_ua_layer.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_uri.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip/sip_util.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip_simple.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsip_ua.h \
+  C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include/pjsua-lib/pjsua.h

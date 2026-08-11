@@ -1,0 +1,3 @@
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/ffmpeg-8.1.2/build/CMakeFiles/ffmpeg-build.dir
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/ffmpeg-8.1.2/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/ffmpeg-8.1.2/build/CMakeFiles/ZERO_CHECK.dir

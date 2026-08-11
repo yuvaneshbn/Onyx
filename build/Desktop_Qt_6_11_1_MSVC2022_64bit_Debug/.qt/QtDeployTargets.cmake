@@ -1,3 +1,3 @@
 set(__QT_DEPLOY_TARGET_onyx-voip_FILE C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/onyx-voip.exe)
 set(__QT_DEPLOY_TARGET_onyx-voip_TYPE EXECUTABLE)
-set(__QT_DEPLOY_TARGET_onyx-voip_RUNTIME_DLLS C:/Qt/6.11.1/msvc2022_64/bin/Qt6Widgetsd.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6Networkd.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6Xmld.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6Guid.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6Cored.dll)
+set(__QT_DEPLOY_TARGET_onyx-voip_RUNTIME_DLLS C:/Qt/6.11.1/msvc2022_64/bin/Qt6Widgetsd.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6Xmld.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6Quickd.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6OpenGLd.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6Guid.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6QmlMetad.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6QmlModelsd.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6QmlWorkerScriptd.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6Qmld.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6Networkd.dll;C:/Qt/6.11.1/msvc2022_64/bin/Qt6Cored.dll)

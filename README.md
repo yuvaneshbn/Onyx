@@ -43,6 +43,7 @@ Requirements:
 Configure:
 
 ```powershell
+cmake --build build-ninja --parallel
 & cmd /c '"C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\Tools\VsDevCmd.bat" -arch=x64 -host_arch=x64 && cmake -S . -B build-msvc -G Ninja -DCMAKE_PREFIX_PATH=C:/Qt/6.11.1/msvc2022_64'
 ```
 

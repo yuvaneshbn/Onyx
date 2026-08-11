@@ -39,7 +39,6 @@
 class RinginDlg;
 class AccountDlg;
 class CMMNotificationClient;
-class QDataExchange;
 class SettingsDlg;
 class ShortcutsDlg;
 class MessagesDlg;
@@ -48,9 +47,6 @@ class Contacts;
 class Calls;
 class Preview;
 class Transfer;
-class CWnd;
-class CDC;
-class CCmdUI;
 
 class CmainDlg : public BaseDialog
 {
@@ -120,8 +116,6 @@ public:
 
     void OnDestroy();
     void PostNcDestroy();
-    void DoDataExchange(QDataExchange* pDX);
-    int OnCreate(LPCREATESTRUCT lpCreateStruct);
     BOOL OnInitDialog();
 
     bool CommandLine(const QString& params);
@@ -216,7 +210,6 @@ public slots:
     void OnContextMenu(QWidget* w, const QPoint& pos);
     BOOL OnQueryEndSession();
     void OnClose();
-    HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
     BOOL OnDeviceChange(UINT nEventType, DWORD_PTR dwData);
     void OnSessionChange(UINT nSessionState, UINT nId);
     void OnMove(int x, int y);
@@ -253,18 +246,11 @@ public slots:
     LRESULT onUsersDirectoryLoaded(URLGetAsyncData* response);
     void onShortcutsURLLoaded(URLGetAsyncData* response);
     LRESULT onCustomLoaded(WPARAM wParam, LPARAM lParam);
-    void OnUpdatePane(CCmdUI* pCmdUI);
     void startTimer(int id, int interval, std::function<void()> callback = std::function<void()>());
     void killTimer(int id);
     void timerEvent(QTimerEvent* event) override;
 
 private:
-    void setupUi();
-    void createTrayIcon();
-    void createStatusBar();
-    void createTimers();
-    QTimer* timerForId(int timerId) const;
-    void showNotPortedMessage(const QString& feature);
 
     QIcon m_hIcon;
     QIcon iconSmall;
@@ -273,16 +259,13 @@ private:
     QMap<int, QIcon> iconStatusMap;
     CMMNotificationClient* mmNotificationClient = nullptr;
 
-    QTabWidget* mainTab = nullptr;
     QLabel* pane2Label = nullptr;
-    QWidget* centralHost = nullptr;
     QTabWidget* tabWidget = nullptr;
     QStatusBar* statusBar = nullptr;
     QMap<int, QLabel*> m_barLabels;
 
     QSystemTrayIcon* trayIcon = nullptr;
     QMenu* trayMenu = nullptr;
-    QStatusBar* m_bar = nullptr;
 
     QTimer* timerIdle = nullptr;
     QTimer* timerTone = nullptr;
@@ -306,15 +289,17 @@ private:
     QTimer* timerCustom = nullptr;
     QMap<int, QPair<int, std::function<void()>>> m_timers;
 
-    unsigned char m_tabPrev = 0;
+    int m_tabPrev = -1;
     qint64 m_lastInputTime = 0;
     int m_idleCounter = 0;
     pjrpid_activity m_PresenceStatus = PJRPID_ACTIVITY_UNKNOWN;
     bool newMessages = false;
 
-    friend DWORD WINAPI gethostbyaddrThread(LPVOID lpParam);
+public:
     static QMutex gethostbyaddrThreadCS;
     static QString gethostbyaddrThreadResult;
+
+    friend DWORD WINAPI gethostbyaddrThread(LPVOID lpParam);
 };
 
 extern CmainDlg* mainDlg;

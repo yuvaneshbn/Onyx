@@ -1,4 +1,5 @@
 C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/CMakeFiles/onyx-voip.dir
+C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/CMakeFiles/onyx-voip_qmlimportscan.dir
 C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/CMakeFiles/edit_cache.dir
 C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/CMakeFiles/rebuild_cache.dir
 C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/CMakeFiles/list_install_components.dir

@@ -39,40 +39,6 @@ TTCHAR* ReallocString(TTCHAR* ptr, size_t newsize, size_t oldsize, bool& bOwnBuf
     return fresh;
 }
 
-template<class TTCHAR>
-TTCHAR* GetFileString(TTCHAR* string, int n, QTextStream* stream)
-{
-    if (!stream || !string || n <= 0) {
-        return nullptr;
-    }
-
-    const QString line = stream->readLine();
-    if (line.isNull() && stream->atEnd()) {
-        return nullptr;
-    }
-
-    copyQStringToBuffer(line, string, n);
-    return string;
-}
-
-template<class TTCHAR>
-TTCHAR* FindCharInString(const TTCHAR* string, int c)
-{
-    if (!string) {
-        return nullptr;
-    }
-
-    const TTCHAR target = static_cast<TTCHAR>(c);
-    const TTCHAR* p = string;
-    while (*p != TTCHAR('\0')) {
-        if (*p == target) {
-            return const_cast<TTCHAR*>(p);
-        }
-        ++p;
-    }
-    return nullptr;
-}
-
 #define INITSIZE 112
 #define DELTASIZE (INITSIZE + 16)
 

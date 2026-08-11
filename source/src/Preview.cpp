@@ -98,18 +98,18 @@ void Preview::Start(int id)
     int x = screenRect.width() - w;
     int y = ptDiff.y() - 6;
 
-    setGeometry(x, y, w, h);
-    show();
-
-    pjsua_vid_win_set_pos(wid, &pos);
-
     const pjmedia_rect_size size = { 320, 240 };
-    pjsua_vid_win_set_size(wid, &size);
+    const HWND hWndVideo = (HWND)wi.hwnd.info.win.hwnd;
 
-    HWND hWndVideo = (HWND)wi.hwnd.info.win.hwnd;
-    if (hWndVideo) {
-        ::SetParent(hWndVideo, (HWND)this->winId());
-    }
+    QMetaObject::invokeMethod(this, [this, x, y, w, h, wid, pos, size, hWndVideo]() {
+        setGeometry(x, y, w, h);
+        show();
+        pjsua_vid_win_set_pos(wid, &pos);
+        pjsua_vid_win_set_size(wid, &size);
+        if (hWndVideo) {
+            ::SetParent(hWndVideo, (HWND)this->winId());
+        }
+    }, Qt::QueuedConnection);
 }
 
 #endif // _GLOBAL_VIDEO

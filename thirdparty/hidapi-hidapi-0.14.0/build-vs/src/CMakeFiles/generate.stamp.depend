@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/src/CMakeLists.txt
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/src/cmake/hidapi-config.cmake.in
+C:/mingw64/share/cmake-4.3/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/mingw64/share/cmake-4.3/Modules/CMakePackageConfigHelpers.cmake
+C:/mingw64/share/cmake-4.3/Modules/GNUInstallDirs.cmake
+C:/mingw64/share/cmake-4.3/Modules/WriteBasicConfigVersionFile.cmake

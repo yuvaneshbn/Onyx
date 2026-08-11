@@ -1,0 +1,6 @@
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/build-vs/CMakeFiles/INSTALL.dir
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/build-vs/CMakeFiles/ALL_BUILD.dir
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/build-vs/CMakeFiles/ZERO_CHECK.dir
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/build-vs/src/CMakeFiles/INSTALL.dir
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/build-vs/src/windows/CMakeFiles/hidapi_winapi.dir
+C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/build-vs/src/windows/CMakeFiles/INSTALL.dir

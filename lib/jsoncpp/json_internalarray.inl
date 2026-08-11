@@ -289,22 +289,25 @@ ValueInternalArray::operator =( const ValueInternalArray &other )
 
 ValueInternalArray::~ValueInternalArray()
 {
-   // destroy all constructed items
-   IteratorState it;
-   IteratorState itEnd;
-   makeBeginIterator( it);
-   makeEndIterator( itEnd );
-   for ( ; !equals(it,itEnd); increment(it) )
-   {
-      Value *value = &dereference(it);
-      value->~Value();
-   }
-   // release all pages
-   PageIndex lastPageIndex = size_ / itemsPerPage;
-   for ( PageIndex pageIndex = 0; pageIndex < lastPageIndex; ++pageIndex )
-      arrayAllocator()->releaseArrayPage( pages_[pageIndex] );
-   // release pages index
-   arrayAllocator()->releaseArrayPageIndex( pages_, pageCount_ );
+    try {
+       // destroy all constructed items
+       IteratorState it;
+       IteratorState itEnd;
+       makeBeginIterator( it);
+       makeEndIterator( itEnd );
+       for ( ; !equals(it,itEnd); increment(it) )
+       {
+          Value *value = &dereference(it);
+          value->~Value();
+       }
+       // release all pages
+       PageIndex lastPageIndex = size_ / itemsPerPage;
+       for ( PageIndex pageIndex = 0; pageIndex < lastPageIndex; ++pageIndex )
+          arrayAllocator()->releaseArrayPage( pages_[pageIndex] );
+    } catch (...) {
+    }
+    // release pages index
+    arrayAllocator()->releaseArrayPageIndex( pages_, pageCount_ );
 }
 
 

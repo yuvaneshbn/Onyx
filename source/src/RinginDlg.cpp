@@ -25,7 +25,7 @@ extern AccountSettings accountSettings;
 extern LangPack langPack;
 
 // Helper function to enumerate monitors (Qt version)
-static QList<QScreen*> getScreens() {
+[[maybe_unused]] static QList<QScreen*> getScreens() {
     return QGuiApplication::screens();
 }
 

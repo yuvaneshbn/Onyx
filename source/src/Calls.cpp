@@ -44,8 +44,8 @@ Calls::Calls(QWidget *parent)
     , m_filterEdit(nullptr)
     , m_timer(nullptr)
 {
-    setAttribute(Qt::WA_DeleteOnClose);
-    setWindowFlags(windowFlags() | Qt::Window); // if used as a standalone window?
+    // Calls is always embedded as a tab page inside CmainDlg's QTabWidget.
+    // Qt::Window must NOT be set here or Qt will float as a separate window.
     initUi();
     setupTable();
     setupFilter();

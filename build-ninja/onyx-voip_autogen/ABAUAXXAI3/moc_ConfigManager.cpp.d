@@ -1,5 +1,63 @@
 C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/ABAUAXXAI3/moc_ConfigManager.cpp: C:/Users/YUVANESH/Downloads/Onyx/source/core/ConfigManager.h \
-  C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/moc_predefs.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/algorithm \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/array \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/atomic \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cassert \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/chrono \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/climits \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cmath \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/concurrencysal.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstddef \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdint \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstdlib \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/cstring \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/functional \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/initializer_list \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/iterator \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/limits \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/limits.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/list \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/map \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/memory \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/new \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/numeric \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/optional \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/sal.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/set \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/stdarg.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/stdbool.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/string \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/string_view \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/tuple \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/type_traits \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/unordered_map \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/unordered_set \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/utility \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vadefs.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/variant \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vcruntime.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vcruntime_string.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/vector \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/version \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/yvals.h \
+  C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include/yvals_core.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/assert.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_malloc.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_s.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_memory.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_search.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_stdio_config.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wctype.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdio.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdlib.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/ctype.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/errno.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stddef.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stdio.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/stdlib.h \
+  C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/string.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QObject \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QProcess \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/QSettings \
@@ -126,220 +184,4 @@ C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/ABAUAXXAI3/moc_Co
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.11.1/msvc2022_64/include/QtCore/qxptype_traits.h \
-  C:/Qt/6.11.1/msvc2022_64/include/QtCore/qyieldcpu.h \
-  C:/mingw64/include/c++/15.2.0/algorithm \
-  C:/mingw64/include/c++/15.2.0/array \
-  C:/mingw64/include/c++/15.2.0/atomic \
-  C:/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
-  C:/mingw64/include/c++/15.2.0/backward/binders.h \
-  C:/mingw64/include/c++/15.2.0/bit \
-  C:/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
-  C:/mingw64/include/c++/15.2.0/bits/align.h \
-  C:/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
-  C:/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
-  C:/mingw64/include/c++/15.2.0/bits/allocator.h \
-  C:/mingw64/include/c++/15.2.0/bits/atomic_base.h \
-  C:/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
-  C:/mingw64/include/c++/15.2.0/bits/basic_string.h \
-  C:/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/char_traits.h \
-  C:/mingw64/include/c++/15.2.0/bits/charconv.h \
-  C:/mingw64/include/c++/15.2.0/bits/chrono.h \
-  C:/mingw64/include/c++/15.2.0/bits/concept_check.h \
-  C:/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
-  C:/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
-  C:/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
-  C:/mingw64/include/c++/15.2.0/bits/enable_special_members.h \
-  C:/mingw64/include/c++/15.2.0/bits/erase_if.h \
-  C:/mingw64/include/c++/15.2.0/bits/exception.h \
-  C:/mingw64/include/c++/15.2.0/bits/exception_defines.h \
-  C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
-  C:/mingw64/include/c++/15.2.0/bits/functexcept.h \
-  C:/mingw64/include/c++/15.2.0/bits/functional_hash.h \
-  C:/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
-  C:/mingw64/include/c++/15.2.0/bits/hashtable.h \
-  C:/mingw64/include/c++/15.2.0/bits/hashtable_policy.h \
-  C:/mingw64/include/c++/15.2.0/bits/invoke.h \
-  C:/mingw64/include/c++/15.2.0/bits/ios_base.h \
-  C:/mingw64/include/c++/15.2.0/bits/list.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/locale_classes.h \
-  C:/mingw64/include/c++/15.2.0/bits/locale_classes.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/localefwd.h \
-  C:/mingw64/include/c++/15.2.0/bits/memory_resource.h \
-  C:/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
-  C:/mingw64/include/c++/15.2.0/bits/move.h \
-  C:/mingw64/include/c++/15.2.0/bits/nested_exception.h \
-  C:/mingw64/include/c++/15.2.0/bits/new_allocator.h \
-  C:/mingw64/include/c++/15.2.0/bits/node_handle.h \
-  C:/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
-  C:/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
-  C:/mingw64/include/c++/15.2.0/bits/postypes.h \
-  C:/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
-  C:/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
-  C:/mingw64/include/c++/15.2.0/bits/range_access.h \
-  C:/mingw64/include/c++/15.2.0/bits/refwrap.h \
-  C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
-  C:/mingw64/include/c++/15.2.0/bits/shared_ptr.h \
-  C:/mingw64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
-  C:/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h \
-  C:/mingw64/include/c++/15.2.0/bits/specfun.h \
-  C:/mingw64/include/c++/15.2.0/bits/std_abs.h \
-  C:/mingw64/include/c++/15.2.0/bits/std_function.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_algo.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_construct.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_function.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_list.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_map.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_multiset.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_numeric.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_pair.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_relops.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_set.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_tree.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
-  C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
-  C:/mingw64/include/c++/15.2.0/bits/stream_iterator.h \
-  C:/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h \
-  C:/mingw64/include/c++/15.2.0/bits/string_view.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/stringfwd.h \
-  C:/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
-  C:/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
-  C:/mingw64/include/c++/15.2.0/bits/unordered_map.h \
-  C:/mingw64/include/c++/15.2.0/bits/unordered_set.h \
-  C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
-  C:/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
-  C:/mingw64/include/c++/15.2.0/bits/utility.h \
-  C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
-  C:/mingw64/include/c++/15.2.0/bits/version.h \
-  C:/mingw64/include/c++/15.2.0/cassert \
-  C:/mingw64/include/c++/15.2.0/cctype \
-  C:/mingw64/include/c++/15.2.0/cerrno \
-  C:/mingw64/include/c++/15.2.0/chrono \
-  C:/mingw64/include/c++/15.2.0/climits \
-  C:/mingw64/include/c++/15.2.0/clocale \
-  C:/mingw64/include/c++/15.2.0/cmath \
-  C:/mingw64/include/c++/15.2.0/compare \
-  C:/mingw64/include/c++/15.2.0/concepts \
-  C:/mingw64/include/c++/15.2.0/cstddef \
-  C:/mingw64/include/c++/15.2.0/cstdint \
-  C:/mingw64/include/c++/15.2.0/cstdio \
-  C:/mingw64/include/c++/15.2.0/cstdlib \
-  C:/mingw64/include/c++/15.2.0/cstring \
-  C:/mingw64/include/c++/15.2.0/ctime \
-  C:/mingw64/include/c++/15.2.0/cwchar \
-  C:/mingw64/include/c++/15.2.0/debug/assertions.h \
-  C:/mingw64/include/c++/15.2.0/debug/debug.h \
-  C:/mingw64/include/c++/15.2.0/exception \
-  C:/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
-  C:/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
-  C:/mingw64/include/c++/15.2.0/ext/atomicity.h \
-  C:/mingw64/include/c++/15.2.0/ext/concurrence.h \
-  C:/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
-  C:/mingw64/include/c++/15.2.0/ext/string_conversions.h \
-  C:/mingw64/include/c++/15.2.0/ext/type_traits.h \
-  C:/mingw64/include/c++/15.2.0/functional \
-  C:/mingw64/include/c++/15.2.0/initializer_list \
-  C:/mingw64/include/c++/15.2.0/iosfwd \
-  C:/mingw64/include/c++/15.2.0/iterator \
-  C:/mingw64/include/c++/15.2.0/limits \
-  C:/mingw64/include/c++/15.2.0/list \
-  C:/mingw64/include/c++/15.2.0/map \
-  C:/mingw64/include/c++/15.2.0/memory \
-  C:/mingw64/include/c++/15.2.0/new \
-  C:/mingw64/include/c++/15.2.0/numeric \
-  C:/mingw64/include/c++/15.2.0/optional \
-  C:/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
-  C:/mingw64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
-  C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
-  C:/mingw64/include/c++/15.2.0/ratio \
-  C:/mingw64/include/c++/15.2.0/set \
-  C:/mingw64/include/c++/15.2.0/stdexcept \
-  C:/mingw64/include/c++/15.2.0/stdlib.h \
-  C:/mingw64/include/c++/15.2.0/streambuf \
-  C:/mingw64/include/c++/15.2.0/string \
-  C:/mingw64/include/c++/15.2.0/string_view \
-  C:/mingw64/include/c++/15.2.0/system_error \
-  C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
-  C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
-  C:/mingw64/include/c++/15.2.0/tuple \
-  C:/mingw64/include/c++/15.2.0/type_traits \
-  C:/mingw64/include/c++/15.2.0/typeinfo \
-  C:/mingw64/include/c++/15.2.0/unordered_map \
-  C:/mingw64/include/c++/15.2.0/unordered_set \
-  C:/mingw64/include/c++/15.2.0/utility \
-  C:/mingw64/include/c++/15.2.0/variant \
-  C:/mingw64/include/c++/15.2.0/vector \
-  C:/mingw64/include/c++/15.2.0/version \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
-  C:/mingw64/x86_64-w64-mingw32/include/assert.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt_wconio.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h \
-  C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
-  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
-  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
-  C:/mingw64/x86_64-w64-mingw32/include/errno.h \
-  C:/mingw64/x86_64-w64-mingw32/include/locale.h \
-  C:/mingw64/x86_64-w64-mingw32/include/process.h \
-  C:/mingw64/x86_64-w64-mingw32/include/pthread.h \
-  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
-  C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
-  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
-  C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sched.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wconio_s.h \
-  C:/mingw64/x86_64-w64-mingw32/include/signal.h \
-  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
-  C:/mingw64/x86_64-w64-mingw32/include/string.h \
-  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
-  C:/mingw64/x86_64-w64-mingw32/include/sys/types.h \
-  C:/mingw64/x86_64-w64-mingw32/include/time.h \
-  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/mingw64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/6.11.1/msvc2022_64/include/QtCore/qyieldcpu.h

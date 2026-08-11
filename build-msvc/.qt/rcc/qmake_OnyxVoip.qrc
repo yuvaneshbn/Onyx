@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/OnyxVoip">
-    <file alias="qmldir">C:/Users/YUVANESH/Downloads/Onyx/build-msvc/OnyxVoip/qmldir</file>
-  </qresource>
-</RCC>
-

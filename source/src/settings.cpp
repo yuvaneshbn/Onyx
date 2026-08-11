@@ -27,7 +27,7 @@ QDateTime startTime;
 QVector<Shortcut> shortcuts;
 
 // Helper: ANSI to wide conversion (used only for old INI conversion)
-static QString AnsiToWideChar(const QByteArray &ansi) {
+[[maybe_unused]] static QString AnsiToWideChar(const QByteArray &ansi) {
     return QString::fromLocal8Bit(ansi);
 }
 

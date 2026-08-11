@@ -80,12 +80,14 @@ public:
       //if ( !value  ||  value[0] == 0 )
       //   return 0;
 
-      if ( length == unknown )
-         length = (unsigned int)strlen(value);
-      char *newString = static_cast<char *>( malloc( length + 1 ) );
-      memcpy( newString, value, length );
-      newString[length] = 0;
-      return newString;
+       if ( length == unknown )
+          length = (unsigned int)strlen(value);
+       char *newString = static_cast<char *>( malloc( length + 1 ) );
+       if ( !newString )
+          return "";
+       memcpy( newString, value, length );
+       newString[length] = 0;
+       return newString;
    }
 
    virtual void releaseStringValue( char *value )

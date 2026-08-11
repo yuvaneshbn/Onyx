@@ -1,4 +1,5 @@
 #include "SettingsDlg.h"
+#include <QScrollArea>
 #include "mainDlg.h"
 #include "MessagesDlg.h"
 #include "Dialer.h"
@@ -50,8 +51,27 @@ SettingsDlg::~SettingsDlg() {}
 void SettingsDlg::setupUi()
 {
     setWindowTitle("Settings");
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    setLayout(mainLayout);
+    setMinimumSize(480, 500);
+    resize(520, 700);
+
+    // All settings groups go into a scroll area so the dialog fits any screen height
+    QScrollArea *scrollArea = new QScrollArea(this);
+    scrollArea->setWidgetResizable(true);
+    scrollArea->setFrameShape(QFrame::NoFrame);
+    scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
+    QWidget *scrollContent = new QWidget;
+    QVBoxLayout *mainLayout = new QVBoxLayout(scrollContent);
+    mainLayout->setSpacing(6);
+    mainLayout->setContentsMargins(8, 8, 8, 8);
+    scrollArea->setWidget(scrollContent);
+
+    // Outer layout: scroll area fills dialog, OK/Cancel below
+    QVBoxLayout *outerLayout = new QVBoxLayout(this);
+    outerLayout->setContentsMargins(0, 0, 0, 0);
+    outerLayout->setSpacing(0);
+    outerLayout->addWidget(scrollArea, 1);
+    setLayout(outerLayout);
 
     // --- Ringtone & Volume ---
     QGroupBox *groupRing = new QGroupBox(Translate("Ringtone"));
@@ -277,13 +297,17 @@ void SettingsDlg::setupUi()
     mainLayout->addLayout(linkLayout);
 
     // OK / Cancel
+    mainLayout->addStretch(); // push all groups to top
+
+    // OK/Cancel outside the scroll area (always visible at bottom)
     QHBoxLayout *dialogBtnLayout = new QHBoxLayout;
+    dialogBtnLayout->setContentsMargins(8, 4, 8, 8);
     dialogBtnLayout->addStretch();
     QPushButton *okBtn = new QPushButton(Translate("OK"));
     QPushButton *cancelBtn = new QPushButton(Translate("Cancel"));
     dialogBtnLayout->addWidget(okBtn);
     dialogBtnLayout->addWidget(cancelBtn);
-    mainLayout->addLayout(dialogBtnLayout);
+    outerLayout->addLayout(dialogBtnLayout);
 
     // Connect main actions
     connect(m_btnBrowseRing, &QPushButton::clicked, this, &SettingsDlg::onBnClickedBrowse);
@@ -322,10 +346,10 @@ void SettingsDlg::populateAudioDevices()
     m_audioOutput->setCurrentIndex(0);
     m_audioRing->setCurrentIndex(0);
 
-    pjmedia_aud_dev_info aud_dev_info[PJMEDIA_AUD_MAX_DEVS];
+    pjmedia_aud_dev_info aud_dev_info[PJMEDIA_AUD_DEV_MAX_DEVS];
     unsigned count = 0;
     if (is_pjsua_running()) {
-        count = PJMEDIA_AUD_MAX_DEVS;
+        count = PJMEDIA_AUD_DEV_MAX_DEVS;
         pjsua_enum_aud_devs(aud_dev_info, &count);
     }
     for (unsigned i = 0; i < count; i++) {

@@ -242,24 +242,9 @@ QByteArray Utf8EncodeUni(const QString& str)
     return str.toUtf8();
 }
 
-QByteArray UnicodeToAnsi(const QString& str)
-{
-    return str.toLocal8Bit();
-}
-
-QString AnsiToUnicode(const QByteArray& str)
-{
-    return QString::fromLocal8Bit(str);
-}
-
 QString AnsiToWideChar(const char* str)
 {
     return QString::fromLocal8Bit(str);
-}
-
-QByteArray StringToPjString(const QString& str)
-{
-    return str.toUtf8(); // PJSIP expects UTF-8 mostly
 }
 
 pj_str_t StrToPjStr(const QString& str)
@@ -273,6 +258,9 @@ char* WideCharToPjStr(const QString& str)
 {
     QByteArray utf8 = str.toUtf8();
     char* buf = (char*)malloc(utf8.size() + 1);
+    if (!buf) {
+        return nullptr;
+    }
     memcpy(buf, utf8.constData(), utf8.size());
     buf[utf8.size()] = '\0';
     return buf;

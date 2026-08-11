@@ -42,6 +42,7 @@
 #define __DBL_MIN_10_EXP__ (-307)
 #define __FINITE_MATH_ONLY__ 0
 #define __cpp_variable_templates 201304L
+#define PJMEDIA_VIDEO_DEV_HAS_AVI 1
 #define __FLT32X_MAX_EXP__ 1024
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1
 #define QT_OPENGL_LIB 1
@@ -84,6 +85,7 @@
 #define __WINT_MIN__ 0
 #define __FLT128_MIN_10_EXP__ (-4931)
 #define __FLT32X_IS_IEC_60559__ 1
+#define _CRT_SECURE_NO_WARNINGS 1
 #define __INT_LEAST16_WIDTH__ 16
 #define __SCHAR_MAX__ 0x7f
 #define __FLT128_MANT_DIG__ 113
@@ -95,6 +97,7 @@
 #define __INT_LEAST64_MAX__ 0x7fffffffffffffffLL
 #define __FLT32X_MANT_DIG__ 53
 #define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 2
+#define PJMEDIA_HAS_VIDEO 1
 #define __cpp_aligned_new 201606L
 #define __FLT32_MAX_10_EXP__ 38
 #define __FLT64X_EPSILON__ 1.08420217248550443400745280086994171e-19F64x
@@ -189,6 +192,7 @@
 #define __LONG_LONG_WIDTH__ 64
 #define __cpp_initializer_lists 200806L
 #define __FLT32_MAX_EXP__ 128
+#define ONYX_HAS_PJSIP 1
 #define __cpp_hex_float 201603L
 #define __GXX_ABI_VERSION 1020
 #define __FLT_MIN_EXP__ (-125)
@@ -338,6 +342,7 @@
 #define __PTRDIFF_WIDTH__ 64
 #define __cpp_range_based_for 201603L
 #define __INT_FAST16_WIDTH__ 16
+#define _WINSOCK_DEPRECATED_NO_WARNINGS 1
 #define __FLT64_HAS_INFINITY__ 1
 #define __FLT64X_MAX__ 1.18973149535723176502126385303097021e+4932F64x
 #define __FLT16_HAS_INFINITY__ 1

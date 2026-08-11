@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\windows\hid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\windows\hidapi_descriptor_reconstruct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\hidapi\hidapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\windows\hidapi_winapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\windows\hidapi_cfgmgr32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\windows\hidapi_descriptor_reconstruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\windows\hidapi_hidclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\windows\hidapi_hidpi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\windows\hidapi_hidsdi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\windows\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\hidapi-hidapi-0.14.0\windows\hidapi.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{86733C7E-26A0-305D-89A7-7551E2D364F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9DA30E48-5645-3266-B0EC-6EAB7A49C8B0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

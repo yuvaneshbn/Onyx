@@ -5,7 +5,6 @@
 #include <QDir>
 #include <QFileInfo>
 #include <QApplication>
-#include <QMenu>
 #include <QAction>
 #include <QAbstractButton>
 #include <QLabel>
@@ -15,21 +14,19 @@
 
 LangPackStruct langPack;
 
-// Helper: trim string (same as original TrimString, but works on char*)
 static void TrimString(char *str)
 {
     size_t start, len = strlen(str);
-    while (len > 0 && (unsigned char)str[len-1] <= ' ') str[--len] = 0;
+    while (len > 0 && (unsigned char)str[len - 1] <= ' ') str[--len] = 0;
     for (start = 0; str[start] && (unsigned char)str[start] <= ' '; start++);
     memmove(str, str + start, len - start + 1);
 }
 
-// Trim only trailing \r\n
 static void TrimStringSimple(char *str)
 {
     size_t len = strlen(str);
-    if (len > 0 && str[len-1] == '\n') str[--len] = '\0';
-    if (len > 0 && str[len-1] == '\r') str[len-1] = '\0';
+    if (len > 0 && str[len - 1] == '\n') str[--len] = '\0';
+    if (len > 0 && str[len - 1] == '\r') str[len - 1] = '\0';
 }
 
 static int IsEmpty(char *str)
@@ -42,7 +39,6 @@ static int IsEmpty(char *str)
     return 1;
 }
 
-// Convert backslash escape sequences in-place (simplified: no code page, works on UTF-8)
 static void ConvertBackslashes(char *str)
 {
     char *pstr = str;
@@ -54,13 +50,12 @@ static void ConvertBackslashes(char *str)
             case 'r': *pstr = '\r'; break;
             default:  *pstr = pstr[1]; break;
             }
-            memmove(pstr+1, pstr+2, strlen(pstr+2) + 1);
+            memmove(pstr + 1, pstr + 2, strlen(pstr + 2) + 1);
         }
         pstr++;
     }
 }
 
-// MurmurHash2 (identical to original)
 unsigned int hash(const void *key, unsigned int len)
 {
     const unsigned int m = 0x5bd1e995;
@@ -82,21 +77,14 @@ unsigned int hash(const void *key, unsigned int len)
     switch (len) {
     case 3: h ^= data[2] << 16;
     case 2: h ^= data[1] << 8;
-    case 1: h ^= data[0];
-            h *= m;
+    case 1:
+        h ^= data[0];
+        h *= m;
     }
     h ^= h >> 13;
     h *= m;
     h ^= h >> 15;
     return h;
-}
-
-unsigned int hashstrW(const wchar_t *key)
-{
-    if (!key) return 0;
-    unsigned int len = (unsigned int)wcslen(key);
-    // Treat as bytes: each wchar_t two bytes (little‑endian order preserved)
-    return hash(key, len * sizeof(wchar_t));
 }
 
 unsigned int hashstr(const char *key)
@@ -105,7 +93,6 @@ unsigned int hashstr(const char *key)
     return hash(key, (unsigned int)strlen(key));
 }
 
-// Sorting functions for bsearch
 static int SortLangPackHashesProc(const LangPackEntry *arg1, const LangPackEntry *arg2)
 {
     if (arg1->englishHash < arg2->englishHash) return -1;
@@ -136,14 +123,14 @@ int LoadLangPack(const QString &szLangPack)
     int entriesAlloced = 0;
     unsigned int linePos = 1;
     bool headersDone = false;
+    Q_UNUSED(headersDone);
 
-    // Read first line to check for UTF-8 BOM (QTextStream handles this)
     line = stream.readLine();
-    if (line.isEmpty() && stream.atEnd()) { file.close(); return 2; }
-    // Original checked BOM manually; skip if present
-    // (We rely on Qt’s codec detection)
+    if (line.isEmpty() && stream.atEnd()) {
+        file.close();
+        return 2;
+    }
 
-    // Header parsing
     while (!stream.atEnd()) {
         line = stream.readLine();
         if (line.isEmpty()) continue;
@@ -151,9 +138,12 @@ int LoadLangPack(const QString &szLangPack)
         char *pline = utf8line.data();
         TrimString(pline);
         if (IsEmpty(pline) || pline[0] == ';') continue;
-        if (pline[0] == '[') break;  // start of body
+        if (pline[0] == '[') break;
         char *pszColon = strchr(pline, ':');
-        if (!pszColon) { file.close(); return 3; }
+        if (!pszColon) {
+            file.close();
+            return 3;
+        }
         *pszColon = 0;
         char *value = pszColon + 1;
         TrimString(value);
@@ -163,40 +153,36 @@ int LoadLangPack(const QString &szLangPack)
         else if (!strcmp(pline, "Author-email")) langPack.authorEmail = QString::fromUtf8(value);
         else if (!strcmp(pline, "RTL")) langPack.rtl = (strcmp(value, "1") == 0);
         else if (!strcmp(pline, "Locale")) {
-            // We store the raw LCID; original used strtol and MAKELCID
             langPack.localeID = (quint32)strtol(value, nullptr, 16);
-            // We won't resolve ANSI codepage; Qt handles Unicode natively.
-            langPack.defaultANSICp = 0;  // no longer needed
+            langPack.defaultANSICp = 0;
         }
     }
 
-    // Body parsing
     while (!stream.atEnd()) {
         QByteArray utf8line = stream.readLine().toUtf8();
         char *pline = utf8line.data();
         if (IsEmpty(pline) || pline[0] == ';') continue;
         TrimStringSimple(pline);
         ConvertBackslashes(pline);
-        if (pline[0] == '[' && pline[strlen(pline)-1] == ']') {
-            // New entry
-            if (langPack.entryCount > 0 && langPack.entry[langPack.entryCount-1].local == nullptr) {
-                free(langPack.entry[langPack.entryCount-1].english);
+        if (pline[0] == '[' && pline[strlen(pline) - 1] == ']') {
+            if (langPack.entryCount > 0 && langPack.entry[langPack.entryCount - 1].local == nullptr) {
+                free(langPack.entry[langPack.entryCount - 1].english);
                 langPack.entryCount--;
             }
             char *pszLine = pline + 1;
-            pline[strlen(pline)-1] = '\0';
+            pline[strlen(pline) - 1] = '\0';
             TrimStringSimple(pszLine);
             if (++langPack.entryCount > entriesAlloced) {
                 entriesAlloced += 128;
                 langPack.entry = (LangPackEntry*)realloc(langPack.entry, sizeof(LangPackEntry) * entriesAlloced);
             }
-            langPack.entry[langPack.entryCount-1].english = nullptr;
-            langPack.entry[langPack.entryCount-1].englishHash = hashstr(pszLine);
-            langPack.entry[langPack.entryCount-1].local = nullptr;
-            langPack.entry[langPack.entryCount-1].wlocal = nullptr;
-            langPack.entry[langPack.entryCount-1].linePos = linePos++;
+            langPack.entry[langPack.entryCount - 1].english = nullptr;
+            langPack.entry[langPack.entryCount - 1].englishHash = hashstr(pszLine);
+            langPack.entry[langPack.entryCount - 1].local = nullptr;
+            langPack.entry[langPack.entryCount - 1].wlocal = nullptr;
+            langPack.entry[langPack.entryCount - 1].linePos = linePos++;
         } else if (langPack.entryCount) {
-            LangPackEntry *E = &langPack.entry[langPack.entryCount-1];
+            LangPackEntry *E = &langPack.entry[langPack.entryCount - 1];
             if (!E->local) {
                 E->local = _strdup(pline);
                 QString wide = QString::fromUtf8(pline);
@@ -204,7 +190,6 @@ int LoadLangPack(const QString &szLangPack)
                 wide.toWCharArray(E->wlocal);
                 E->wlocal[wide.size()] = L'\0';
             } else {
-                // Append newline and the new line
                 size_t oldLen = strlen(E->local);
                 E->local = (char*)realloc(E->local, oldLen + strlen(pline) + 2);
                 strcat(E->local, "\n");
@@ -221,18 +206,16 @@ int LoadLangPack(const QString &szLangPack)
     file.close();
 
     qsort(langPack.entry, langPack.entryCount, sizeof(LangPackEntry),
-          (int(*)(const void*,const void*))SortLangPackHashesProc);
+          (int(*)(const void*, const void*))SortLangPackHashesProc);
 
     return 0;
 }
 
-// LangPackTranslateString is now internal; external code uses LangPackTranslate(QString)
 static QString LangPackTranslateString(const QString &english)
 {
     if (langPack.entryCount == 0 || english.isEmpty())
         return english;
 
-    // Use hash on UTF-8 representation of the English string
     QByteArray utf8 = english.toUtf8();
     unsigned int h = hash(utf8.constData(), utf8.size());
 
@@ -240,9 +223,9 @@ static QString LangPackTranslateString(const QString &english)
     key.englishHash = h;
     LangPackEntry *entry = (LangPackEntry*)bsearch(&key, langPack.entry, langPack.entryCount,
                                                    sizeof(LangPackEntry),
-                                                   (int(*)(const void*,const void*))SortLangPackHashesProc2);
+                                                   (int(*)(const void*, const void*))SortLangPackHashesProc2);
     if (!entry) return english;
-    // Walk backwards to find first entry with same hash (original did this)
+
     while (entry > langPack.entry) {
         entry--;
         if (entry->englishHash != h) {
@@ -258,25 +241,20 @@ QString LangPackTranslate(const QString &english)
     return LangPackTranslateString(english);
 }
 
-// Recursively translate a widget and its children
 static void TranslateWidgetRecursive(QWidget *widget)
 {
     if (!widget) return;
 
-    // Translate window title if it's a top-level widget or has a meaningful title
     QString title = widget->windowTitle();
     if (!title.isEmpty()) {
         widget->setWindowTitle(Translate(title));
     }
 
-    // Translate specific widget types that have text
     const QMetaObject *mo = widget->metaObject();
     if (mo->inherits(&QAbstractButton::staticMetaObject) ||
         mo->inherits(&QLabel::staticMetaObject) ||
         mo->inherits(&QGroupBox::staticMetaObject) ||
         mo->inherits(&QAction::staticMetaObject)) {
-        // These classes have setText/setTitle
-        // For simplicity we just use property “text” if available
         if (widget->property("text").isValid()) {
             QString txt = widget->property("text").toString();
             if (!txt.isEmpty())
@@ -289,7 +267,6 @@ static void TranslateWidgetRecursive(QWidget *widget)
         }
     }
 
-    // Recurse into children
     foreach (QObject *child, widget->children()) {
         QWidget *w = qobject_cast<QWidget*>(child);
         if (w) TranslateWidgetRecursive(w);
@@ -303,32 +280,8 @@ int TranslateDialog(QWidget *widget)
     return 0;
 }
 
-void TranslateMenu(QMenu *menu)
-{
-    if (!menu) return;
-    QList<QAction*> actions = menu->actions();
-    for (QAction *action : actions) {
-        QString text = action->text();
-        if (!text.isEmpty()) {
-            // Preserve shortcut if exists (original used \t)
-            int tabPos = text.indexOf('\t');
-            if (tabPos >= 0) {
-                QString beforeTab = text.left(tabPos);
-                QString afterTab = text.mid(tabPos);
-                action->setText(Translate(beforeTab) + afterTab);
-            } else {
-                action->setText(Translate(text));
-            }
-        }
-        // Also process submenus
-        if (action->menu())
-            TranslateMenu(action->menu());
-    }
-}
-
 void LoadLangPackModule()
 {
-    // Search for langpack_*.txt in application directory
     QString appDir = QApplication::applicationDirPath();
     QDir dir(appDir);
     QStringList filters;

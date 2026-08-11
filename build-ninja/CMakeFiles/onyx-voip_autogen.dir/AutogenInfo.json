@@ -11,30 +11,43 @@
 		"C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/4.3.1/CMakeSystem.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/4.3.1/CMakeCCompiler.cmake",
 		"C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/4.3.1/CMakeCXXCompiler.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/CMakeGenericSystem.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/Platform/Windows.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/CMakeCXXInformation.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/CMakeCInformation.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/Compiler/GNU-CXX.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/Compiler/GNU.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Compiler/MSVC-C.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Compiler/MSVC.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-GNU.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-MSVC-C.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake",
 		"C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/4.3.1/CMakeRCCompiler.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/CMakeRCInformation.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-windres.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Internal/CMakeCLinkerInformation.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Linker/MSVC-C.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Linker/MSVC.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC-C.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/CMakeCXXInformation.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Compiler/MSVC-CXX.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Compiler/MSVC.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-MSVC-CXX.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/Platform/Linker/Windows-CXX.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU-CXX.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/Platform/Linker/GNU.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Linker/MSVC-CXX.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Linker/MSVC.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC-CXX.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -94,8 +107,9 @@
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/FindThreads.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/CheckLibraryExists.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/CheckIncludeFileCXX.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/CheckIncludeFile.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/CheckCSourceCompiles.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/FindPackageMessage.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake",
@@ -356,11 +370,16 @@
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Xml/Qt6XmlTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Xml/Qt6XmlAdditionalTargetInfo.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Xml/Qt6XmlVersionlessAliasTargets.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlConfigVersion.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlConfigVersionImpl.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Quick/Qt6QuickConfigVersion.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Quick/Qt6QuickConfigVersionImpl.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake",
 		"C:/mingw64/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlDependencies.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsConfigVersion.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsConfigVersionImpl.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsConfig.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsDependencies.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfigVersion.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfigVersionImpl.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfig.cmake",
@@ -372,6 +391,24 @@
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsAdditionalTargetInfo.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsVersionlessTargets.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargetsPrecheck.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets-debug.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsAdditionalTargetInfo.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsVersionlessTargets.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6SvgToQmlMacros.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlConfigVersion.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlConfigVersionImpl.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlDependencies.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfigVersion.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfigVersionImpl.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfig.cmake",
+		"C:/mingw64/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsDependencies.cmake",
+		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsTargetsPrecheck.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlIntegration/Qt6QmlIntegrationConfigVersion.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlIntegration/Qt6QmlIntegrationConfigVersionImpl.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlIntegration/Qt6QmlIntegrationConfig.cmake",
@@ -1035,29 +1072,6 @@
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QTcpServerConnectionFactoryPluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QTcpServerConnectionFactoryPluginAdditionalTargetInfo.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlVersionlessAliasTargets.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Quick/Qt6QuickConfigVersion.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Quick/Qt6QuickConfigVersionImpl.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsConfigVersion.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsConfigVersionImpl.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsConfig.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsDependencies.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfigVersion.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfigVersionImpl.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfig.cmake",
-		"C:/mingw64/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsDependencies.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6QmlToolsTargetsPrecheck.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargetsPrecheck.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets-debug.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets-relwithdebinfo.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsAdditionalTargetInfo.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsVersionlessTargets.cmake",
-		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6SvgToQmlMacros.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlModels/Qt6QmlModelsConfigVersion.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlModels/Qt6QmlModelsConfigVersionImpl.cmake",
 		"C:/Qt/6.11.1/msvc2022_64/lib/cmake/Qt6QmlModels/Qt6QmlModelsConfig.cmake",
@@ -1127,57 +1141,357 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/YUVANESH/Downloads/Onyx/lib/CSVFile.h",
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/CListCtrl_LabelTip.h",
 			"MU",
-			"ZJOKMXDKB7/moc_CSVFile.cpp",
+			"CNRV46JDGV/moc_CListCtrl_LabelTip.cpp",
 			null
 		],
 		[
-			"C:/Users/YUVANESH/Downloads/Onyx/lib/Crypto.h",
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/CListCtrl_ToolTip.h",
 			"MU",
-			"ZJOKMXDKB7/moc_Crypto.cpp",
+			"CNRV46JDGV/moc_CListCtrl_ToolTip.cpp",
 			null
 		],
 		[
-			"C:/Users/YUVANESH/Downloads/Onyx/lib/Hid.h",
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/CMask.h",
 			"MU",
-			"ZJOKMXDKB7/moc_Hid.cpp",
+			"CNRV46JDGV/moc_CMask.cpp",
 			null
 		],
 		[
-			"C:/Users/YUVANESH/Downloads/Onyx/lib/Markup.h",
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/CSVFile.h",
 			"MU",
-			"ZJOKMXDKB7/moc_Markup.cpp",
+			"CNRV46JDGV/moc_CSVFile.cpp",
 			null
 		],
 		[
-			"C:/Users/YUVANESH/Downloads/Onyx/lib/MessageBoxX.h",
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/Crypto.h",
 			"MU",
-			"ZJOKMXDKB7/moc_MessageBoxX.cpp",
+			"CNRV46JDGV/moc_Crypto.cpp",
 			null
 		],
 		[
-			"C:/Users/YUVANESH/Downloads/Onyx/lib/ModelessMessageBox.h",
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/Hid.h",
 			"MU",
-			"ZJOKMXDKB7/moc_ModelessMessageBox.cpp",
+			"CNRV46JDGV/moc_Hid.cpp",
 			null
 		],
 		[
-			"C:/Users/YUVANESH/Downloads/Onyx/lib/OnyxUtils.h",
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/Markup.h",
 			"MU",
-			"ZJOKMXDKB7/moc_OnyxUtils.cpp",
+			"CNRV46JDGV/moc_Markup.cpp",
 			null
 		],
 		[
-			"C:/Users/YUVANESH/Downloads/Onyx/lib/StdioFileEx.h",
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/MessageBoxX.h",
 			"MU",
-			"ZJOKMXDKB7/moc_StdioFileEx.cpp",
+			"CNRV46JDGV/moc_MessageBoxX.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/ModelessMessageBox.h",
+			"MU",
+			"CNRV46JDGV/moc_ModelessMessageBox.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/OnyxUtils.h",
+			"MU",
+			"CNRV46JDGV/moc_OnyxUtils.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/StdioFileEx.h",
+			"MU",
+			"CNRV46JDGV/moc_StdioFileEx.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/TemplateSmartPtr.h",
+			"MU",
+			"CNRV46JDGV/moc_TemplateSmartPtr.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/VisualStylesXP.h",
+			"MU",
+			"CNRV46JDGV/moc_VisualStylesXP.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/ggets.h",
+			"MU",
+			"CNRV46JDGV/moc_ggets.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/hidapi.h",
+			"MU",
+			"CNRV46JDGV/moc_hidapi.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/include/langpack.h",
+			"MU",
+			"CNRV46JDGV/moc_langpack.cpp",
 			null
 		],
 		[
 			"C:/Users/YUVANESH/Downloads/Onyx/source/core/ConfigManager.h",
 			"MU",
 			"ABAUAXXAI3/moc_ConfigManager.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/AAOptionsDlg.h",
+			"MU",
+			"NSCEOGMIZ6/moc_AAOptionsDlg.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/AccountDlg.h",
+			"MU",
+			"NSCEOGMIZ6/moc_AccountDlg.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/AddDlg.h",
+			"MU",
+			"NSCEOGMIZ6/moc_AddDlg.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/BaseDialog.h",
+			"MU",
+			"NSCEOGMIZ6/moc_BaseDialog.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/ButtonBottom.h",
+			"MU",
+			"NSCEOGMIZ6/moc_ButtonBottom.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/ButtonDialer.h",
+			"MU",
+			"NSCEOGMIZ6/moc_ButtonDialer.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/ButtonEx.h",
+			"MU",
+			"NSCEOGMIZ6/moc_ButtonEx.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/ButtonSafe.h",
+			"MU",
+			"NSCEOGMIZ6/moc_ButtonSafe.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/CListCtrl_SortItemsEx.h",
+			"MU",
+			"NSCEOGMIZ6/moc_CListCtrl_SortItemsEx.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/CListCtrl_Sortable.h",
+			"MU",
+			"NSCEOGMIZ6/moc_CListCtrl_Sortable.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/Calls.h",
+			"MU",
+			"NSCEOGMIZ6/moc_Calls.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/ClosableTabCtrl.h",
+			"MU",
+			"NSCEOGMIZ6/moc_ClosableTabCtrl.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/Contacts.h",
+			"MU",
+			"NSCEOGMIZ6/moc_Contacts.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/Dialer.h",
+			"MU",
+			"NSCEOGMIZ6/moc_Dialer.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/FeatureCodesDlg.h",
+			"MU",
+			"NSCEOGMIZ6/moc_FeatureCodesDlg.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/IconButton.h",
+			"MU",
+			"NSCEOGMIZ6/moc_IconButton.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/LevelsSliderCtrl.h",
+			"MU",
+			"NSCEOGMIZ6/moc_LevelsSliderCtrl.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/MMNotificationClient.h",
+			"MU",
+			"NSCEOGMIZ6/moc_MMNotificationClient.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/MessagesDlg.h",
+			"MU",
+			"NSCEOGMIZ6/moc_MessagesDlg.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/Preview.h",
+			"MU",
+			"NSCEOGMIZ6/moc_Preview.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/Resource.h",
+			"MU",
+			"NSCEOGMIZ6/moc_Resource.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/RinginDlg.h",
+			"MU",
+			"NSCEOGMIZ6/moc_RinginDlg.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/SettingsDlg.h",
+			"MU",
+			"NSCEOGMIZ6/moc_SettingsDlg.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/ShortcutsDlg.h",
+			"MU",
+			"NSCEOGMIZ6/moc_ShortcutsDlg.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/StatusBar.h",
+			"MU",
+			"NSCEOGMIZ6/moc_StatusBar.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/Transfer.h",
+			"MU",
+			"NSCEOGMIZ6/moc_Transfer.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/addons.h",
+			"MU",
+			"NSCEOGMIZ6/moc_addons.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/afxinet.h",
+			"MU",
+			"NSCEOGMIZ6/moc_afxinet.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/afxmt.h",
+			"MU",
+			"NSCEOGMIZ6/moc_afxmt.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/afxvisualmanager.h",
+			"MU",
+			"NSCEOGMIZ6/moc_afxvisualmanager.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/afxvisualmanagerwindows.h",
+			"MU",
+			"NSCEOGMIZ6/moc_afxvisualmanagerwindows.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/atlrx.h",
+			"MU",
+			"NSCEOGMIZ6/moc_atlrx.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/const.h",
+			"MU",
+			"NSCEOGMIZ6/moc_const.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/define.h",
+			"MU",
+			"NSCEOGMIZ6/moc_define.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/global.h",
+			"MU",
+			"NSCEOGMIZ6/moc_global.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/jumplist.h",
+			"MU",
+			"NSCEOGMIZ6/moc_jumplist.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/mainDlg.h",
+			"MU",
+			"NSCEOGMIZ6/moc_mainDlg.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/onyx.h",
+			"MU",
+			"NSCEOGMIZ6/moc_onyx.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/settings.h",
+			"MU",
+			"NSCEOGMIZ6/moc_settings.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/stdafx.h",
+			"MU",
+			"NSCEOGMIZ6/moc_stdafx.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/targetver-xp.h",
+			"MU",
+			"NSCEOGMIZ6/moc_targetver-xp.cpp",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/include/targetver.h",
+			"MU",
+			"NSCEOGMIZ6/moc_targetver.cpp",
 			null
 		],
 		[
@@ -1217,10 +1531,12 @@
 	"MOC_DEFINITIONS" : 
 	[
 		"NOMINMAX",
+		"ONYX_HAS_PJSIP=1",
+		"PJMEDIA_HAS_VIDEO=1",
+		"PJMEDIA_VIDEO_DEV_HAS_AVI=1",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NETWORK_LIB",
-		"QT_NO_DEBUG",
 		"QT_OPENGL_LIB",
 		"QT_QMLINTEGRATION_LIB",
 		"QT_QML_LIB",
@@ -1230,10 +1546,12 @@
 		"UNICODE",
 		"WIN32",
 		"WIN64",
+		"_CRT_SECURE_NO_WARNINGS",
 		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
 		"_UNICODE",
 		"_WIN64",
-		"_WINDOWS"
+		"_WINDOWS",
+		"_WINSOCK_DEPRECATED_NO_WARNINGS"
 	],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -1245,13 +1563,23 @@
 	"MOC_INCLUDES" : 
 	[
 		"C:/Users/YUVANESH/Downloads/Onyx/source",
+		"C:/Users/YUVANESH/Downloads/Onyx/source/include",
+		"C:/Users/YUVANESH/Downloads/Onyx/source/src",
 		"C:/Users/YUVANESH/Downloads/Onyx/source/core",
 		"C:/Users/YUVANESH/Downloads/Onyx/source/models",
 		"C:/Users/YUVANESH/Downloads/Onyx/source/network",
 		"C:/Users/YUVANESH/Downloads/Onyx/lib",
+		"C:/Users/YUVANESH/Downloads/Onyx/lib/include",
+		"C:/Users/YUVANESH/Downloads/Onyx/lib/src",
 		"C:/Users/YUVANESH/Downloads/Onyx/lib/jsoncpp",
 		"C:/Users/YUVANESH/Downloads/Onyx/lib/jsoncpp/json",
-		"C:/Users/YUVANESH/Downloads/Onyx/lib/compat",
+		"C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib/include",
+		"C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjlib-util/include",
+		"C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjmedia/include",
+		"C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjnath/include",
+		"C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/pjsip/include",
+		"C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/lib/pjlib/include",
+		"C:/Users/YUVANESH/Downloads/Onyx/thirdparty/pjproject-2.17/pjproject-2.17/lib/pjmedia/include",
 		"C:/Qt/6.11.1/msvc2022_64/include/QtCore",
 		"C:/Qt/6.11.1/msvc2022_64/include",
 		"C:/Qt/6.11.1/msvc2022_64/mkspecs/win32-msvc",
@@ -1259,17 +1587,10 @@
 		"C:/Qt/6.11.1/msvc2022_64/include/QtWidgets",
 		"C:/Qt/6.11.1/msvc2022_64/include/QtNetwork",
 		"C:/Qt/6.11.1/msvc2022_64/include/QtXml",
+		"C:/Qt/6.11.1/msvc2022_64/include/QtQuick",
 		"C:/Qt/6.11.1/msvc2022_64/include/QtQml",
 		"C:/Qt/6.11.1/msvc2022_64/include/QtQmlIntegration",
-		"C:/Qt/6.11.1/msvc2022_64/include/QtQuick",
-		"C:/Qt/6.11.1/msvc2022_64/include/QtOpenGL",
-		"C:/mingw64/include/c++/15.2.0",
-		"C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32",
-		"C:/mingw64/include/c++/15.2.0/backward",
-		"C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include",
-		"C:/mingw64/include",
-		"C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed",
-		"C:/mingw64/x86_64-w64-mingw32/include"
+		"C:/Qt/6.11.1/msvc2022_64/include/QtOpenGL"
 	],
 	"MOC_MACRO_NAMES" : 
 	[
@@ -1280,18 +1601,10 @@
 		"Q_GADGET_EXPORT",
 		"Q_ENUM_NS"
 	],
-	"MOC_OPTIONS" : [ "-DWIN32" ],
+	"MOC_OPTIONS" : [ "-DWIN32", "--compiler-flavor=msvc" ],
 	"MOC_PATH_PREFIX" : false,
-	"MOC_PREDEFS_CMD" : 
-	[
-		"C:/mingw64/bin/c++.exe",
-		"-std=c++17",
-		"-w",
-		"-dM",
-		"-E",
-		"C:/mingw64/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp"
-	],
-	"MOC_PREDEFS_FILE" : "C:/Users/YUVANESH/Downloads/Onyx/build-ninja/onyx-voip_autogen/moc_predefs.h",
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
@@ -1304,24 +1617,162 @@
 	"SETTINGS_FILE" : "C:/Users/YUVANESH/Downloads/Onyx/build-ninja/CMakeFiles/onyx-voip_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/CSVFile.cpp", "MU", null ],
-		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/Crypto.cpp", "MU", null ],
-		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/Hid.cpp", "MU", null ],
-		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/Markup.cpp", "MU", null ],
-		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/MessageBoxX.cpp", "MU", null ],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/hid.c", "MU", null ],
 		[
-			"C:/Users/YUVANESH/Downloads/Onyx/lib/ModelessMessageBox.cpp",
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/src/CListCtrl_ToolTip.cpp",
 			"MU",
 			null
 		],
-		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/OnyxUtils.cpp", "MU", null ],
-		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/StdioFileEx.cpp", "MU", null ],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/src/CMask.cpp", "MU", null ],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/src/CSVFile.cpp", "MU", null ],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/src/Crypto.cpp", "MU", null ],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/src/Hid.cpp", "MU", null ],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/src/Markup.cpp", "MU", null ],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/src/MessageBoxX.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/src/ModelessMessageBox.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/src/OnyxUtils.cpp", "MU", null ],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/src/StdioFileEx.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/lib/src/VisualStylesXP.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/lib/src/langpack.cpp", "MU", null ],
 		[
 			"C:/Users/YUVANESH/Downloads/Onyx/source/network/SipController.cpp",
 			"MU",
 			null
 		],
-		[ "C:/Users/YUVANESH/Downloads/Onyx/source/ui/main.cpp", "MU", null ]
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/AAOptionsDlg.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/AccountDlg.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/source/src/AddDlg.cpp", "MU", null ],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/BaseDialog.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/ButtonBottom.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/ButtonDialer.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/ButtonEx.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/ButtonSafe.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/CListCtrl_SortItemsEx.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/CListCtrl_Sortable.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/source/src/Calls.cpp", "MU", null ],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/ClosableTabCtrl.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/Contacts.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/source/src/Dialer.cpp", "MU", null ],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/FeatureCodesDlg.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/IconButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/LevelsSliderCtrl.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/MessagesDlg.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/source/src/Preview.cpp", "MU", null ],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/RinginDlg.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/SettingsDlg.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/ShortcutsDlg.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/StatusBar.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/Transfer.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/source/src/global.cpp", "MU", null ],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/jumplist.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/source/src/mainDlg.cpp", "MU", null ],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/source/src/onyx.cpp", "MU", null ],
+		[
+			"C:/Users/YUVANESH/Downloads/Onyx/source/src/settings.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/YUVANESH/Downloads/Onyx/source/src/stdafx.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

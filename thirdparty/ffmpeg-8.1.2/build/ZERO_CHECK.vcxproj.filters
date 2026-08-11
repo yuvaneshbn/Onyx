@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\ffmpeg-8.1.2\build\CMakeFiles\f9957ecf72161e52e7e318a82e5b1416\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{458EFA88-144A-3C27-B88E-DB297AD4BD88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

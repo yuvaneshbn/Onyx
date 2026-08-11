@@ -1,0 +1,23 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/pjlib/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/third_party/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/third_party/g7221/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/third_party/gsm/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/third_party/ilbc/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/third_party/resample/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/third_party/speex/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/third_party/srtp/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/third_party/webrtc/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/third_party/webrtc_aec3/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/third_party/yuv/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/pjlib-util/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/pjnath/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/pjmedia/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/pjsip/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/Onyx/build-pjproject-msvc/pjsip-apps/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

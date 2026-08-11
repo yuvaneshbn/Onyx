@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/build-vs/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/build-vs/src/cmake_install.cmake",
+		"C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/hidapi-hidapi-0.14.0/build-vs/src/windows/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -40,15 +40,12 @@ int LoadLangPack(const QString &szLangPack);
 void LoadLangPackModule();
 void UnloadLangPackModule();
 int TranslateDialog(QWidget *widget);           // was HWND
-void TranslateMenu(QMenu *menu);               // new overload for QMenu
-
 // Returns a pointer to the translated string (now a QByteArray or wchar_t*).
 // In Qt we return QString for Unicode convenience.
 QString LangPackTranslate(const QString &english);
 
 // Original low-level hash functions kept unchanged
 unsigned int hash(const void *key, unsigned int len);
-unsigned int hashstrW(const wchar_t *key);
 unsigned int hashstr(const char *key);
 
 // Inline helper for backwards compatibility (calls LangPackTranslate)

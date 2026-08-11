@@ -1,15 +1,16 @@
 // ButtonBottom.cpp
+// ButtonBottom.cpp
 #include "ButtonBottom.h"
 #include <QPainter>
 #include <QStyleOptionButton>
 
 ButtonBottom::ButtonBottom(QWidget *parent)
     : QPushButton(parent)
-    , m_clrButton(255, 255, 255)        // White
-    , m_clrButtonHover(224, 238, 249)   // Light blue
-    , m_clrButtonPushed(92, 145, 219)   // Medium blue
-    , m_clrButtonText(0, 0, 0)          // Black
-    , m_clrButtonTextPushed(255, 255, 255) // White
+    , m_clrButton(45, 45, 48)            // Dark grey matching dark theme
+    , m_clrButtonHover(60, 60, 65)      // Hover highlight
+    , m_clrButtonPushed(92, 145, 219)   // Medium blue when pressed
+    , m_clrButtonText(240, 240, 240)    // Light text
+    , m_clrButtonTextPushed(255, 255, 255) // White text
 {
     // Mimic flat style: no border, transparent
     setFlat(true);

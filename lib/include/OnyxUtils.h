@@ -38,10 +38,7 @@ namespace Onyx
     QString PjToStr(const pj_str_t* str, bool utf = false);
     QString Utf8DecodeUni(const char* str);
     QByteArray Utf8EncodeUni(const QString& str);
-    QByteArray UnicodeToAnsi(const QString& str);
-    QString AnsiToUnicode(const QByteArray& str);
     QString AnsiToWideChar(const char* str);
-    QByteArray StringToPjString(const QString& str);
     pj_str_t StrToPjStr(const QString& str);
     char* WideCharToPjStr(const QString& str);
     void OpenURL(const QString& url);

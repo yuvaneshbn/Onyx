@@ -97,13 +97,6 @@ template <> constexpr inline auto CmainDlg::qt_create_metaobjectdata<qt_meta_tag
         "OnQueryEndSession",
         "BOOL",
         "OnClose",
-        "OnCtlColor",
-        "HBRUSH",
-        "CDC*",
-        "pDC",
-        "CWnd*",
-        "pWnd",
-        "nCtlColor",
         "OnDeviceChange",
         "nEventType",
         "DWORD_PTR",
@@ -157,9 +150,6 @@ template <> constexpr inline auto CmainDlg::qt_create_metaobjectdata<qt_meta_tag
         "onUsersDirectoryLoaded",
         "onShortcutsURLLoaded",
         "onCustomLoaded",
-        "OnUpdatePane",
-        "CCmdUI*",
-        "pCmdUI",
         "startTimer",
         "id",
         "interval",
@@ -276,163 +266,155 @@ template <> constexpr inline auto CmainDlg::qt_create_metaobjectdata<qt_meta_tag
         QtMocHelpers::SlotData<BOOL()>(54, 2, QMC::AccessPublic, 0x80000000 | 55),
         // Slot 'OnClose'
         QtMocHelpers::SlotData<void()>(56, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'OnCtlColor'
-        QtMocHelpers::SlotData<HBRUSH(CDC *, CWnd *, UINT)>(57, 2, QMC::AccessPublic, 0x80000000 | 58, {{
-            { 0x80000000 | 59, 60 }, { 0x80000000 | 61, 62 }, { 0x80000000 | 45, 63 },
-        }}),
         // Slot 'OnDeviceChange'
-        QtMocHelpers::SlotData<BOOL(UINT, DWORD_PTR)>(64, 2, QMC::AccessPublic, 0x80000000 | 55, {{
-            { 0x80000000 | 45, 65 }, { 0x80000000 | 66, 67 },
+        QtMocHelpers::SlotData<BOOL(UINT, DWORD_PTR)>(57, 2, QMC::AccessPublic, 0x80000000 | 55, {{
+            { 0x80000000 | 45, 58 }, { 0x80000000 | 59, 60 },
         }}),
         // Slot 'OnSessionChange'
-        QtMocHelpers::SlotData<void(UINT, UINT)>(68, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 45, 69 }, { 0x80000000 | 45, 70 },
+        QtMocHelpers::SlotData<void(UINT, UINT)>(61, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 45, 62 }, { 0x80000000 | 45, 63 },
         }}),
         // Slot 'OnMove'
-        QtMocHelpers::SlotData<void(int, int)>(71, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 72 }, { QMetaType::Int, 73 },
+        QtMocHelpers::SlotData<void(int, int)>(64, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 65 }, { QMetaType::Int, 66 },
         }}),
         // Slot 'OnSize'
-        QtMocHelpers::SlotData<void(UINT, int, int)>(74, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 45, 75 }, { QMetaType::Int, 51 }, { QMetaType::Int, 76 },
+        QtMocHelpers::SlotData<void(UINT, int, int)>(67, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 45, 68 }, { QMetaType::Int, 51 }, { QMetaType::Int, 69 },
         }}),
         // Slot 'onShellHookMessage'
-        QtMocHelpers::SlotData<void()>(77, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(70, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'onCallAnswer'
-        QtMocHelpers::SlotData<LRESULT(int, int)>(78, 2, QMC::AccessPublic, 0x80000000 | 79, {{
+        QtMocHelpers::SlotData<LRESULT(int, int)>(71, 2, QMC::AccessPublic, 0x80000000 | 72, {{
             { QMetaType::Int, 10 }, { QMetaType::Int, 12 },
         }}),
         // Slot 'onCallAnswer'
-        QtMocHelpers::SlotData<LRESULT(int)>(78, 2, QMC::AccessPublic | QMC::MethodCloned, 0x80000000 | 79, {{
+        QtMocHelpers::SlotData<LRESULT(int)>(71, 2, QMC::AccessPublic | QMC::MethodCloned, 0x80000000 | 72, {{
             { QMetaType::Int, 10 },
         }}),
         // Slot 'onCallHangup'
-        QtMocHelpers::SlotData<LRESULT(int)>(80, 2, QMC::AccessPublic, 0x80000000 | 79, {{
+        QtMocHelpers::SlotData<LRESULT(int)>(73, 2, QMC::AccessPublic, 0x80000000 | 72, {{
             { QMetaType::Int, 10 },
         }}),
         // Slot 'onTabIconUpdate'
-        QtMocHelpers::SlotData<LRESULT(int)>(81, 2, QMC::AccessPublic, 0x80000000 | 79, {{
+        QtMocHelpers::SlotData<LRESULT(int)>(74, 2, QMC::AccessPublic, 0x80000000 | 72, {{
             { QMetaType::Int, 10 },
         }}),
         // Slot 'onPlayerPlay'
-        QtMocHelpers::SlotData<void(int, const QString &)>(82, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 83 }, { QMetaType::QString, 84 },
+        QtMocHelpers::SlotData<void(int, const QString &)>(75, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 76 }, { QMetaType::QString, 77 },
         }}),
         // Slot 'onPlayerPlay'
-        QtMocHelpers::SlotData<void(int)>(82, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
-            { QMetaType::Int, 83 },
+        QtMocHelpers::SlotData<void(int)>(75, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
+            { QMetaType::Int, 76 },
         }}),
         // Slot 'onPlayerStop'
-        QtMocHelpers::SlotData<void(int, int)>(85, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(int, int)>(78, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 3 }, { QMetaType::Int, 12 },
         }}),
         // Slot 'onPlayerStop'
-        QtMocHelpers::SlotData<void(int)>(85, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(int)>(78, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
             { QMetaType::Int, 3 },
         }}),
         // Slot 'onPlayerStop'
-        QtMocHelpers::SlotData<void()>(85, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(78, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void),
         // Slot 'onCommandLine'
-        QtMocHelpers::SlotData<void(const QString &)>(86, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 87 },
+        QtMocHelpers::SlotData<void(const QString &)>(79, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 80 },
         }}),
         // Slot 'OnAccount'
-        QtMocHelpers::SlotData<void(WPARAM, LPARAM)>(88, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(WPARAM, LPARAM)>(81, 2, QMC::AccessPublic, QMetaType::Void, {{
             { 0x80000000 | 42, 3 }, { 0x80000000 | 43, 12 },
         }}),
         // Slot 'OnAccount'
-        QtMocHelpers::SlotData<void(WPARAM)>(88, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(WPARAM)>(81, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
             { 0x80000000 | 42, 3 },
         }}),
         // Slot 'OnAccount'
-        QtMocHelpers::SlotData<void()>(88, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(81, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void),
         // Slot 'OnMenuAccountAdd'
-        QtMocHelpers::SlotData<void()>(89, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(82, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnMenuAccountEdit'
-        QtMocHelpers::SlotData<void(int)>(90, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(int)>(83, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 46 },
         }}),
         // Slot 'OnMenuAccountChange'
-        QtMocHelpers::SlotData<void(int)>(91, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(int)>(84, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 46 },
         }}),
         // Slot 'OnMenuAccountLocalEdit'
-        QtMocHelpers::SlotData<void()>(92, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(85, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnMenuCustomRange'
-        QtMocHelpers::SlotData<void(int)>(93, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(int)>(86, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 46 },
         }}),
         // Slot 'OnMenuSettings'
-        QtMocHelpers::SlotData<void()>(94, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(87, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnMenuShortcuts'
-        QtMocHelpers::SlotData<void()>(95, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(88, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnMenuAlwaysOnTop'
-        QtMocHelpers::SlotData<void()>(96, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(89, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnMenuLog'
-        QtMocHelpers::SlotData<void()>(97, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(90, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnMenuExit'
-        QtMocHelpers::SlotData<void()>(98, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(91, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnTimer'
-        QtMocHelpers::SlotData<void(int)>(99, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 100 },
+        QtMocHelpers::SlotData<void(int)>(92, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 93 },
         }}),
         // Slot 'OnTcnSelchangeTab'
-        QtMocHelpers::SlotData<void(int)>(101, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 102 },
+        QtMocHelpers::SlotData<void(int)>(94, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 95 },
         }}),
         // Slot 'OnTcnSelchangingTab'
-        QtMocHelpers::SlotData<void(int)>(103, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 102 },
+        QtMocHelpers::SlotData<void(int)>(96, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 95 },
         }}),
         // Slot 'OnMenuWebsite'
-        QtMocHelpers::SlotData<void()>(104, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(97, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnMenuHelp'
-        QtMocHelpers::SlotData<void()>(105, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(98, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnMenuAddl'
-        QtMocHelpers::SlotData<void()>(106, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(99, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnMuteInput'
-        QtMocHelpers::SlotData<void()>(107, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(100, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnMuteOutput'
-        QtMocHelpers::SlotData<void()>(108, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(101, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnCheckUpdates'
-        QtMocHelpers::SlotData<void()>(109, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(102, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'CheckUpdates'
-        QtMocHelpers::SlotData<void()>(110, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(103, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'OnUpdateCheckerLoaded'
-        QtMocHelpers::SlotData<LRESULT(URLGetAsyncData *)>(111, 2, QMC::AccessPublic, 0x80000000 | 79, {{
-            { 0x80000000 | 112, 113 },
+        QtMocHelpers::SlotData<LRESULT(URLGetAsyncData *)>(104, 2, QMC::AccessPublic, 0x80000000 | 72, {{
+            { 0x80000000 | 105, 106 },
         }}),
         // Slot 'onUsersDirectoryLoaded'
-        QtMocHelpers::SlotData<LRESULT(URLGetAsyncData *)>(114, 2, QMC::AccessPublic, 0x80000000 | 79, {{
-            { 0x80000000 | 112, 113 },
+        QtMocHelpers::SlotData<LRESULT(URLGetAsyncData *)>(107, 2, QMC::AccessPublic, 0x80000000 | 72, {{
+            { 0x80000000 | 105, 106 },
         }}),
         // Slot 'onShortcutsURLLoaded'
-        QtMocHelpers::SlotData<void(URLGetAsyncData *)>(115, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 112, 113 },
+        QtMocHelpers::SlotData<void(URLGetAsyncData *)>(108, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 105, 106 },
         }}),
         // Slot 'onCustomLoaded'
-        QtMocHelpers::SlotData<LRESULT(WPARAM, LPARAM)>(116, 2, QMC::AccessPublic, 0x80000000 | 79, {{
+        QtMocHelpers::SlotData<LRESULT(WPARAM, LPARAM)>(109, 2, QMC::AccessPublic, 0x80000000 | 72, {{
             { 0x80000000 | 42, 3 }, { 0x80000000 | 43, 12 },
         }}),
-        // Slot 'OnUpdatePane'
-        QtMocHelpers::SlotData<void(CCmdUI *)>(117, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 118, 119 },
+        // Slot 'startTimer'
+        QtMocHelpers::SlotData<void(int, int, std::function<void()>)>(110, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 111 }, { QMetaType::Int, 112 }, { 0x80000000 | 113, 114 },
         }}),
         // Slot 'startTimer'
-        QtMocHelpers::SlotData<void(int, int, std::function<void()>)>(120, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 121 }, { QMetaType::Int, 122 }, { 0x80000000 | 123, 124 },
-        }}),
-        // Slot 'startTimer'
-        QtMocHelpers::SlotData<void(int, int)>(120, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
-            { QMetaType::Int, 121 }, { QMetaType::Int, 122 },
+        QtMocHelpers::SlotData<void(int, int)>(110, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
+            { QMetaType::Int, 111 }, { QMetaType::Int, 112 },
         }}),
         // Slot 'killTimer'
-        QtMocHelpers::SlotData<void(int)>(125, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 121 },
+        QtMocHelpers::SlotData<void(int)>(115, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 111 },
         }}),
         // Slot 'timerEvent'
-        QtMocHelpers::SlotData<void(QTimerEvent *)>(126, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 127, 128 },
+        QtMocHelpers::SlotData<void(QTimerEvent *)>(116, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 117, 118 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -489,63 +471,60 @@ void CmainDlg::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 29: { BOOL _r = _t->OnQueryEndSession();
             if (_a[0]) *reinterpret_cast<BOOL*>(_a[0]) = std::move(_r); }  break;
         case 30: _t->OnClose(); break;
-        case 31: { HBRUSH _r = _t->OnCtlColor((*reinterpret_cast<std::add_pointer_t<CDC*>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<CWnd*>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<UINT>>(_a[3])));
-            if (_a[0]) *reinterpret_cast<HBRUSH*>(_a[0]) = std::move(_r); }  break;
-        case 32: { BOOL _r = _t->OnDeviceChange((*reinterpret_cast<std::add_pointer_t<UINT>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<DWORD_PTR>>(_a[2])));
+        case 31: { BOOL _r = _t->OnDeviceChange((*reinterpret_cast<std::add_pointer_t<UINT>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<DWORD_PTR>>(_a[2])));
             if (_a[0]) *reinterpret_cast<BOOL*>(_a[0]) = std::move(_r); }  break;
-        case 33: _t->OnSessionChange((*reinterpret_cast<std::add_pointer_t<UINT>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<UINT>>(_a[2]))); break;
-        case 34: _t->OnMove((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
-        case 35: _t->OnSize((*reinterpret_cast<std::add_pointer_t<UINT>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3]))); break;
-        case 36: _t->onShellHookMessage(); break;
-        case 37: { LRESULT _r = _t->onCallAnswer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])));
+        case 32: _t->OnSessionChange((*reinterpret_cast<std::add_pointer_t<UINT>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<UINT>>(_a[2]))); break;
+        case 33: _t->OnMove((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
+        case 34: _t->OnSize((*reinterpret_cast<std::add_pointer_t<UINT>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3]))); break;
+        case 35: _t->onShellHookMessage(); break;
+        case 36: { LRESULT _r = _t->onCallAnswer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])));
             if (_a[0]) *reinterpret_cast<LRESULT*>(_a[0]) = std::move(_r); }  break;
-        case 38: { LRESULT _r = _t->onCallAnswer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 37: { LRESULT _r = _t->onCallAnswer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<LRESULT*>(_a[0]) = std::move(_r); }  break;
-        case 39: { LRESULT _r = _t->onCallHangup((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 38: { LRESULT _r = _t->onCallHangup((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<LRESULT*>(_a[0]) = std::move(_r); }  break;
-        case 40: { LRESULT _r = _t->onTabIconUpdate((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 39: { LRESULT _r = _t->onTabIconUpdate((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<LRESULT*>(_a[0]) = std::move(_r); }  break;
-        case 41: _t->onPlayerPlay((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
-        case 42: _t->onPlayerPlay((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 43: _t->onPlayerStop((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
-        case 44: _t->onPlayerStop((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 45: _t->onPlayerStop(); break;
-        case 46: _t->onCommandLine((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 47: _t->OnAccount((*reinterpret_cast<std::add_pointer_t<WPARAM>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<LPARAM>>(_a[2]))); break;
-        case 48: _t->OnAccount((*reinterpret_cast<std::add_pointer_t<WPARAM>>(_a[1]))); break;
-        case 49: _t->OnAccount(); break;
-        case 50: _t->OnMenuAccountAdd(); break;
-        case 51: _t->OnMenuAccountEdit((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 52: _t->OnMenuAccountChange((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 53: _t->OnMenuAccountLocalEdit(); break;
-        case 54: _t->OnMenuCustomRange((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 55: _t->OnMenuSettings(); break;
-        case 56: _t->OnMenuShortcuts(); break;
-        case 57: _t->OnMenuAlwaysOnTop(); break;
-        case 58: _t->OnMenuLog(); break;
-        case 59: _t->OnMenuExit(); break;
-        case 60: _t->OnTimer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 61: _t->OnTcnSelchangeTab((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 62: _t->OnTcnSelchangingTab((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 63: _t->OnMenuWebsite(); break;
-        case 64: _t->OnMenuHelp(); break;
-        case 65: _t->OnMenuAddl(); break;
-        case 66: _t->OnMuteInput(); break;
-        case 67: _t->OnMuteOutput(); break;
-        case 68: _t->OnCheckUpdates(); break;
-        case 69: _t->CheckUpdates(); break;
-        case 70: { LRESULT _r = _t->OnUpdateCheckerLoaded((*reinterpret_cast<std::add_pointer_t<URLGetAsyncData*>>(_a[1])));
+        case 40: _t->onPlayerPlay((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
+        case 41: _t->onPlayerPlay((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 42: _t->onPlayerStop((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
+        case 43: _t->onPlayerStop((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 44: _t->onPlayerStop(); break;
+        case 45: _t->onCommandLine((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 46: _t->OnAccount((*reinterpret_cast<std::add_pointer_t<WPARAM>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<LPARAM>>(_a[2]))); break;
+        case 47: _t->OnAccount((*reinterpret_cast<std::add_pointer_t<WPARAM>>(_a[1]))); break;
+        case 48: _t->OnAccount(); break;
+        case 49: _t->OnMenuAccountAdd(); break;
+        case 50: _t->OnMenuAccountEdit((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 51: _t->OnMenuAccountChange((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 52: _t->OnMenuAccountLocalEdit(); break;
+        case 53: _t->OnMenuCustomRange((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 54: _t->OnMenuSettings(); break;
+        case 55: _t->OnMenuShortcuts(); break;
+        case 56: _t->OnMenuAlwaysOnTop(); break;
+        case 57: _t->OnMenuLog(); break;
+        case 58: _t->OnMenuExit(); break;
+        case 59: _t->OnTimer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 60: _t->OnTcnSelchangeTab((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 61: _t->OnTcnSelchangingTab((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 62: _t->OnMenuWebsite(); break;
+        case 63: _t->OnMenuHelp(); break;
+        case 64: _t->OnMenuAddl(); break;
+        case 65: _t->OnMuteInput(); break;
+        case 66: _t->OnMuteOutput(); break;
+        case 67: _t->OnCheckUpdates(); break;
+        case 68: _t->CheckUpdates(); break;
+        case 69: { LRESULT _r = _t->OnUpdateCheckerLoaded((*reinterpret_cast<std::add_pointer_t<URLGetAsyncData*>>(_a[1])));
             if (_a[0]) *reinterpret_cast<LRESULT*>(_a[0]) = std::move(_r); }  break;
-        case 71: { LRESULT _r = _t->onUsersDirectoryLoaded((*reinterpret_cast<std::add_pointer_t<URLGetAsyncData*>>(_a[1])));
+        case 70: { LRESULT _r = _t->onUsersDirectoryLoaded((*reinterpret_cast<std::add_pointer_t<URLGetAsyncData*>>(_a[1])));
             if (_a[0]) *reinterpret_cast<LRESULT*>(_a[0]) = std::move(_r); }  break;
-        case 72: _t->onShortcutsURLLoaded((*reinterpret_cast<std::add_pointer_t<URLGetAsyncData*>>(_a[1]))); break;
-        case 73: { LRESULT _r = _t->onCustomLoaded((*reinterpret_cast<std::add_pointer_t<WPARAM>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<LPARAM>>(_a[2])));
+        case 71: _t->onShortcutsURLLoaded((*reinterpret_cast<std::add_pointer_t<URLGetAsyncData*>>(_a[1]))); break;
+        case 72: { LRESULT _r = _t->onCustomLoaded((*reinterpret_cast<std::add_pointer_t<WPARAM>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<LPARAM>>(_a[2])));
             if (_a[0]) *reinterpret_cast<LRESULT*>(_a[0]) = std::move(_r); }  break;
-        case 74: _t->OnUpdatePane((*reinterpret_cast<std::add_pointer_t<CCmdUI*>>(_a[1]))); break;
-        case 75: _t->startTimer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<std::function<void()>>>(_a[3]))); break;
-        case 76: _t->startTimer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
-        case 77: _t->killTimer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 78: _t->timerEvent((*reinterpret_cast<std::add_pointer_t<QTimerEvent*>>(_a[1]))); break;
+        case 73: _t->startTimer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<std::function<void()>>>(_a[3]))); break;
+        case 74: _t->startTimer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
+        case 75: _t->killTimer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 76: _t->timerEvent((*reinterpret_cast<std::add_pointer_t<QTimerEvent*>>(_a[1]))); break;
         default: ;
         }
     }
@@ -582,14 +561,14 @@ int CmainDlg::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 79)
+        if (_id < 77)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 79;
+        _id -= 77;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 79)
+        if (_id < 77)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 79;
+        _id -= 77;
     }
     return _id;
 }

@@ -28,7 +28,7 @@
 #include <QKeyEvent>
 #include <QMessageBox>
 // Helper: legacy wrapper kept for compatibility with old call sites.
-static inline QString tow(const QString& str) {
+[[maybe_unused]] static inline QString tow(const QString& str) {
     return str;
 }
 

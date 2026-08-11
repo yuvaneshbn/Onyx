@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\autocorr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\az_isp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\bits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\c2t64fx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\c4t64fx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\convolve.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\cor_h_x.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\decim54.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\deemph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\dtx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\g_pitch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\gpclip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\homing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\hp400.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\hp50.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\hp6k.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\hp_wsp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\int_lpc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\isp_az.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\isp_isf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\lag_wind.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\levinson.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\log2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\lp_dec2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\math_op.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\mem_align.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\oper_32b.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\p_med_ol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\pit_shrp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\pitch_f4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\pred_lt4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\preemph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\q_gain2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\q_pulse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\qisf_ns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\qpisf_2s.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\residu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\scale.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\stream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\syn_filt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\updt_tar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\voAMRWBEnc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\voicefac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\wb_vad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\amrwbenc\src\weight_a.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\common\cmnMemory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\wrapper.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\YUVANESH\Downloads\New folder (5)\thirdparty\vo-amrwbenc\vo-amrwbenc.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{290775F8-81E5-361A-A271-77FBF04733B7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

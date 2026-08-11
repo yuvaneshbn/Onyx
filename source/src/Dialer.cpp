@@ -113,14 +113,12 @@ void Dialer::applyAutoMove()
     QRect rect = this->rect();
     for (const AutoMoveData& data : m_autoMoveList) {
         if (!data.widget) continue;
-        // Calculate position and size using percentages
         int x = rect.left() + (data.left * rect.width()) / 100;
         int y = rect.top() + (data.top * rect.height()) / 100;
-        int w = (data.right - data.left) * rect.width() / 100;
-        int h = (data.bottom - data.top) * rect.height() / 100;
-        // Ensure non-negative size
-        if (w < 0) w = 0;
-        if (h < 0) h = 0;
+        int w = (data.right * rect.width()) / 100;
+        int h = (data.bottom * rect.height()) / 100;
+        if (w <= 0) w = data.widget->sizeHint().width() > 0 ? data.widget->sizeHint().width() : rect.width();
+        if (h <= 0) h = data.widget->sizeHint().height() > 0 ? data.widget->sizeHint().height() : 28;
         data.widget->setGeometry(x, y, w, h);
     }
 }
@@ -256,35 +254,43 @@ void Dialer::setupUi()
     // DND, FWD, AA, AC, Conf, Rec (CButtonBottom)
     m_ButtonDND = new CButtonBottom("DND", this);
     m_ButtonDND->setObjectName("IDC_DIALER_DND");
+    m_ButtonDND->setVisible(false);
     connect(m_ButtonDND, &QPushButton::clicked, this, &Dialer::onDNDClicked);
 
     m_ButtonFWD = new CButtonBottom("FWD", this);
     m_ButtonFWD->setObjectName("IDC_DIALER_FWD");
+    m_ButtonFWD->setVisible(false);
     connect(m_ButtonFWD, &QPushButton::clicked, this, &Dialer::onFWDClicked);
 
     m_ButtonAA = new CButtonBottom("AA", this);
     m_ButtonAA->setObjectName("IDC_DIALER_AA");
+    m_ButtonAA->setVisible(false);
     connect(m_ButtonAA, &QPushButton::clicked, this, &Dialer::onAAClicked);
 
     m_ButtonAC = new CButtonBottom("AC", this);
     m_ButtonAC->setObjectName("IDC_DIALER_AC");
+    m_ButtonAC->setVisible(false);
     connect(m_ButtonAC, &QPushButton::clicked, this, &Dialer::onACClicked);
 
     m_ButtonConf = new CButtonBottom("CONF", this);
     m_ButtonConf->setObjectName("IDC_DIALER_CONF");
+    m_ButtonConf->setVisible(false);
     connect(m_ButtonConf, &QPushButton::clicked, this, &Dialer::onConfClicked);
 
     m_ButtonRec = new CButtonBottom("REC", this);
     m_ButtonRec->setObjectName("IDC_DIALER_REC");
+    m_ButtonRec->setVisible(false);
     connect(m_ButtonRec, &QPushButton::clicked, this, &Dialer::onRecClicked);
 
     // Hold, Transfer, Message (simplified as QPushButton)
     QPushButton* holdButton = new QPushButton("Hold", this);
     holdButton->setObjectName("IDC_HOLD");
+    holdButton->setVisible(false);
     connect(holdButton, &QPushButton::clicked, this, &Dialer::onHoldClicked);
 
     QPushButton* transferButton = new QPushButton("Transfer", this);
     transferButton->setObjectName("IDC_TRANSFER");
+    transferButton->setVisible(false);
     connect(transferButton, &QPushButton::clicked, this, &Dialer::onTransferClicked);
 
     QPushButton* messageButton = new QPushButton("Msg", this);
@@ -363,45 +369,48 @@ void Dialer::initDialog()
 
     // 9. Set AutoMove for all controls (exact percentages from original)
     // -- Number combo and DTMF button (handled later)
-    AutoMove(m_comboNumber, 0, 0, 100, 0);
-    // DTMF button is created later in SetDTMF, so we'll skip for now
+    // -- Number combo (top 2% to 10%)
+    AutoMove(m_comboNumber, 2, 2, 96, 8);
 
-    int height = 17;
-    int height4 = height * 4;
-    int height2 = height * 2;
-    int height3 = height * 3;
+    // Keypad Row 1 (1, 2, 3) at y=12%, h=13%
+    AutoMove(m_ButtonDialer1, 2, 12, 30, 13);
+    AutoMove(m_ButtonDialer2, 35, 12, 30, 13);
+    AutoMove(m_ButtonDialer3, 68, 12, 30, 13);
 
-    // Keypad buttons
-    AutoMove(m_ButtonDialer1, 0, 0, 33, height);
-    AutoMove(m_ButtonDialer4, 0, height, 33, height);
-    AutoMove(m_ButtonDialer7, 0, height2, 33, height);
-    AutoMove(m_ButtonDialerStar, 0, height3, 33, height);
-    AutoMove(m_ButtonDialerRedial, 0, height4, 33, height);
-    AutoMove(m_ButtonDialerDelete, 0, height4, 33, 17);
+    // Keypad Row 2 (4, 5, 6) at y=26%, h=13%
+    AutoMove(m_ButtonDialer4, 2, 26, 30, 13);
+    AutoMove(m_ButtonDialer5, 35, 26, 30, 13);
+    AutoMove(m_ButtonDialer6, 68, 26, 30, 13);
 
-    AutoMove(m_ButtonDialer2, 33, 0, 34, height);
-    AutoMove(m_ButtonDialer5, 33, height, 34, height);
-    AutoMove(m_ButtonDialer8, 33, height2, 34, height);
-    AutoMove(m_ButtonDialer0, 33, height3, 34, height);
-    AutoMove(m_ButtonDialerPlus, 33, height4, 34, height);
-    AutoMove(m_ButtonDialer3, 67, 0, 33, height);
-    AutoMove(m_ButtonDialer6, 67, height, 33, height);
-    AutoMove(m_ButtonDialer9, 67, height2, 33, height);
-    AutoMove(m_ButtonDialerGrate, 67, height3, 33, height);
-    AutoMove(m_ButtonDialerClear, 67, height4, 33, height);
+    // Keypad Row 3 (7, 8, 9) at y=40%, h=13%
+    AutoMove(m_ButtonDialer7, 2, 40, 30, 13);
+    AutoMove(m_ButtonDialer8, 35, 40, 30, 13);
+    AutoMove(m_ButtonDialer9, 68, 40, 30, 13);
 
+    // Keypad Row 4 (*, 0, #) at y=54%, h=13%
+    AutoMove(m_ButtonDialerStar, 2, 54, 30, 13);
+    AutoMove(m_ButtonDialer0, 35, 54, 30, 13);
+    AutoMove(m_ButtonDialerGrate, 68, 54, 30, 13);
+
+    // Keypad Row 5 (Delete/Redial, +, Clear) at y=68%, h=13%
+    AutoMove(m_ButtonDialerDelete, 2, 68, 30, 13);
+    AutoMove(m_ButtonDialerRedial, 2, 68, 30, 13);
+    AutoMove(m_ButtonDialerPlus, 35, 68, 30, 13);
+    AutoMove(m_ButtonDialerClear, 68, 68, 30, 13);
+
+    // Bottom Action Bar at y=83%, h=14%
 #ifdef _GLOBAL_VIDEO
-    AutoMove(findChild<QPushButton*>("IDC_VIDEO_CALL"), 0, 85, 14, 15);
-    AutoMove(m_ButtonCall, 14, 85, 72, 15);
-    AutoMove(findChild<QPushButton*>("IDC_MESSAGE"), 86, 85, 14, 15);
+    AutoMove(findChild<QPushButton*>("IDC_VIDEO_CALL"), 2, 83, 20, 14);
+    AutoMove(m_ButtonCall, 24, 83, 52, 14);
+    AutoMove(findChild<QPushButton*>("IDC_MESSAGE"), 78, 83, 20, 14);
 #else
-    AutoMove(m_ButtonCall, 0, 85, 84, 15);
-    AutoMove(findChild<QPushButton*>("IDC_MESSAGE"), 84, 85, 16, 15);
+    AutoMove(m_ButtonCall, 2, 83, 74, 14);
+    AutoMove(findChild<QPushButton*>("IDC_MESSAGE"), 78, 83, 20, 14);
 #endif
 
-    AutoMove(m_ButtonEnd, 14, 85, 72, 15);
-    AutoMove(findChild<QPushButton*>("IDC_HOLD"), 0, 85, 14, 15);
-    AutoMove(findChild<QPushButton*>("IDC_TRANSFER"), 86, 85, 14, 15);
+    AutoMove(m_ButtonEnd, 24, 83, 52, 14);
+    AutoMove(findChild<QPushButton*>("IDC_HOLD"), 2, 83, 20, 14);
+    AutoMove(findChild<QPushButton*>("IDC_TRANSFER"), 78, 83, 20, 14);
 
     AutoMove(findChild<QPushButton*>("IDC_BUTTON_MUTE_OUTPUT"), 0, 100, 0, 0);
     AutoMove(findChild<QPushButton*>("IDC_BUTTON_MUTE_INPUT"), 0, 100, 0, 0);
@@ -1289,16 +1298,6 @@ void Dialer::OnTimerShortcutsBlink()
 
 void Dialer::RebuildButtons(bool init)
 {
-    if (!init) {
-        // Destroy existing buttons
-        if (m_ButtonDND) { AutoUnmove(m_ButtonDND); delete m_ButtonDND; m_ButtonDND = nullptr; }
-        if (m_ButtonFWD) { AutoUnmove(m_ButtonFWD); delete m_ButtonFWD; m_ButtonFWD = nullptr; }
-        if (m_ButtonAA) { AutoUnmove(m_ButtonAA); delete m_ButtonAA; m_ButtonAA = nullptr; }
-        if (m_ButtonAC) { AutoUnmove(m_ButtonAC); delete m_ButtonAC; m_ButtonAC = nullptr; }
-        if (m_ButtonConf) { AutoUnmove(m_ButtonConf); delete m_ButtonConf; m_ButtonConf = nullptr; }
-        if (m_ButtonRec) { AutoUnmove(m_ButtonRec); delete m_ButtonRec; m_ButtonRec = nullptr; }
-    }
-
     // Determine which buttons to show
     bool addDND = (accountSettings.denyIncoming == "button");
     bool addFWD = (accountSettings.forwarding == "button" && !accountSettings.forwardingNumber.isEmpty());
@@ -1307,19 +1306,39 @@ void Dialer::RebuildButtons(bool init)
     bool addConf = accountSettings.buttonCONF;
     bool addRec = accountSettings.recordingButton;
 
-    // We'll create buttons only if needed, and use AutoMove to position them.
-    // For simplicity, we'll just set visibility and check states on existing buttons.
-    // But we need to create them if they don't exist.
-    // This is a stub; full implementation would recreate them with proper positioning.
-    // Since the original does that, we'll replicate.
+    QList<QPair<QPushButton*, bool>> list = {
+        {m_ButtonDND, addDND},
+        {m_ButtonFWD, addFWD},
+        {m_ButtonAA, addAA},
+        {m_ButtonAC, addAC},
+        {m_ButtonConf, addConf},
+        {m_ButtonRec, addRec}
+    };
 
-    // For brevity, I'll assume they are created elsewhere and we just set visibility.
-    if (m_ButtonDND) m_ButtonDND->setVisible(addDND);
-    if (m_ButtonFWD) m_ButtonFWD->setVisible(addFWD);
-    if (m_ButtonAA) m_ButtonAA->setVisible(addAA);
-    if (m_ButtonAC) m_ButtonAC->setVisible(addAC);
-    if (m_ButtonConf) m_ButtonConf->setVisible(addConf);
-    if (m_ButtonRec) m_ButtonRec->setVisible(addRec);
+    int activeCount = 0;
+    for (auto& item : list) {
+        if (item.first) {
+            item.first->setVisible(item.second);
+            if (item.second) activeCount++;
+        }
+    }
+
+    if (activeCount > 0) {
+        int wPct = 96 / activeCount;
+        int currentLeft = 2;
+        for (auto& item : list) {
+            if (item.first && item.second) {
+                AutoMove(item.first, currentLeft, 10, wPct - 1, 6);
+                currentLeft += wPct;
+            } else if (item.first) {
+                AutoUnmove(item.first);
+            }
+        }
+    } else {
+        for (auto& item : list) {
+            if (item.first) AutoUnmove(item.first);
+        }
+    }
 
     // Update voicemail visibility
     if (accountSettings.accountId && !accountSettings.account.voicemailNumber.isEmpty()) {

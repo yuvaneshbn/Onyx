@@ -1,0 +1,10 @@
+^C:\USERS\YUVANESH\DOWNLOADS\NEW FOLDER (5)\THIRDPARTY\FFMPEG-8.1.2\BUILD\CMAKEFILES\F9957ECF72161E52E7E318A82E5B1416\GENERATE.STAMP.RULE
+setlocal
+C:\mingw64\bin\cmake.exe "-SC:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/ffmpeg-8.1.2" "-BC:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/ffmpeg-8.1.2/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/YUVANESH/Downloads/New folder (5)/thirdparty/ffmpeg-8.1.2/build/ffmpeg-wrapper.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

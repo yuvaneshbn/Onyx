@@ -113,9 +113,14 @@ class CMMNotificationClient : public IMMNotificationClient
 		  LPCWSTR pwstrDeviceId,
 		  DWORD dwNewState)
 	  {
-		  CWnd *pMainWnd = AfxGetApp()->m_pMainWnd;
-		  if (pMainWnd) {
-			  ::PostMessage(pMainWnd->m_hWnd, WM_DEVICECHANGE, DBT_DEVNODES_CHANGED, 1);
+		  // Post a WM_DEVICECHANGE notification to the main window via Win32 HWND.
+		  // mainDlg is the global Qt main window; retrieve its HWND via winId().
+		  extern class CmainDlg* mainDlg;
+		  if (mainDlg) {
+			  HWND hwnd = reinterpret_cast<HWND>(mainDlg->winId());
+			  if (hwnd) {
+				  ::PostMessage(hwnd, WM_DEVICECHANGE, DBT_DEVNODES_CHANGED, 1);
+			  }
 		  }
 		  return S_OK;
 	  }

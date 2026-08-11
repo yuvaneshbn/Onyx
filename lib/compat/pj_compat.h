@@ -166,6 +166,12 @@ struct pjmedia_vid_codec_param
     } enc_fmt;
 };
 
+enum pjmedia_event_type
+{
+    PJMEDIA_EVENT_NONE = 0,
+    PJMEDIA_EVENT_FMT_CHANGED = 0x464D4348
+};
+
 struct pjmedia_event
 {
     int type = 0;
