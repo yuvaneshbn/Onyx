@@ -168,7 +168,7 @@ QWidget* MainWindow::createNavRail() {
         btn->setFixedSize(44, 44);
         btn->setCheckable(true);
         btn->setIcon(QIcon(iconPath));
-        btn->setIconSize(QSize(22, 22));
+        btn->setIconSize(QSize(24, 24));
         btn->setToolTip(tip);
         btn->setCursor(Qt::PointingHandCursor);
         btn->setStyleSheet(
@@ -176,6 +176,8 @@ QWidget* MainWindow::createNavRail() {
             "  background-color: transparent;"
             "  border: none;"
             "  border-radius: 12px;"
+            "  padding: 0px;"
+            "  margin: 0px;"
             "}"
             "QPushButton:hover {"
             "  background-color: #1E293B;"
@@ -266,7 +268,7 @@ QWidget* MainWindow::createSidebar() {
     cardHangupBtn->setIcon(QIcon(":/icons/call-end.svg"));
     cardHangupBtn->setIconSize(QSize(16, 16));
     cardHangupBtn->setFixedSize(32, 32);
-    cardHangupBtn->setStyleSheet("background-color: #EF4444; border-radius: 16px; border: none;");
+    cardHangupBtn->setStyleSheet("background-color: #EF4444; border-radius: 16px; border: none; padding: 0px;");
     connect(cardHangupBtn, &QPushButton::clicked, this, &MainWindow::onLeaveCall);
     callCardLayout->addWidget(cardHangupBtn);
 
@@ -367,7 +369,7 @@ QWidget* MainWindow::createChatView() {
     m_chatVoiceBtn->setIconSize(QSize(18, 18));
     m_chatVoiceBtn->setToolTip("Start Voice Call");
     m_chatVoiceBtn->setFixedSize(36, 36);
-    m_chatVoiceBtn->setStyleSheet("background-color: #1E293B; border-radius: 18px; border: 1px solid #334155;");
+    m_chatVoiceBtn->setStyleSheet("background-color: #1E293B; border-radius: 18px; border: 1px solid #334155; padding: 0px;");
     connect(m_chatVoiceBtn, &QPushButton::clicked, this, [this]() { onStartDirectCall(false); });
     headerLayout->addWidget(m_chatVoiceBtn);
 
@@ -376,7 +378,7 @@ QWidget* MainWindow::createChatView() {
     m_chatVideoBtn->setIconSize(QSize(18, 18));
     m_chatVideoBtn->setToolTip("Start Video Call");
     m_chatVideoBtn->setFixedSize(36, 36);
-    m_chatVideoBtn->setStyleSheet("background-color: #0078D4; border-radius: 18px; border: none;");
+    m_chatVideoBtn->setStyleSheet("background-color: #0078D4; border-radius: 18px; border: none; padding: 0px;");
     connect(m_chatVideoBtn, &QPushButton::clicked, this, [this]() { onStartDirectCall(true); });
     headerLayout->addWidget(m_chatVideoBtn);
 
@@ -415,7 +417,7 @@ QWidget* MainWindow::createChatView() {
     m_attachFileBtn->setIconSize(QSize(20, 20));
     m_attachFileBtn->setFixedSize(32, 32);
     m_attachFileBtn->setToolTip("Attach and send file");
-    m_attachFileBtn->setStyleSheet("background-color: transparent; border: none;");
+    m_attachFileBtn->setStyleSheet("background-color: transparent; border: none; padding: 0px; margin: 0px;");
     connect(m_attachFileBtn, &QPushButton::clicked, this, &MainWindow::onSendFileAttachment);
     inputLayout->addWidget(m_attachFileBtn);
 
@@ -435,10 +437,10 @@ QWidget* MainWindow::createChatView() {
         "  background-color: #0078D4;"
         "  border: none;"
         "  border-radius: 17px;"
+        "  padding: 0px;"
+        "  margin: 0px;"
         "}"
         "QPushButton:hover {"
-        "  background-color: #106EBE;"
-        "}"
         "  background-color: #106EBE;"
         "}"
     );
@@ -564,7 +566,7 @@ QWidget* MainWindow::createContactProfileDrawer() {
         b->setIconSize(QSize(18, 18));
         b->setFixedSize(40, 40);
         b->setToolTip(tip);
-        b->setStyleSheet("background-color: #1E293B; border: 1px solid #334155; border-radius: 20px;");
+        b->setStyleSheet("background-color: #1E293B; border: 1px solid #334155; border-radius: 20px; padding: 0px;");
         return b;
     };
     QPushButton* actChat = makeActionBtn(":/icons/chat.svg", "Direct Chat");

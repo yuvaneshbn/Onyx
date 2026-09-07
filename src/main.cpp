@@ -5,6 +5,9 @@
 #include "ui/LoginDialog.h"
 
 int main(int argc, char* argv[]) {
+    // Explicitly initialize Qt resources bundle
+    Q_INIT_RESOURCE(resources);
+
     QApplication app(argc, argv);
     app.setApplicationName("Onyx");
     app.setOrganizationName("Onyx");

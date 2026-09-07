@@ -73,7 +73,6 @@ QString DarkTheme::getStyleSheet() {
             color: #f8fafc;
             border: 1px solid #334155;
             border-radius: 6px;
-            padding: 8px 16px;
             font-weight: 600;
         }
 

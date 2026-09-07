@@ -57,6 +57,11 @@ set(SOURCES
     src/ui/SettingsDialog.cpp
     src/ui/MainWindow.cpp
     resources/resources.qrc
+
+    # JsonCpp 1.9.6 (compiled directly to avoid MSVC Debug/Release runtime mismatch LNK2038)
+    thirdparty/jsoncpp-1.9.6/src/lib_json/json_reader.cpp
+    thirdparty/jsoncpp-1.9.6/src/lib_json/json_value.cpp
+    thirdparty/jsoncpp-1.9.6/src/lib_json/json_writer.cpp
 )
 
 set(HEADERS
@@ -96,9 +101,6 @@ target_link_libraries(Onyx PRIVATE
 
     # Opus 1.6.1
     "${THIRDPARTY_DIR}/opus-1.6.1/build-ninja-x64/opus.lib"
-
-    # JsonCpp 1.9.6
-    "${THIRDPARTY_DIR}/jsoncpp-1.9.6/build-vs/lib/Release/jsoncpp_static.lib"
 
     # HIDAPI 0.14.0
     "${THIRDPARTY_DIR}/hidapi-hidapi-0.14.0/build-vs/src/windows/Release/hidapi.lib"
