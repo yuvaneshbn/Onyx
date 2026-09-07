@@ -1,0 +1,21 @@
+﻿<RCC>
+    <qresource prefix="/icons">
+        <file>icons/chat.svg</file>
+        <file>icons/call.svg</file>
+        <file>icons/call-end.svg</file>
+        <file>icons/video.svg</file>
+        <file>icons/video-off.svg</file>
+        <file>icons/mic.svg</file>
+        <file>icons/mic-off.svg</file>
+        <file>icons/screen-share.svg</file>
+        <file>icons/record.svg</file>
+        <file>icons/users.svg</file>
+        <file>icons/files.svg</file>
+        <file>icons/settings.svg</file>
+        <file>icons/shield.svg</file>
+        <file>icons/search.svg</file>
+        <file>icons/paperclip.svg</file>
+        <file>icons/send.svg</file>
+        <file>icons/headset.svg</file>
+    </qresource>
+</RCC>

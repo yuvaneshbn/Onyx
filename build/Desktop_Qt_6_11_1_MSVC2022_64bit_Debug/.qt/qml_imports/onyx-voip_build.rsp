@@ -1,9 +1,0 @@
--rootPath
-C:/Users/YUVANESH/Downloads/Onyx
--cmake-output
--output-file
-C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug/.qt/qml_imports/onyx-voip_build.cmake
--importPath
-C:/Users/YUVANESH/Downloads/Onyx/build/Desktop_Qt_6_11_1_MSVC2022_64bit_Debug
--importPath
-C:/Qt/6.11.1/msvc2022_64/qml

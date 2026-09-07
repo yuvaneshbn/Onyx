@@ -1,0 +1,31 @@
+﻿# Build outputs and IDE files
+build/
+.vs/
+.vscode/
+.idea/
+*.user
+
+# Intermediate build objects
+*.obj
+*.o
+*.pdb
+*.idb
+*.tlog
+*.ilk
+*.exp
+*.lastbuildstate
+*.ipch
+
+# CMake intermediate files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.ninja
+.ninja_deps
+.ninja_log
+
+# Download archives & temp
+thirdparty/_downloads/
+downloads/
+*.log

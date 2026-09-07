@@ -1,1 +1,0 @@
-QMAKE_MANIFEST = custom.manifest
