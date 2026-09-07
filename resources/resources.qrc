@@ -1,5 +1,5 @@
-﻿<RCC>
-    <qresource prefix="/icons">
+<RCC>
+    <qresource prefix="/">
         <file>icons/chat.svg</file>
         <file>icons/call.svg</file>
         <file>icons/call-end.svg</file>
